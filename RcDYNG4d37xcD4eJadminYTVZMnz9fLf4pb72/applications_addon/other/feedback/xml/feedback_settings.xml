@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_title_title>User Response Settings</conf_title_title>
+      <conf_title_desc>Manage the Users Response System</conf_title_desc>
+      <conf_title_tab>System</conf_title_tab>
+      <conf_title_app>feedback</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Require Deal Topic / Classified</conf_title>
+      <conf_description>If yes, users will have to specify the forum topic (or classified item) where the deal they are leaving feedback for took place.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>fbrequiretopic</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Leaving Response</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Allowed URLs type</conf_title>
+      <conf_description><![CDATA[If you allow any links, users can add links to any resources. In some cases it may be not safe, and may also be the cause of users leave your website. Use with caution.]]></conf_description>
+      <conf_type>dropdown</conf_type>
+      <conf_key>fb_linkType</conf_key>
+      <conf_default/>
+      <conf_extra>t=Links are allowed only within this domain
+c=Any links are allowed</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>classifieds, feedback</conf_keywords>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Captcha?</conf_title>
+      <conf_description>Enables Captcha on the leaving Response form.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>fb_enableCaptcha</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Flood Control</conf_title>
+      <conf_description>Minimum number of seconds between leaving Response (0 to disable)</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>fb_floodControl</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Bypass Flood Control</conf_title>
+      <conf_description>Groups that can bypass flood control when leaving feedback</conf_description>
+      <conf_type>multi</conf_type>
+      <conf_key>fb_floodControlBypass</conf_key>
+      <conf_default>4</conf_default>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['fb_floodControlBypass']) )
+	{
+		$_POST['fb_floodControlBypass'] = implode(",",$_POST['fb_floodControlBypass']);
+	}
+	else
+	{
+		$_POST['fb_floodControlBypass'] = "";
+	}
+	
+	$key = 'fb_floodControlBypass';
+}
+if ( $show == 1 )
+{
+    $key='fb_floodControlBypass[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Show in Private Conversations?</conf_title>
+      <conf_description>Show the user response information next to personal conversation messages?</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>fb_userPanePC</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>User Pane Information</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Hide In Forums</conf_title>
+      <conf_description>Select forums that you do not want to show feedback data next to posts. CTRL+Click to select multiple forums.</conf_description>
+      <conf_type>multi</conf_type>
+      <conf_key>fb_hideInForums</conf_key>
+      <conf_default/>
+      <conf_extra>#show_forums#</conf_extra>
+      <conf_evalphp><![CDATA[if ( $save == 1)
+{
+	if ( is_array($_POST['fb_hideInForums']) )
+	{
+		$_POST['fb_hideInForums'] = ','.implode(",",$_POST['fb_hideInForums']).',';
+	}
+	else
+	{
+		$_POST['fb_hideInForums'] = "";
+	}
+	
+	$key = 'fb_hideInForums';
+}
+if ( $show == 1 )
+{
+$key = 'fb_hideInForums[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>feedback</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

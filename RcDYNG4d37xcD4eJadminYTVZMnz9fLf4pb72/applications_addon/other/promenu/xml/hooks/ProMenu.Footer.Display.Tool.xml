@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name>ProMenu: Footer Navigation Display Tool</hook_name>
+      <hook_desc>This tool is used to display the custom menus created in the footer.</hook_desc>
+      <hook_author>Provisionists LLC</hook_author>
+      <hook_email />
+      <hook_website />
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:3:{s:21:"required_applications";a:1:{s:4:"core";a:3:{s:8:"app_name";s:6:"System";s:11:"min_version";i:3;s:11:"max_version";i:0;}}s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>2.0.4</hook_version_human>
+      <hook_version_long>20004</hook_version_long>
+      <hook_extra_data><![CDATA[a:1:{s:7:"display";N;}]]></hook_extra_data>
+      <hook_key>promenu_display_footer</hook_key>
+      <hook_global_caches/>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>globalProMenuFooterDisplay.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>globalProMenuFooterDisplay</hook_classname>
+      <hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_global";s:12:"skinFunction";s:14:"globalTemplate";s:4:"type";s:2:"if";s:2:"id";s:11:"hasFooterAd";s:8:"position";s:10:"post.endif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+class globalProMenuFooterDisplay
+{
+	public $registry;
+	public $request;
+	public $settings;
+	
+	public function __construct()
+	{
+		$this->registry    = ipsRegistry::instance();
+		$this->request  =& $this->registry->fetchRequest();
+		$this->settings =& $this->registry->fetchSettings();
+	}
+	
+	public function getOutput()
+	{
+		$output = "";
+		
+		if(!IPSLib::appIsInstalled('promenu'))
+		{
+			return $output;
+		}
+		else
+		{
+			if ( $this->settings['promenu_enable_footer_menus'] != 1 ) 
+			{ 
+				return $output; 
+			}
+			
+			if( !$this->registry->isClassLoaded( 'app_class_promenu' ) ) 
+			{ 
+				$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('promenu') . '/app_class_promenu.php', 'app_class_promenu', 'promenu' ); 
+				$this->registry->setClass( 'app_class_promenu', new $classToLoad( $this->registry ) ); 
+			}	
+
+			$menudata = $this->registry->getClass('class_functions')->get_menus('footer_menus');
+
+			if( is_array( $menudata ) && count( $menudata ) )
+			{
+				if ( $this->settings['promenu_group_perm_view'] == 1 ) 
+				{ 
+					$menudata = $this->registry->getClass('class_perms')->checkGroupView( $menudata ); 
+				}
+				else
+				{
+					$menudata = $this->registry->getClass('class_perms')->checkPermissions( $menudata );
+				}
+				
+				$menudata = $this->registry->getClass('class_functions')->parseMenuURL( $menudata );
+				
+				$menudata = $this->registry->getClass('class_functions')->parseMenuActive( $menudata );
+	
+				if( $this->registry->output->getTemplate('promenu')->footer_menus($menudata))
+				{
+					$output .= $this->registry->output->getTemplate('promenu')->footer_menus($menudata);
+				}
+			}
+			return $output;
+		}
+	}
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_title>Enable/Disable</conf_title_title>
+      <conf_title_desc/>
+      <conf_title_noshow>0</conf_title_noshow>
+      <conf_title_keyword>promenu_group_display</conf_title_keyword>
+      <conf_title_app>promenu</conf_title_app>
+      <conf_title_tab>ProMenu</conf_title_tab>
+    </setting>
+    <setting>
+      <conf_id/>
+      <conf_title>Enable Footer Navigation Menus</conf_title>
+      <conf_description><![CDATA[Enable or disable the Footer Navigation Menus. If set to no, all menus in the <b>Footer Menus</b> group will not displayed in the footer block.]]></conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_enable_footer_menus</conf_key>
+      <conf_value/>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_group_display</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </hookextras_settings>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates>
+    <templates>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<if test="hasmenus:|:is_array($menudata) AND count($menudata) > 0">
+<br class="clear"/>
+<br class="clear"/>
+	<div id="footer_menu" class="ipsBox clear">
+    	<div class="ipsBox_container ipsPad">
+			<table>
+				<tr>  
+				<foreach loop="menus:$menudata as $menuid => $menuitem">
+					<if test="isNewRow:|:$menuitem['promenu_new_row'] == 1">
+				</tr>
+				<tr>
+					</if>
+					<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1 OR $menuitem['promenu_parent_id'] == 0"> 
+					<td class="category" valign="top">
+						<if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+		                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+		                <else />
+							<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+								<img src="{$menuitem['promenu_icon']}" />
+							<else />
+								<h3>{$menuitem['promenu_title']}</h3>
+							</if>
+						</if>
+						<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+						{parse template="footer_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+						</if>      
+					</td> 
+					<else />
+					</td>
+				</tr>
+				<tr>
+					<td style="display: inline; align:center; valign:top;">
+						<if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+		                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+		                <else />
+							<a href="{$menuitem['promenu_url']}" class="notMe <if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> menucat</if><if test="isactive:|:$menuitem['_active'] == 1"> active</if>" <if test="disableHover:|:$menuitem['promenu_disable_desc_hover'] != 1"><if test="useDataTool:|:$menuitem['promenu_data_tooltip'] == 1">data-tooltip<else />title</if>="<if test="hasDescrip:|:$menuitem['promenu_description']">{$menuitem['promenu_description']}<else />{$menuitem['promenu_title']}</if>"</if> id="promenu_{$menuitem['promenu_id']}"
+							<if test="isCategorynoFollow:|:$menuitem['promenu_is_cat'] == 1">
+							rel="nofollow"
+							</if>
+							<if test="openNew:|:$menuitem['promenu_open_new_window'] == 1"> target="_blank"</if>>
+							<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+								<img src="{$menuitem['promenu_icon']}" />
+							<else />
+								<if test="hasIcon:|:$menuitem['promenu_icon']">
+									<img src="{$menuitem['promenu_icon']}" height='14px' width='14px' />&nbsp;
+								</if>
+								<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1">
+									<h3>{$menuitem['promenu_title']}</h3><else />{$menuitem['promenu_title']}
+								</if>
+							</if>
+							</a>
+						</if>
+						<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+							{parse template="footer_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}	
+						</if>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</if>
+				</foreach>
+				</tr>
+			</table>
+		</div>
+	</div>
+</if>]]></template_content>
+      <template_name>footer_menus</template_name>
+      <template_data>$menudata</template_data>
+      <template_updated>1315492100</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+    <templates>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<if test="hasmenus:|:is_array($menudata) AND count($menudata) > 0">
+	<foreach loop="menus:$menudata as $menuid => $menuitem">
+		<if test="isNewColumn:|:$menuitem['promenu_new_row'] == 1">
+		</tr>
+		<tr>
+		</if>
+		<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> 
+			<td class="category" valign="top">
+				<if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+                <else />
+					<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+					<img src="{$menuitem['promenu_icon']}" />
+					<else />
+					<h3>{$menuitem['promenu_title']}</h3>
+					</if>
+				</if>
+				<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+				{parse template="footer_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+				</if>      
+			</td> 
+		<else />
+			<if test="isCategory:|:$menuitem['promenu_as_cat'] == 1">
+				<if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+                <else />
+					<h3>{$menuitem['promenu_title']}</h3>
+				</if>
+			<else />
+				<if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+                <else />
+					<a href="{$menuitem['promenu_url']}" class="notMe <if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> menucat</if><if test="isactive:|:$menuitem['_active'] == 1"> active</if>" <if test="disableHover:|:$menuitem['promenu_disable_desc_hover'] != 1"><if test="useDataTool:|:$menuitem['promenu_data_tooltip'] == 1">data-tooltip<else />title</if>="<if test="hasDescrip:|:$menuitem['promenu_description']">{$menuitem['promenu_description']}<else />{$menuitem['promenu_title']}</if>"</if> id="promenu_{$menuitem['promenu_id']}"
+					<if test="isCategorynoFollow:|:$menuitem['promenu_is_cat'] == 1">
+					rel="nofollow"
+					</if><if test="openNew:|:$menuitem['promenu_open_new_window'] == 1"> target="_blank"</if>>
+						<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+							<img src="{$menuitem['promenu_icon']}" />
+						<else />
+							<if test="hasIcon:|:$menuitem['promenu_icon']">
+							<img src="{$menuitem['promenu_icon']}" height='14px' width='14px' />&nbsp;
+							</if>
+							<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1">
+							<h3>{$menuitem['promenu_title']}</h3><else />{$menuitem['promenu_title']}
+							</if>
+						</if>
+					</a>
+				</if>
+			</if>
+			<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+				{parse template="footer_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+			</if>
+		</if>
+	</foreach>
+</if>]]></template_content>
+      <template_name>footer_submenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1315492100</template_updated>
+      <template_removable>0</template_removable>
+      <template_added_to>0</template_added_to>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </templates>
+  </hookextras_templates>
+  <hookextras_css/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert>
+    <insert>
+      <table>promenu_groups</table>
+      <updates>promenu_group_id=5,promenu_group_title=Footer Navigation Menus,promenu_group_description=Footer Navigation Menus,promenu_group_displayorder=5,promenu_group_key=footer_menus</updates>
+      <fordelete>promenu_group_id=5</fordelete>
+    </insert>
+  </hookextras_database_insert>
+</hookexport>

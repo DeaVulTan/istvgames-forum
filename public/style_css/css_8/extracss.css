@@ -1,0 +1,9 @@
+#attach_wrap
+li.attachment{display:block}.attachment-box{margin:0
+auto;max-width:300px;border:4px
+solid #9acfea;background:#fff;text-align:center}.attachment-button
+a{display:inline-block;margin:5px
+0;padding:4px;border:1px
+solid #9acfea;border-radius:2px;background-color:#d9edf7;background-image:-webkit-linear-gradient(top,#d9edf7 0,#b9def0 100%);background-image:linear-gradient(to bottom,#d9edf7 0,#b9def0 100%);color:#31708f;text-transform:uppercase;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0)}.attachment-button a:hover{background-color:#b9def0;background-image:-webkit-linear-gradient(top,#b9def0 0,#d9edf7 100%);background-image:linear-gradient(to bottom,#b9def0 0,#d9edf7 100%)}.attachment-url{padding:5px
+0;background:#d9edf7}.attachment-meta{padding:5px
+0;background:#d9edf7;color:#3F4249;font-size:11px}

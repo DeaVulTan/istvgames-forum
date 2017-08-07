@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name>ProMenu: Primary Navigation Display Tool</hook_name>
+      <hook_desc>This tool is used to display the custom menus created in the primary navigation bar.</hook_desc>
+      <hook_author>Provisionists LLC</hook_author>
+      <hook_email />
+      <hook_website />
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:3:{s:21:"required_applications";a:0:{}s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>2.0.4</hook_version_human>
+      <hook_version_long>20004</hook_version_long>
+      <hook_extra_data/>
+      <hook_key>promenu_display_primary</hook_key>
+      <hook_global_caches/>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>globalProMenuPrimaryDisplay.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>globalProMenuPrimaryDisplay</hook_classname>
+			<hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_global";s:12:"skinFunction";s:14:"globalTemplate";s:4:"type";s:2:"if";s:2:"id";s:26:"hasCustomPrimaryNavigation";s:8:"position";s:11:"pre.startif";}]]></hook_data>
+			<hooks_source><![CDATA[<?php
+
+class globalProMenuPrimaryDisplay
+{
+	public $registry;
+	public $request;
+	public $settings;
+	
+	public function __construct()
+	{
+		$this->registry    = ipsRegistry::instance();
+		$this->request  =& $this->registry->fetchRequest();
+		$this->settings =& $this->registry->fetchSettings();
+	}
+	
+	public function getOutput()
+	{
+		$output = "";
+		
+		if(!IPSLib::appIsInstalled('promenu'))
+		{
+			return $output;
+		}
+		else
+		{
+			if ( $this->settings['promenu_enable_primary_menus'] != 1  ) 
+			{ 
+				return $output; 
+			}
+			
+			if( !$this->registry->isClassLoaded( 'app_class_promenu' ) ) 
+			{ 
+				$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('promenu') . '/app_class_promenu.php', 'app_class_promenu', 'promenu' ); 
+				$this->registry->setClass( 'app_class_promenu', new $classToLoad( $this->registry ) ); 
+			}	
+
+			$menudata = $this->registry->getClass('class_functions')->get_menus('primary_menus');
+
+			if( is_array( $menudata ) && count( $menudata ) )
+			{
+				if ( $this->settings['promenu_group_perm_view'] == 1 ) 
+				{ 
+					$menudata = $this->registry->getClass('class_perms')->checkGroupView( $menudata ); 
+				}
+				else
+				{
+					$menudata = $this->registry->getClass('class_perms')->checkPermissions( $menudata );
+				}
+							
+				$menudata = $this->registry->getClass('class_functions')->parseMenuURL( $menudata );
+				
+				$menudata = $this->registry->getClass('class_functions')->parseMenuActive( $menudata );
+	
+				if ($this->registry->output->getTemplate('promenu')->primary_menus($menudata))
+				{
+					$output .= $this->registry->output->getTemplate('promenu')->primary_menus($menudata);
+				}
+			}
+			return $output;
+		}
+	}
+}]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates/>
+  <hookextras_css/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

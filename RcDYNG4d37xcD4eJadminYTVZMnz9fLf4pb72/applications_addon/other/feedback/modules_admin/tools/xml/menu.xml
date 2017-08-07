@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Конвертировать из другого приложения</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Конвертировать из другого приложения</subitemtitle>
+					<subsection>convert</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Инструменты</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Перестроить данные профилей</subitemtitle>
+					<subsection>rebuild</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

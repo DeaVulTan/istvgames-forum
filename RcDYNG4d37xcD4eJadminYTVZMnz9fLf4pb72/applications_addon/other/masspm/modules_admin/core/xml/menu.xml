@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Управление ЛС</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Посмотреть все сообщения</subitemtitle>
+					<subitemlang>show_all_messages</subitemlang>
+					<subsection>main</subsection>
+					<subitemurl>do=viewAllPms</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Отправить новое ЛС всем</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Отправить новое ЛС всем</subitemtitle>
+					<subitemlang>send_new_pm</subitemlang>
+					<subsection>main</subsection>
+					<subitemurl>do=addMassPm</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

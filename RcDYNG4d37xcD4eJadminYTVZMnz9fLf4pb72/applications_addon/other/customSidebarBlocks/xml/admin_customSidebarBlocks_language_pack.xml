@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>do_raw_html</word_key>
+      <word_default>Включить RAW HTML/JS режим?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>error_none_found</word_key>
+      <word_default>Нету блоков соответствующих ID!</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>error_no_id</word_key>
+      <word_default>Нету ID совпадений!</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>perms</word_key>
+      <word_default>Права доступа</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>general_config</word_key>
+      <word_default>Главные настройки</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>boxed</word_key>
+      <word_default>В рамке</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>blocks_recached</word_key>
+      <word_default>Кеш блоков был обновлён</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>recache_blocks</word_key>
+      <word_default>Обновить кеш</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>enter_content_below</word_key>
+      <word_default>Введите содержимое блока:</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>add_new_block</word_key>
+      <word_default>Добавить новый блок</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>delete_block</word_key>
+      <word_default>Удалить блок</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>block_added</word_key>
+      <word_default>Блок был успешно добавлен</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>block_edited</word_key>
+      <word_default><![CDATA[<%NAME%> блок был успешно изменён!]]></word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>blocks_page</word_key>
+      <word_default>Управление пользовательскими блоками</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>block_deleted</word_key>
+      <word_default>Блок был успешно удалён!</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>enter_content_below_exp</word_key>
+      <word_default>HTML и BBкоды разрешены. А так же другие языки программирования.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>options</word_key>
+      <word_default>Опции</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>image</word_key>
+      <word_default>Иконка</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>edit_block</word_key>
+      <word_default>Создать/изменить блок</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>editing</word_key>
+      <word_default>Редактирование</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>add_block</word_key>
+      <word_default>Добавить блок</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>adding_block</word_key>
+      <word_default>Добавление нового блока</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>use_perms</word_key>
+      <word_default>Использовать настройки ниже?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>use_perms_exp</word_key>
+      <word_default>Оставьте "Нет" чтобы игнорировать настройки ниже.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>image_name</word_key>
+      <word_default>Полное имя изображения (С расширением!):</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>image_name_exp</word_key>
+      <word_default><![CDATA[Картинка должна быть загружена в: "public/style_images/master"! Или в созданную папку по этому пути.]]></word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>use_box_exp</word_key>
+      <word_default>Настройка того как будет выглядить блок.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>use_box</word_key>
+      <word_default>Использовать Таблицу/Обводку/Название/Иконку?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>title_exp</word_key>
+      <word_default>Отображается в заголовке блока.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>block_title</word_key>
+      <word_default>Название блока:</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>block_details</word_key>
+      <word_default>Настройки блока</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>display_content</word_key>
+      <word_default>Настройки отображения</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>enabled</word_key>
+      <word_default>Показать блок?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>enabled_exp</word_key>
+      <word_default>Настройка показа.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>custom_sidebar_blocks</word_key>
+      <word_default>Пользовательские блоки</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>do_raw_html_exp</word_key>
+      <word_default>Если включено, будет происходить без разбора. Хорошо, если вы хотите, показать только HTML/JavaScript, например, поместить виджет или баннер.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>hide_collapse_ability</word_key>
+      <word_default>Сделать невозможным свернуть блок?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>hide_collapse_ability_exp</word_key>
+      <word_default>Если включено, то блок нельзя будет свернуть, как другие.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>and_reload</word_key>
+      <word_default>и Перезагрузить</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>preview</word_key>
+      <word_default>Предпросмотр</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>parsing_options</word_key>
+      <word_default>Настройки содержимого</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>php_based</word_key>
+      <word_default>Включить PHP режим?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>php_based_exp</word_key>
+      <word_default><![CDATA[Если включено, и функция выше отключена, всё содержимое блока должно быть в PHP.  Вам нужно возвратить HTML для отображения, и не использовать echo, print, и т.д.  И не используйте открытые/закрытые теги PHP.<br />
+	  Все стандартные объекты IPB доступны (registry, DB, memberData, cache, settings, request, и т.д.).]]></word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>	
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>export_block</word_key>
+      <word_default>Экспортировать блок</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>raw_mode</word_key>
+      <word_default>Raw режим</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>php_mode</word_key>
+      <word_default>PHP режим</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>collapsible</word_key>
+      <word_default>Блок сворачивается</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>	
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>hide_from_main_block</word_key>
+      <word_default>Скрыть от основных пользовательских блоков?</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>
+    <lang>
+      <word_app>customSidebarBlocks</word_app>
+      <word_pack>admin_customSidebarBlocks</word_pack>
+      <word_key>hide_from_main_block_exp</word_key>
+      <word_default>Если включено, то этот блок будет пропущен при отображении всех пользовательских блоков в индексе.</word_default>
+      <word_custom/>
+      <word_default_version>30008</word_default_version>
+      <word_custom_version/>
+      <word_js>0</word_js>
+    </lang>	
+  </languagegroup>
+</languageexport>

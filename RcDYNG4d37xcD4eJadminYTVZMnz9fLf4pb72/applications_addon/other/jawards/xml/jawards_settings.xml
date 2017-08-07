@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_title_title> Core Settings</conf_title_title>
+      <conf_title_desc>Основные настройки</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить компонент?</conf_title>
+      <conf_description>Настройка включения.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_enable</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>0</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Главные настройки</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>awards,listings</conf_keywords>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title><![CDATA[Оффлайн сообщение:]]></conf_title>
+      <conf_description>Напишите сообщение, которое будет отображаться когда система наград выключена.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>textarea</conf_type>
+      <conf_key>jacore_disabled_msg</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>0</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>awards,listings,error, message</conf_keywords>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить выдавать себе награду?</conf_title>
+      <conf_description>Позволение администраторам добавлять себе награды.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_self_awarding</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>0</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group>Другие настройки</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор автонаграждения:</conf_title>
+      <conf_description><![CDATA[Напишите имя пользователя, и от его лица будут выдаваться награды. Используется если хук не имеет такой настройки.
+]]></conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jacore_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать награды в профиле?</conf_title>
+      <conf_description><![CDATA[Отображение наград в профиле.]]></conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_show_profile</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>Настройки отображения</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать краткое описание?</conf_title>
+      <conf_description>Отображение краткого описание награды.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_show_profile_desc</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать полное описание?</conf_title>
+      <conf_description>Отображение полного описание награды.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_show_profile_longdesc</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать имя автора выдачи?</conf_title>
+      <conf_description><![CDATA[Будет отображать 'Выдал "Имя Автора"'.]]></conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_show_profile_given</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать примечание?</conf_title>
+      <conf_description><![CDATA[Отображение информции о том как получить награду.]]></conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_show_profile_notes</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Показывать отсутствие наград?</conf_title>
+      <conf_description>Если включено, то будет написано что у пользователя ещё нету наград.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jacore_showmissing</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Стиль неполученной награды:</conf_title>
+      <conf_description>Команды для затемнения ещё не полученной награды.</conf_description>
+      <conf_group>49</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jacore_profiledim</conf_key>
+      <conf_default>filter: alpha(opacity=40); opacity: 0.4;</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jacore</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaabb</conf_title_keyword>
+      <conf_title_title>AutoAward by Blog entry</conf_title_title>
+      <conf_title_desc>Автонаграждение в компоненте Blog</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения в компоненте Blog</conf_description>
+      <conf_group>50</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaabb_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabb</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>50</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaabb_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabb</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaabg</conf_title_keyword>
+      <conf_title_title>AutoAward by Gallery Upload</conf_title_title>
+      <conf_title_desc>Автонаграждение в компоненте Gallery</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения в компоненте Gallery</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaabg_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabg</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>51</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaabg_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabg</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaabp</conf_title_keyword>
+      <conf_title_title>AutoAward By Post</conf_title_title>
+      <conf_title_desc>Автонаграждение за определённое количество написанных сообщений</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения за написание определённого количества сообщений.</conf_description>
+      <conf_group>52</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaabp_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Только высшая награда?</conf_title>
+      <conf_description>Использовать только высшую награду для текущего пользователя. Перед выдачей новой старая удаляется.</conf_description>
+      <conf_group>52</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaabp_highonly</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>52</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaabp_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaabp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaafu</conf_title_keyword>
+      <conf_title_title>AutoAward by Upload</conf_title_title>
+      <conf_title_desc>Автонаграждение в компоненте Downloads</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения в компоненте Downloads</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaafu_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaafu</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>53</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaafu_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaafu</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaanp</conf_title_keyword>
+      <conf_title_title>AutoAward on Nexus Payment</conf_title_title>
+      <conf_title_desc>Автонаграждение в компоненте Nexus</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения в компоненте Nexus</conf_description>
+      <conf_group>54</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaanp_enabled</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaanp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>54</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaanp_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaanp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jaasp</conf_title_keyword>
+      <conf_title_title>AutoAward on Subscription Payment</conf_title_title>
+      <conf_title_desc>Автонаграждение за покупку подписки</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение автонаграждения за покупку подписки</conf_description>
+      <conf_group>55</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jaasp_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaasp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор наград:</conf_title>
+      <conf_description>Напишите имя пользователя, от лица которого будут выдаваться награды.</conf_description>
+      <conf_group>55</conf_group>
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>jaasp_autouser</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jaasp</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_title_title>Public Awarding </conf_title_title>
+      <conf_title_desc>Настройки публичного награждения</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Отключить публичное награждение?</conf_title>
+      <conf_description>Отключение возможности награждения не входя в АЦ. Эта опция отменит все разрешения, и не как не повлияет на выдачу наград через АЦ.</conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_public_awarding</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройка включения</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отключить публичное удаление?</conf_title>
+      <conf_description><![CDATA[Отключение возможности удаления наград не входя в АЦ.<br />
+<br />
+Администраторы всё равно смогут удалять награды.]]></conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_restricted_removing</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group>Параметры доступа</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить самонаграждение?</conf_title>
+      <conf_description>Настройка возможности наградить самого себя.</conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_self_awarding</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Награждение "одногруппников"?</conf_title>
+      <conf_description><![CDATA[При включении пользователи смогут наградить только пользователей своей группы.<br />
+<br />
+Вы можете выбрать включение подгруппы ниже..]]></conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_same_group</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Включить подгруппы?</conf_title>
+      <conf_description>При включении пользователи смогут наградить только пользователей своей подгруппы.</conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_sub_groups</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Утверждать публичные награды?</conf_title>
+      <conf_description>При включении награды выданные публично придётся утверждать через АЦ.</conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_approve_new</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Не удалять публично удалённые награды?</conf_title>
+      <conf_description>Полное удаление тогда будет осуществляться через АЦ.</conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japa_approve_removals</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Освобождённые группы от одобрения администратором:</conf_title>
+      <conf_description><![CDATA[Укажите группы, действия которых администратор модерерировать не должен.<br />
+<br />
+Эти группы будут засчитываться как для настроек выше.]]></conf_description>
+      <conf_group>56</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>japa_approval_exempt</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[if($save == 1)
+{
+    if(is_array($_POST['japa_approval_exempt']) )
+	{
+		$_POST['japa_approval_exempt'] = implode(",",$_POST['japa_approval_exempt']);
+	}
+	else
+	{
+		$_POST['japa_approval_exempt'] = "";
+	}
+
+	$key = 'japa_approval_exempt';
+}
+if ( $show == 1 )
+{
+    $key='japa_approval_exempt[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japa</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_title_title>Acheivement Badge Display</conf_title_title>
+      <conf_title_desc>Настройка значков</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение отображения значков наград. Хук должен быть включен тоже.</conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japab_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award achievment</conf_keywords>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Стиль неполученной награды:</conf_title>
+      <conf_description>Команды для затемнения ещё не полученной награды.</conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japab_dim</conf_key>
+      <conf_default>filter: alpha(opacity=40); opacity: 0.4;</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Изменять размер значков?</conf_title>
+      <conf_description><![CDATA[Включение автоматического изменения размера значков.<br />
+<br />
+<strong style="color:#FF0000;">Это требует PHP GD LIBRARY TO BE INSTALLED!!!</strong><br />
+<br />
+Выключите если у вас нету этого.]]></conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japab_resize</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Максимальный размер значков:</conf_title>
+      <conf_description><![CDATA[Если значок награды будет больше указанного тут размера, то он автоматически уменьшится. Работает при включенной настройке выше.<br />
+<br />
+Требуемый формат: ШиринаxВысота]]></conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japab_resize_size</conf_key>
+      <conf_default>25x25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Всплывающая подсказка:</conf_title>
+      <conf_description><![CDATA[То что будет отображаться при наведении курсора на награду при просмотре темы.<br />
+<br />
+<strong>Специальные коды:</strong><br />
+{name} = Название награды<br />
+{desc} = Описание награды<br />
+{notes} = Как получить награду<br />
+{date} = Дата вручения]]></conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japab_tool_tip</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Несколько наград:</conf_title>
+      <conf_description>Обработка нескольких наград для одного пользователя.</conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>japab_multiawards</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>0=Скрыть&#13;
+1=Счётчик</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отступ:</conf_title>
+      <conf_description>Заполнение места между значками наград.</conf_description>
+      <conf_group>57</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japab_padding</conf_key>
+      <conf_default><![CDATA[&nbsp; ]]></conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 && $value )
+{
+  $value = htmlspecialchars( $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japab</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>japbd</conf_title_keyword>
+      <conf_title_title>Post Badge Display</conf_title_title>
+      <conf_title_desc>Значки</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение отображения значков наград. Хук должен быть включен тоже.</conf_description>
+      <conf_group>58</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japbd_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile</conf_keywords>
+      <conf_title_keyword>japbd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_title_title>Post Profile Display</conf_title_title>
+      <conf_title_desc>Настройки отображения в теме</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение отображения значков наград. Хук должен быть включен тоже.</conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jappd_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile</conf_keywords>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Количество наград:</conf_title>
+      <conf_description>Напишите число наград для отображения в теме.</conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappd_count</conf_key>
+      <conf_default>5</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile count</conf_keywords>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Изменять размер значков?</conf_title>
+      <conf_description><![CDATA[Включение автоматического изменения размера значков.<br />
+<br />
+<strong style="color:#FF0000;">Это требует PHP GD LIBRARY TO BE INSTALLED!!!</strong><br />
+<br />
+Выключите если у вас нету этого.]]></conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jappd_resize</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Максимальный размер значков:</conf_title>
+      <conf_description><![CDATA[Если значок награды будет больше указанного тут размера, то он автоматически уменьшится. Работает при включенной настройке выше.<br />
+<br />
+Требуемый формат: ШиринаxВысота]]></conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappd_resize_size</conf_key>
+      <conf_default>25x25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Всплывающая подсказка:</conf_title>
+      <conf_description><![CDATA[То что будет отображаться при наведении курсора на награду при просмотре темы.<br />
+<br />
+<strong>Специальные коды:</strong><br />
+{name} = Название награды<br />
+{desc} = Описание награды<br />
+{notes} = Как получить награду<br />
+{date} = Дата вручения]]></conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappd_tool_tip</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Несколько наград:</conf_title>
+      <conf_description>Обработка нескольких наград для одного пользователя.</conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>jappd_multiawards</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>0=Скрыть&#13;
+1=Показать&#13;
+2=Счётчик&#13;
+3=Последняя/Счётчик</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отступ:</conf_title>
+      <conf_description>Заполнение места между значками наград.</conf_description>
+      <conf_group>59</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappd_padding</conf_key>
+      <conf_default><![CDATA[&nbsp; ]]></conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 && $value )
+{
+  $value = htmlspecialchars( $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_title_title>Post Profile Naked Display</conf_title_title>
+      <conf_title_desc>Настройки отображения в профиле</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение отображения значков наград. Хук должен быть включен тоже.</conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jappn_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile</conf_keywords>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Количество наград:</conf_title>
+      <conf_description>Напишите число наград для отображения в профиле.</conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappn_count</conf_key>
+      <conf_default>5</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile count</conf_keywords>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Изменять размер значков?</conf_title>
+      <conf_description><![CDATA[Включение автоматического изменения размера значков.<br />
+<br />
+<strong style="color:#FF0000;">Это требует PHP GD LIBRARY TO BE INSTALLED!!!</strong><br />
+<br />
+Выключите если у вас нету этого.]]></conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>jappn_resize</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Максимальный размер значков:</conf_title>
+      <conf_description><![CDATA[Если значок награды будет больше указанного тут размера, то он автоматически уменьшится. Работает при включенной настройке выше.<br />
+<br />
+Требуемый формат: ШиринаxВысота]]></conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappn_resize_size</conf_key>
+      <conf_default>25x25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Всплывающая подсказка:</conf_title>
+      <conf_description><![CDATA[То что будет отображаться при наведении курсора на награду при просмотре темы.<br />
+<br />
+<strong>Специальные коды:</strong><br />
+{name} = Название награды<br />
+{desc} = Описание награды<br />
+{notes} = Как получить награду<br />
+{date} = Дата вручения]]></conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappn_tool_tip</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Несколько наград:</conf_title>
+      <conf_description>Обработка нескольких наград для одного пользователя.</conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>jappn_multiawards</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>0=Скрыть&#13;
+1=Показать</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отступ:</conf_title>
+      <conf_description>Заполнение места между значками наград.</conf_description>
+      <conf_group>60</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>jappn_padding</conf_key>
+      <conf_default><![CDATA[<br />]]></conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $show == 1 && $value )
+{
+  $value = htmlspecialchars( $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>jappn</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_title_title>Post Signature Display</conf_title_title>
+      <conf_title_desc>Настройки отображения в подписи</conf_title_desc>
+      <conf_title_tab>JAwards</conf_title_tab>
+      <conf_title_app>jawards</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить?</conf_title>
+      <conf_description>Включение отображения значков наград. Хук должен быть включен тоже.</conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japsd_show</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile</conf_keywords>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Количество наград:</conf_title>
+      <conf_description>Напишите число наград для отображения в подписи.</conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japsd_count</conf_key>
+      <conf_default>5</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>award profile count</conf_keywords>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Изменять размер значков?</conf_title>
+      <conf_description><![CDATA[Включение автоматического изменения размера значков.<br />
+<br />
+<strong style="color:#FF0000;">Это требует PHP GD LIBRARY TO BE INSTALLED!!!</strong><br />
+<br />
+Выключите если у вас нету этого.]]></conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>yes_no</conf_type>
+      <conf_key>japsd_resize</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Максимальный размер значков:</conf_title>
+      <conf_description><![CDATA[Если значок награды будет больше указанного тут размера, то он автоматически уменьшится. Работает при включенной настройке выше.<br />
+<br />
+Требуемый формат: ШиринаxВысота]]></conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japsd_resize_size</conf_key>
+      <conf_default>25x25</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Всплывающая подсказка:</conf_title>
+      <conf_description><![CDATA[То что будет отображаться при наведении курсора на награду при просмотре темы.<br />
+<br />
+<strong>Специальные коды:</strong><br />
+{name} = Название награды<br />
+{desc} = Описание награды<br />
+{notes} = Как получить награду<br />
+{date} = Дата вручения]]></conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japsd_tool_tip</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Несколько наград:</conf_title>
+      <conf_description>Обработка нескольких наград для одного пользователя.</conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>japsd_multiawards</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>0=Скрыть&#13;
+1=Показать&#13;
+2=Счётчик&#13;
+3=Последняя/Счётчик</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отступ:</conf_title>
+      <conf_description>Заполнение места между значками наград.</conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>input</conf_type>
+      <conf_key>japsd_padding</conf_key>
+      <conf_default><![CDATA[&nbsp; ]]></conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if( $save == 1 && $value )
+{
+}
+if( $show == 1 && $value )
+{
+  $value = htmlspecialchars( $value );
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отображение:</conf_title>
+      <conf_description>Укажите место отображения наград.</conf_description>
+      <conf_group>61</conf_group>
+      <conf_type>dropdown</conf_type>
+      <conf_key>japsd_position</conf_key>
+      <conf_default/>
+      <conf_extra>left=Слева&#13;
+center=По центру&#13;
+right=Справа</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>japsd</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>WHERE_shoutbox_view</word_key>
+      <word_default>Viewing the Shoutbox</word_default>
+      <word_custom>Просмотр чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>WHERE_shoutbox_ajax</word_key>
+      <word_default>Using the Shoutbox</word_default>
+      <word_custom>Использование чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>total_mods_members</word_key>
+      <word_default>Total Moderators (Members)</word_default>
+      <word_custom>Всего модераторов (пользователей)</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>total_shouts</word_key>
+      <word_default>Total Shouts</word_default>
+      <word_custom>Всего сообщений</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>view_main_shoutbox</word_key>
+      <word_default>View Main Shoutbox</word_default>
+      <word_custom>Просмотр чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>top_shouter</word_key>
+      <word_default>Top Shouter</word_default>
+      <word_custom>Топ авторов</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>total_mods_groups</word_key>
+      <word_default>Total Moderators (Groups)</word_default>
+      <word_custom>Всего модераторов (групп)</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>today_shouts</word_key>
+      <word_default><![CDATA[Today's Shouts]]></word_default>
+      <word_custom><![CDATA[Сегодняшние сообщения]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>toggle_shoutbox</word_key>
+      <word_default>Toggle shoutbox</word_default>
+      <word_custom>Свернуть чат</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_pruned_shouts</word_key>
+      <word_default>%s shouts pruned from the shoutbox</word_default>
+      <word_custom>%s сообщений урезано</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_tweet_disabled</word_key>
+      <word_default>Shoutbox Twitter importer disabled, Task turned off</word_default>
+      <word_custom>Импорт Twitter отключен, задача выключена</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_tweet_shouts</word_key>
+      <word_default>Twitter imported '%s' messages</word_default>
+      <word_custom>Импортировано twitter-сообщений: %s</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_tweet_nouser</word_key>
+      <word_default>Shoutbox Twitter no users set, Task turned off</word_default>
+      <word_custom>Нет пользователей twitter-shoutbox, задача отключена</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_tweet_noapi</word_key>
+      <word_default>Shoutbox Twitter API details not set, Task turned off</word_default>
+      <word_custom>API Twitter не настроен, задача отключена</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_tweet_paid</word_key>
+      <word_default>Twitter importer requires the paid version of Shoutbox</word_default>
+      <word_custom>Для импорта twitter требует платная версия shoutbox</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sure_delete_shout</word_key>
+      <word_default>Are you sure you want to delete this shout?</word_default>
+      <word_custom>Вы уверены, что хотите удалить это сообщение?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>shout_number</word_key>
+      <word_default>Shout</word_default>
+      <word_custom>Сообщение</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>smilies</word_key>
+      <word_default>Smilies</word_default>
+      <word_custom>Смайлики</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>spy_shoutbox_added_shout</word_key>
+      <word_default>Added Shout</word_default>
+      <word_custom><![CDATA[Добавлено сообщение]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>start</word_key>
+      <word_default>Start</word_default>
+      <word_custom>Старт</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>shouts</word_key>
+      <word_default>Shouts</word_default>
+      <word_custom>Сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>shoutbox_statistics</word_key>
+      <word_default>%s Statistics</word_default>
+      <word_custom>%s статистик</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>shout</word_key>
+      <word_default>Shout</word_default>
+      <word_custom>Отправить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sb_hook_active_users</word_key>
+      <word_default>Users in the shoutbox</word_default>
+      <word_custom>Пользователей в чате</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sb_archive_loaded</word_key>
+      <word_default>Shoutbox Archive Loaded</word_default>
+      <word_custom>Архив чата загружен</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sb_archive_welcome</word_key>
+      <word_default><![CDATA[Here you are able to look at past shouts that are stored in the Shoutbox.<br />You can filter out unwanted shouts by customizing the filtering options located to your right.<br />Simply customize and click 'Filter'.]]></word_default>
+      <word_custom><![CDATA[Здесь вы можете посмотреть на прошлые сообщения, которые хранятся в чате.<br />Вы можете отфильтровать сообщения по настройке параметров фильтрации, расположеных справа от вас.]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sb_archive</word_key>
+      <word_default>Shoutbox Archive</word_default>
+      <word_custom>Архив чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>saving_prefs</word_key>
+      <word_default>Saving preferences...</word_default>
+      <word_custom>Сохранение...</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sblog_banned</word_key>
+      <word_default><![CDATA[Banned '%s' (ID: %d) from the shoutbox]]></word_default>
+      <word_custom><![CDATA['%s' (ID: %d) забанен в чате]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>sblog_unbanned</word_key>
+      <word_default><![CDATA[Unbanned '%s' (ID: %d) from the shoutbox]]></word_default>
+      <word_custom><![CDATA['%s' (ID: %d) разбанен из чата]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>save_prefs</word_key>
+      <word_default>Save Prefs</word_default>
+      <word_custom>Сохранить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>refresh</word_key>
+      <word_default>Refresh</word_default>
+      <word_custom>Обновить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>prune_executed_all</word_key>
+      <word_default>All shouts have been pruned successfully!</word_default>
+      <word_custom>Все сообщения были урезаны!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>restore_default</word_key>
+      <word_default>Restore Default</word_default>
+      <word_custom>Восстановить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>resize_shouts_area</word_key>
+      <word_default>Resize Shouts Area</word_default>
+      <word_custom>Изменение размера для сообщений</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>refreshMe</word_key>
+      <word_default><![CDATA[Manual refresh req'd if changed]]></word_default>
+      <word_custom><![CDATA[Manual refresh req'd if changed]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>quick_filters</word_key>
+      <word_default>Quick Filters</word_default>
+      <word_custom>Быстрые фильтры</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>prune_executed_older_days</word_key>
+      <word_default>%s shout(s) have been pruned successfully!</word_default>
+      <word_custom>%s сообщений урезаны!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>pruned_shouts_older_x</word_key>
+      <word_default>Pruned %d shouts older than %d days from the shoutbox</word_default>
+      <word_custom>Урезание %d сообщений, старше %d дней</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>prefs_restored</word_key>
+      <word_default>Your preferences have been restored to the default preferences</word_default>
+      <word_custom>Ваши настройки были восстановлены</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>prefs_saved</word_key>
+      <word_default>Preferences Saved</word_default>
+      <word_custom>Сохранено</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>processed</word_key>
+      <word_default>Processed</word_default>
+      <word_custom>В процессе</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>processing</word_key>
+      <word_default>Processing, please wait...</word_default>
+      <word_custom>Пожалуйста, подождите...</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>page</word_key>
+      <word_default>Page</word_default>
+      <word_custom>Страница</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>pm</word_key>
+      <word_default>PM</word_default>
+      <word_custom>PM</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>open_popup</word_key>
+      <word_default>Open the Shoutbox in a popup</word_default>
+      <word_custom>Открыть чат во всплывающем окне</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>olderNewer</word_key>
+      <word_default><![CDATA[Older -> Newer]]></word_default>
+      <word_custom><![CDATA[Старые -> Новые]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>of</word_key>
+      <word_default>of</word_default>
+      <word_custom> </word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>no_found_shout</word_key>
+      <word_default>We could not find the shout you were attempting to delete</word_default>
+      <word_custom>Мы не нашли сообщение, которое вы хотите удалить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>no_delete_shout</word_key>
+      <word_default>You do not have permission to delete that shout</word_default>
+      <word_custom>У вас нет прав для удаления сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_shouts</word_key>
+      <word_default>My Shouts</word_default>
+      <word_custom>Мои сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>newerOlder</word_key>
+      <word_default><![CDATA[Newer -> Older]]></word_default>
+      <word_custom><![CDATA[Новые -> Старые]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_vol</word_key>
+      <word_default>Sound volume control</word_default>
+      <word_custom>Уровень громкости</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_welcome</word_key>
+      <word_default><![CDATA[Here you can change your personal preferences for the Shoutbox.<br />Simply update the preferences to your liking and click the 'Save Prefs' button.]]></word_default>
+      <word_custom><![CDATA[Здесь вы можете изменить ваши личные предпочтения в чате.]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_snd</word_key>
+      <word_default>Disable sound on new Shout?</word_default>
+      <word_custom>Отключить звук при появлении новых сообщений?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_panel</word_key>
+      <word_default>My Preferences Panel</word_default>
+      <word_custom>Панель предпочтений</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_sdo</word_key>
+      <word_default>Shoutbox display order?</word_default>
+      <word_custom>Упорядочивать сообщения в чате?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_loaded</word_key>
+      <word_default>Preferences loaded</word_default>
+      <word_custom>Настройки загружены</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_gsb</word_key>
+      <word_default>Display Global Shoutbox?</word_default>
+      <word_custom>Отображать чат?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_ets</word_key>
+      <word_default><![CDATA[<em>Enter Key</em> Acts As 'Shout' Button?]]></word_default>
+      <word_custom><![CDATA[<em>Enter Key</em> Acts As 'Shout' Button?]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>month_shouts</word_key>
+      <word_default><![CDATA[This Month's Shouts]]></word_default>
+      <word_custom><![CDATA[Сообщения этого месяца]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>more</word_key>
+      <word_default>More</word_default>
+      <word_custom>Больше</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs</word_key>
+      <word_default>My Prefs</word_default>
+      <word_custom>Настройки</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_drb</word_key>
+      <word_default>Display Refresh Button?</word_default>
+      <word_custom>Отображать кнопку Обновить?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>my_prefs_eqc</word_key>
+      <word_default>Enable Quick Commands?</word_default>
+      <word_custom>Включить быстрые команды?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_shout_edited</word_key>
+      <word_default>Shout edited</word_default>
+      <word_custom>Сообщение отредактировано</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_view_options</word_key>
+      <word_default>View Moderator Options</word_default>
+      <word_custom>Просмотр параметров модератора</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_panel_title</word_key>
+      <word_default>Moderator Panel</word_default>
+      <word_custom>Панель модератора</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_shouts_to_delete</word_key>
+      <word_default>Shouts to be Deleted</word_default>
+      <word_custom>Сообщения будут удалены</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_yes</word_key>
+      <word_default>Yes</word_default>
+      <word_custom>Да</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_unban</word_key>
+      <word_default>Unban Member</word_default>
+      <word_custom>Разбан пользователя</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_delete_all</word_key>
+      <word_default>Delete All Shouts</word_default>
+      <word_custom>Удалить все сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_delmod</word_key>
+      <word_default>Remove Moderator</word_default>
+      <word_custom>Удалить модератора</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_edit</word_key>
+      <word_default>Edit Shout</word_default>
+      <word_custom>Редактировать</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_edit_history</word_key>
+      <word_default>Edit History</word_default>
+      <word_custom>Редактировать историю</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_no</word_key>
+      <word_default>No</word_default>
+      <word_custom>Нет</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_confirm_delmod</word_key>
+      <word_default>Are you sure you want to remove this members moderating permissions from the Shoutbox?</word_default>
+      <word_custom>Вы хотите удалить права модератора чата у этого пользователя?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_confirm_unban</word_key>
+      <word_default>Are you sure you want to unban this member from the Shoutbox?</word_default>
+      <word_custom>Вы хотите разбанить этого пользователя из чата?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_delete</word_key>
+      <word_default>Delete this Shout</word_default>
+      <word_custom>Удалить это сообщение</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_confirm_delete</word_key>
+      <word_default>Are you sure you want to delete this shout from the Shoutbox?</word_default>
+      <word_custom>Вы точно хотите удалить эти сообщения из чата?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_confirm_delete_all</word_key>
+      <word_default>Are you sure you want to delete all the shouts by this member from the Shoutbox?</word_default>
+      <word_custom>Вы точно хотите удалить все сообщения этого пользователя из чата?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_confirm_ban</word_key>
+      <word_default>Are you sure you want to ban this member from the Shoutbox?</word_default>
+      <word_custom>Вы точно хотите забанить этого пользователя в чате?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_ban</word_key>
+      <word_default>Ban Member</word_default>
+      <word_custom>Забанить пользователя</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opts_welcome</word_key>
+      <word_default>To begin, please click one of the links below to select the action you want to perform.</word_default>
+      <word_custom>Для начала нажмите одну из ссылок ниже, чтобы выбрать действие, которое вы хотите выполнить.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opts_start_status</word_key>
+      <word_default>Waiting for an action to be chosen...</word_default>
+      <word_custom>Ожидание...</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opts</word_key>
+      <word_default>Moderator Options</word_default>
+      <word_custom>Опции модератора</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opts_confirm</word_key>
+      <word_default>Are you sure?</word_default>
+      <word_custom>Вы уверены?</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opts_start_content</word_key>
+      <word_default><![CDATA[This panel allows you to perform various actions based on your permissions. <br />To get started please select an action from below.<br /><br />]]></word_default>
+      <word_custom><![CDATA[Эта панель позволяет выполнять различные действия в зависимости от ваших прав.<br />Для начала выберите действие<br /><br />]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_edit_shout</word_key>
+      <word_default>Edit Shout</word_default>
+      <word_custom>Редактировать сообщение</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_loaded_confirm</word_key>
+      <word_default>Operation loaded, please confirm</word_default>
+      <word_custom>Пожалуйста, подтвердите действие</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_member_banned</word_key>
+      <word_default>Member Banned</word_default>
+      <word_custom>Пользователь забанен</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_member_unbanned</word_key>
+      <word_default>Member Un-Banned</word_default>
+      <word_custom>Пользователь разбанен</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_member_unmodded</word_key>
+      <word_default>Moderator Removed</word_default>
+      <word_custom>Модератор удалён</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mmenu_load_mod_opts</word_key>
+      <word_default>Load Moderator Options</word_default>
+      <word_custom>Загрузка параметров модератора</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_edit_history_text</word_key>
+      <word_default><![CDATA[Edit History displays the editing history of this shout.<br />Below lists the members that have edited this shout and when they performed their edit.]]></word_default>
+      <word_custom><![CDATA[Редактирование истории сообщений]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>latest_shouts</word_key>
+      <word_default>Latest Shouts</word_default>
+      <word_custom>Последние сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>member</word_key>
+      <word_default>Member</word_default>
+      <word_custom>Пользователь</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>member_name</word_key>
+      <word_default>Member Name</word_default>
+      <word_custom>Имя пользователя</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>ip</word_key>
+      <word_default>IP</word_default>
+      <word_custom>IP</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>insert_name</word_key>
+      <word_default><![CDATA[Insert member's name into Shout]]></word_default>
+      <word_custom><![CDATA[Вставить имя пользователя в форму сообщения]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>inactive_text</word_key>
+      <word_default><![CDATA[We've noticed that you've been inactive for over <#MINUTES#> minute(s).<br />We've stopped running the Shoutbox due to your inactivity.<br />If you are back again, please click the <span style='text-decoration: underline;'>I'm Back</span> button below.]]></word_default>
+      <word_custom><![CDATA[Вы были не активны в течение <#MINUTES#> минут(ы).<br />Если вы хотите вернуться в чат, нажмите кнопку <span style='text-decoration: underline;'>Я вернулся</span>]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>im_back</word_key>
+      <word_default><![CDATA[I'm Back]]></word_default>
+      <word_custom>Я вернулся</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>global_shoutbox_off</word_key>
+      <word_default>Global shoutbox disabled</word_default>
+      <word_custom>Глобальный чат выключен</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>ignored_shouter</word_key>
+      <word_default><![CDATA[<em>This shout is hidden because you have chosen to ignore that user.</em>]]></word_default>
+      <word_custom><![CDATA[<em>Это сообщение было скрыто.</em>]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>ignored_shouter_view</word_key>
+      <word_default>View the shout</word_default>
+      <word_custom>Просмотр чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filter_no_results</word_key>
+      <word_default>No results were found to match your filtering.</word_default>
+      <word_custom>Мы не нашли ничего по фильтру.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filter</word_key>
+      <word_default>Filter</word_default>
+      <word_custom>Фильтр</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filtered</word_key>
+      <word_default>Filtered</word_default>
+      <word_custom>Отфильтровано</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filtering</word_key>
+      <word_default>Filtering...</word_default>
+      <word_custom>Фильтрация...</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filter_by_names</word_key>
+      <word_default>Filter by Members</word_default>
+      <word_custom>Фильтр по пользователям</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>filter_member_name_status</word_key>
+      <word_default>Filter the shouts by member name. Separate each name with a comma (,)</word_default>
+      <word_custom>Фильтр сообщений по пользователям. Введите имена через запятую (,)</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_too_many_emoticons</word_key>
+      <word_default><![CDATA[You have posted a shout with more emoticons than this board allows. Please reduce the number of emoticons you've added to the message]]></word_default>
+      <word_custom><![CDATA[В сообщении слишком много смайлов. Уменьшите количество смайлов]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_unknown</word_key>
+      <word_default>An unknown error was encountered</word_default>
+      <word_custom>Не известная ошибка</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_shoutbox_offline</word_key>
+      <word_default>The shoutbox is currently offline, please check back later</word_default>
+      <word_custom>В настроящее время чат закрыт</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_shout_too_big</word_key>
+      <word_default>Your shout is too big, please shorten it</word_default>
+      <word_custom>Ваше сообщение слишком длинное</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_use_posts_display</word_key>
+      <word_default>You do not have enough posts required to use the Shoutbox. You need %d posts to use the Shoutbox.</word_default>
+      <word_custom>Вам нехватает сообщений для использования чата, у вас должно быть %d сообщений.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_view_perm</word_key>
+      <word_default>You do not have permission to view the Shoutbox</word_default>
+      <word_custom>У вас нет прав на просмотр чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_prefs_login</word_key>
+      <word_default>You must be a member to edit/save your preferences, please login</word_default>
+      <word_custom>Вы должны войти, чтобы отредактировать свои настройки</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_prune_invalid_number</word_key>
+      <word_default><![CDATA[You have to insert a number after '/prune ' for the function to work!]]></word_default>
+      <word_custom><![CDATA[Вы должны ввести число после команды '/prune ' для её работоспособности!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_shouts</word_key>
+      <word_default><![CDATA[No shouts have been made in the Shoutbox, why don't you add one to get the Shoutbox started?]]></word_default>
+      <word_custom><![CDATA[Сообщений в чате нет, почему бы вам не оставить первое сообщение?]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_use_perm</word_key>
+      <word_default>You do not have permission to use the Shoutbox</word_default>
+      <word_custom>У вас нет прав на использование чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_use_posts</word_key>
+      <word_default>You do not have enough posts required to use the Shoutbox</word_default>
+      <word_custom>У вас не хватает сообщений, необходимых для использования чата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_mods</word_key>
+      <word_default><![CDATA[No moderators have been added, to add one go to the <em>Admin CP -> Other Apps -> Shoutbox -> Management -> Manage Moderators page</em>!]]></word_default>
+      <word_custom><![CDATA[Модераторов пока нет, для добавления перейдите в <em>Админцентр -> Мои приложения -> IP.Shoutbox -> Управление -> Управление модераторами</em>!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_archive_perm</word_key>
+      <word_default>You do not have permission to view the Shoutbox Archive!</word_default>
+      <word_custom>У вас нет прав на просмотр архива чата!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_cmds_enabled</word_key>
+      <word_default>You do not have quick commands enabled. Open up your Preferences and enable quick commands.</word_default>
+      <word_custom>У вас не настроены быстрые команды, для настройки перейдите в настройки предпочтений.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_acp_access</word_key>
+      <word_default><![CDATA[You don't have ACP access!]]></word_default>
+      <word_custom><![CDATA[Вы не имеете права входа в админцентр!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_shout_only_own</word_key>
+      <word_default>You are allowed to edit only your own shouts!</word_default>
+      <word_custom>Вы можете редактировать только свои сообщения!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_shout_not_exist</word_key>
+      <word_default><![CDATA[That shout doesn't appear to exist!]]></word_default>
+      <word_custom><![CDATA[Сообщение не существует]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_unban_self</word_key>
+      <word_default><![CDATA[You can't remove the ban from your account yourself!]]></word_default>
+      <word_custom><![CDATA[Вы не можете разбаниться самостоятельно!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_perms</word_key>
+      <word_default><![CDATA[You don't have any moderating permissions!]]></word_default>
+      <word_custom><![CDATA[Вы не имеете прав модератора!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_perm</word_key>
+      <word_default><![CDATA[You don't have moderating permission to perform this function!]]></word_default>
+      <word_custom><![CDATA[Вы не имеете прав модератора для выполнения этого действия!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_ban_24</word_key>
+      <word_default>Ban Member 24h</word_default>
+      <word_custom>Блокировать на 24ч</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>mod_opt_ban_48</word_key>
+      <word_default>Ban Member 48h</word_default>
+      <word_custom>Блокировать на 48ч</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_ban_self</word_key>
+      <word_default><![CDATA[You can't ban yourself!]]></word_default>
+      <word_custom><![CDATA[Вы не можете себя забанить!]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_ban_admins</word_key>
+      <word_default>You are not allowed to ban admins</word_default>
+      <word_custom>Вы не можете банить администраторов</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_member_not_mod</word_key>
+      <word_default><![CDATA[That member isn't a moderator.]]></word_default>
+      <word_custom><![CDATA[Этот пользователь не модератор.]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_no_action</word_key>
+      <word_default>An uknown moderation action was specified, please try again</word_default>
+      <word_custom>Неизвестное действие</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_member_already_unbanned</word_key>
+      <word_default>Member is already un-banned.</word_default>
+      <word_custom>Пользователь уже разбанен.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_member_not_exist</word_key>
+      <word_default><![CDATA[That member doesn't seem to exist.]]></word_default>
+      <word_custom><![CDATA[Такой пользователь не существует]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_invalid_name</word_key>
+      <word_default>Invalid member name provided.</word_default>
+      <word_custom>Имя пользователя введено не верно.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_member_already_banned</word_key>
+      <word_default>Member is already banned.</word_default>
+      <word_custom>Пользователь уже забанен.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_invalid_id</word_key>
+      <word_default>Invalid shout ID provided.</word_default>
+      <word_custom>Неверный ID сообщения.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_invalid_mid</word_key>
+      <word_default>Invalid member ID provided.</word_default>
+      <word_custom>Неверный ID пользователя.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_mod_group_no_remove</word_key>
+      <word_default>That member is in a group of moderators so you cannot remove it in this way, to remove it please login into ACP and remove it from there.</word_default>
+      <word_custom>Этот пользователь является модератором, поэтому вы не можете его удалить. Прежде удалите его из модераторов.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_member_name_too_short</word_key>
+      <word_default>The member name entered is shorter than 3 characters, please enter at least 3 characters for the member name.</word_default>
+      <word_custom>Имя пользователя введено не верно, разрешено более 3 символов.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_loading_members_viewing</word_key>
+      <word_default>There was an error loading the members viewing the shoutbox!</word_default>
+      <word_custom>Ошибка загрузки!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_member_names_too_short</word_key>
+      <word_default>The member names entered are all shorter than 3 characters. Please enter at least 3 characters per member name.</word_default>
+      <word_custom>Имя пользователя введено не верно, разрешено более 3 символов.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_invalid_command</word_key>
+      <word_default><![CDATA[That command isn't recognized, please check its syntax.]]></word_default>
+      <word_custom><![CDATA[Эта команда не распознана, пожалуйста, проверьте правильность команды.]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_guests_no_shout</word_key>
+      <word_default>Guests are not allowed to shout.</word_default>
+      <word_custom>Гости не имеют права оставлять сообщения.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_flooding</word_key>
+      <word_default>Shout flooding is enabled. Please wait {#EXTRA#} seconds before shouting again.</word_default>
+      <word_custom>Включён лимит сообщений. Пожалуйста, подождите {#EXTRA#} секунд.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_blank_shout</word_key>
+      <word_default>Your shout is empty.</word_default>
+      <word_custom>Пустое сообщение.</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_banned</word_key>
+      <word_default>You are banned from the Shoutbox!</word_default>
+      <word_custom>Вы забанены в чате!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_already_submitting</word_key>
+      <word_default>A shout is already being submitted, please wait until the loading is complete</word_default>
+      <word_custom>Сообщение добавляется</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_already_filtering</word_key>
+      <word_default>A shout filter is already being applied, please wait until the loading is completed</word_default>
+      <word_custom>Фильтр сообщений уже применяется</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>yesterday_shouts</word_key>
+      <word_default><![CDATA[Yesterday's Shouts]]></word_default>
+      <word_custom><![CDATA[Вчерашние сообщения]]></word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>end</word_key>
+      <word_default>End</word_default>
+      <word_custom>и</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error</word_key>
+      <word_default>Error!</word_default>
+      <word_custom>Ошибка!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>default</word_key>
+      <word_default>Default</word_default>
+      <word_custom>По-умолчанию</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>date</word_key>
+      <word_default>Date</word_default>
+      <word_custom>Дата</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>clear</word_key>
+      <word_default>Clear</word_default>
+      <word_custom>Очистить</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>cancel</word_key>
+      <word_default>Cancel</word_default>
+      <word_custom>Отмена</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>by</word_key>
+      <word_default>By</word_default>
+      <word_custom>от</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>bbcode</word_key>
+      <word_default>BBCode</word_default>
+      <word_custom>ББ-коды</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>back_to_filters</word_key>
+      <word_default>Back to Filters</word_default>
+      <word_custom>Вернуться к фильтрам</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>archive</word_key>
+      <word_default>Archive</word_default>
+      <word_custom>Архив</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>am</word_key>
+      <word_default>AM</word_default>
+      <word_custom>AM</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>all_shouts</word_key>
+      <word_default>All Shouts</word_default>
+      <word_custom>Все сообщения</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_use_old</word_key>
+      <word_default>You do not have enough days registered required to use the Shoutbox</word_default>
+      <word_custom>Вы зарегистрировались недостаточно давно для использвания Shoutbox</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_no_use_old_display</word_key>
+      <word_default>You do not have enough days registered required to use the Shoutbox. You need %d days to use the Shoutbox.</word_default>
+      <word_custom>Вы зарегистрировались недостаточно давно для использвания Shoutbox. Необходимо быть зарегистрированным более %d дн. назад</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_banned24</word_key>
+      <word_default>You are banned 24H from the Shoutbox!</word_default>
+      <word_custom>Вы заблокированы на 24ч.!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>error_banned48</word_key>
+      <word_default>You are banned 48H from the Shoutbox!</word_default>
+      <word_custom>Вы заблокированы на 48ч.!</word_custom>
+    </lang>
+    <lang>
+      <word_app>shoutbox</word_app>
+      <word_pack>public_shoutbox</word_pack>
+      <word_key>task_removedbanned_shouts</word_key>
+      <word_default>%s unbanned members from the shoutbox</word_default>
+      <word_custom>%s разблокировал пользователей</word_custom>
+    </lang>
+  </languagegroup>
+</languageexport>

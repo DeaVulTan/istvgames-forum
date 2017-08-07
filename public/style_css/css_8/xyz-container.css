@@ -1,0 +1,4 @@
+.xyz-container{position:absolute;top:60px;left:40px;margin:auto;width:50px;height:50px;-webkit-perspective-origin:150px -50px;-webkit-perspective:200px}.plane{position:absolute;top:0;left:0;height:50px;width:50px;-webkit-transition:1s}.plane:before{content:'';position:absolute;width:1px;height:50px;top:0;left:25px;background-color:rgba(255,255,255,0.5)}.x{background-color:rgba(0,0,255,0.5)}.xyz-container:hover
+.x{-webkit-transform:rotateX(90deg)}.y{background-color:rgba(255,0,0,0.5)}.xyz-container:hover
+.y{-webkit-transform:rotateY(90deg)}.z{background-color:rgba(0,255,0,0.5)}.xyz-container:hover
+.z{-webkit-transform:rotateZ(90deg)}

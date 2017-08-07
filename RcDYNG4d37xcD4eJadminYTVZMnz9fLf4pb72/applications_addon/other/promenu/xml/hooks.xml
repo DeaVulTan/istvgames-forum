@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hooks>
+	<hook>
+		<file>ProMenu.Footer.Display.Tool.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>ProMenu.Header.Display.Tool.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>ProMenu.Javascripts.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>ProMenu.Primary.Display.Tool.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>ProMenu.Removal.Tool.xml</file>
+		<enabled>1</enabled>
+	</hook>
+</hooks>

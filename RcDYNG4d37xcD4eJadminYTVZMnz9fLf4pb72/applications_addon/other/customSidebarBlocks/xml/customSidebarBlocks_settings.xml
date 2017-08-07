@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>e_CSB</conf_title_keyword>
+      <conf_title_title>Custom Sidebar Blocks</conf_title_title>
+      <conf_title_desc>Настройки компонента.</conf_title_desc>
+      <conf_title_tab>Hooks</conf_title_tab>
+      <conf_title_app>customSidebarBlocks</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить компонент?</conf_title>
+      <conf_description>Настройка включения.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>e_CSB_on</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Главные настройки</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>Custom Sidebar Blocks</conf_keywords>
+      <conf_title_keyword>e_CSB</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Использовать простое поле ввода?</conf_title>
+      <conf_description>Если эту настройку отключить, то управлять содержимым блоков придётся обычным редактором IPB.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>e_CSB_use_plain_text_area</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <conf_end_group>1</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>Custom Sidebar Blocks</conf_keywords>
+      <conf_title_keyword>e_CSB</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>	
+    <setting>
+      <conf_title>Показывать на Portal'е?</conf_title>
+      <conf_description>Настройка отображения в компоненте Portal.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>e_CSB_on_portal</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group>Portal</conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>Custom Sidebar Blocks</conf_keywords>
+      <conf_title_keyword>e_CSB</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+	    <setting>
+      <conf_title>Показывать блок выше других?</conf_title>
+      <conf_description>Если "Да", то ваши блоки будут выше всех остальных на Portal'е. Если "Нет", то над блоком "Онлайн пользователи", а если его нет, то в самом низу.</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>e_CSB_portal_top</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <conf_end_group>0</conf_end_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>Custom Sidebar Blocks</conf_keywords>
+      <conf_title_keyword>e_CSB</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

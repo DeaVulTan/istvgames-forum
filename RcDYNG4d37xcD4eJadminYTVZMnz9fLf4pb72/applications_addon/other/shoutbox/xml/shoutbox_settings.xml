@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_title_title>Ajax Обновление</conf_title_title>
+      <!--Ajax Refresh-->
+      <conf_title_desc>Обновление сообщений, пользователей и других параметров</conf_title_desc>
+      <!--Refresh time for shouts, members and other related settings-->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Частота обновления</conf_title>
+      <!--Shout refresh rate-->
+      <conf_description><![CDATA[Время (в секундах) для обновления чата.<br />
+<strong style='color: red;'>ВНИМАНИЕ: Вы не можете установить параметр меньше 30 секунд.</strong>]]></conf_description>
+      <!--The amount of time to refresh the shoutbox shouts (in seconds).<br />
+<strong style='color: red;'>NOTE: Due to resource issues, you cannot set this any lower than 30 seconds.</strong>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_shouts_refresh</conf_key>
+      <conf_default>60</conf_default>
+      <!--60-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if( intval( $value ) < 30 )
+{
+	$value = 30;
+}
+]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройки обновления Ajax</conf_start_group>
+      <!--Ajax Refresh Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Частота обновления просмотров</conf_title>
+      <!--Members viewing refresh rate-->
+      <conf_description><![CDATA[Время обновления просмотров (в секундах).<br />
+<strong style='color: red;'>ВНИМАНИЕ: Вы не можете установить параметр меньше 30 секунд.</strong>]]></conf_description>
+      <!--The amount of time to refresh the members viewing shoutbox (in seconds).<br />
+<strong style='color: red;'>NOTE: Due to resource issues, you cannot set this any lower than 30 seconds.</strong>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_members_viewing_refresh</conf_key>
+      <conf_default>60</conf_default>
+      <!--60-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if( intval( $value ) < 30 )
+{
+	$value = 30;
+}
+]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Бездействие</conf_title>
+      <!--Inactivity cutoff-->
+      <conf_description><![CDATA[Количество минут для проверки бездействия пользователей в чате.<br /><i>Пример: 5 минут - После 5 минут бездействия пользователей в чате, чат прекратит делать запросы.</i><br />
+<strong style='color: red;'>ВНИМАНИЕ: Вы не можете установить параметр больше 30 минут.</strong>]]></conf_description>
+      <!--The number of minutes to use to check for inactivity timeout.<br /><i>Ex: 5 minutes - After 5 minutes, if no user activity, Shoutbox will halt operations.</i><br />
+<strong style='color: red;'>NOTE: Due to resource issues, you cannot set this any greater than 30 minutes.</strong>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_inactivity_cutoff</conf_key>
+      <conf_default>10</conf_default>
+      <!--10-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if( intval( $value ) > 30 )
+{
+	$value = 30;
+}
+]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автоматически скрывать кнопку "Обновить"?</conf_title>
+      <!--Auto-hide refresh button?-->
+      <conf_description><![CDATA[Если эта настройка установлена на Да, кнопка Обновить будет исчезать всегда пока чат проверяет наличие новых сообщений.]]></conf_description>
+      <!--When this setting is set to yes the refresh button will disappear while the shoutbox is checking for new shouts.<br />This is useful when you don't want your members to flood the ajax check-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_autohide_refresh</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отключить обновления изображений?</conf_title>
+      <!--Disable the refresh image?-->
+      <conf_description>Stops the image from showing at the top of the page each time an ajax refresh action occurs (refreshing the shouts list or active users list).</conf_description>
+      <!--Stops the image from showing at the top of the page each time an ajax refresh action occurs (refreshing the shouts list or active users list).-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_disable_refresh_image</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_refresh</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_title_title>Глобальные настройки</conf_title_title>
+      <!--Global Configuration-->
+      <conf_title_desc>Глобальные настройки, такие как заголовок, анонсы, формат времени, число сообщений и т.д.</conf_title_desc>
+      <!--Global settings such as title, announcement, time format, number of shouts and more-->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Заголовок чата</conf_title>
+      <!--Shoutbox title-->
+      <conf_description><![CDATA[Заголовок вашего чата.<br /><i>Пример:  Мой чат</i>]]></conf_description>
+      <!--The title of your shoutbox.<br /><i>Ex:  My Shoutbox</i>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_title</conf_key>
+      <conf_default>Чат</conf_default>
+      <!--Shoutbox-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Глобальные настройки</conf_start_group>
+      <!--Global Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Анонс</conf_title>
+      <!--Announcement-->
+      <conf_description>Отображает анонс чата выше сообщений.</conf_description>
+      <!--Display an announcement above the shouts for the Shoutbox.-->
+      <conf_type>editor</conf_type>
+      <conf_key>shoutbox_announcement</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Формат имён пользователей?</conf_title>
+      <!--Format shouter names?-->
+      <conf_description><![CDATA[Форматировать имена пользователей по их суффиксам и префиксам?]]></conf_description>
+      <!--Format a shouters name to their groups prefix & suffix formatting?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_format_names</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>@ Форматирование</conf_title>
+      <!--@User name formatting-->
+      <conf_description><![CDATA[Добавление стиля для отображения @пользователь.<br />
+Используйте HTML, установите {name} в строку, где идёт обращение к пользователю<br />
+<strong style='color: red;'>ВНИМАНИЕ: Незакрытые теги могу исказить структуру форума</strong> ]]></conf_description>
+      <!--Add html styles to the @user display.<br />
+Use full html, put the @{name} into the string where the name is to appear, don't forget the '@'<br />
+<strong style='color: red;'>NOTE: Malformed html tags will destroy your page layouts</strong> -->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_format_about</conf_key>
+      <conf_default><![CDATA[{name}]]></conf_default>
+      <!--@{name}-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Форматирование имён</conf_title>
+      <!--User name formatting-->
+      <conf_description><![CDATA[Добавление стиля для отображени обращения к пользователю.<br />
+Используйте HTML<br />
+<strong style='color: red;'>ВНИМАНИЕ: Незакрытые теги могу исказить структуру форума</strong> ]]></conf_description>
+      <!--Add html styles to the standard user display.<br />
+Use full html, put the {name} into the string where the name is to appear<br />
+<strong style='color: red;'>NOTE: Malformed html tags will destroy your page layouts</strong> -->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_format_extra</conf_key>
+      <conf_default><![CDATA[{name}]]></conf_default>
+      <!--{name}-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разделять двоеточием?</conf_title>
+      <!--Show colon separator-->
+      <conf_description><![CDATA[Скрыть/показать двоеточие (':') между именем пользователя и текстом сообщения]]></conf_description>
+      <!--Show/hide the ':' separator between the user name the shout text-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_format_colon</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Эффект затухания</conf_title>
+      <!--Add fading affect-->
+      <conf_description>Добавить эффект затухания при добавлении сообщений в чат?</conf_description>
+      <!--Add a fading affect when submitting a new shout?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_shout_fade</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Общий Формат времени</conf_title>
+      <!--Long time format-->
+      <conf_description><![CDATA[Формат времени можно настроить с помощью <a href='http://php.net/strftime'>PHP's strftime</a>]]></conf_description>
+      <!--The format here is the same as <a href='http://php.net/strftime'>PHP's strftime</a>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_time_long</conf_key>
+      <conf_default>%d %B %Y - %I:%M %p</conf_default>
+      <!--%d %B %Y - %I:%M %p-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Формат сегодняшнего времени</conf_title>
+      <!--Today time format-->
+      <conf_description><![CDATA[Этот формат времени используется сообщениями, отправленными сегодня.<br />Настроить можно с помощью <a href='http://php.net/strftime'>PHP's strftime</a>]]></conf_description>
+      <!--This time format is used for the shouts made "Today".<br />The format here is the same as <a href='http://php.net/strftime'>PHP's strftime</a>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_time_today</conf_key>
+      <conf_default>%I:%M %p</conf_default>
+      <!--%I:%M %p-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить всплывающее окно чата?</conf_title>
+      <!--Allow Shoutbox Popup?-->
+      <conf_description>Показать кнопку, которая позволит пользователям открывать чат во всплывающем окне?</conf_description>
+      <!--Show a button that will let users open the Shoutbox in a popup window?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_popup</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Высота по-умолчанию</conf_title>
+      <!--Default height-->
+      <conf_description>Установите высоту чата для пользователей по-умолчанию.</conf_description>
+      <!--Set the default height new users will have for the shout area of the main Shoutbox application.-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_default_height</conf_key>
+      <conf_default>275</conf_default>
+      <!--275-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if( intval( $value ) < 100 )
+{
+	$value = 100;
+}
+]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Интегрировать с Content Spy?</conf_title>
+      <!--Enable Content Spy?-->
+      <conf_description>Если content spy установлен, действия чата будут отслеживаться</conf_description>
+      <!--If content spy is enabled whether shout actions will be tracked-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_spy</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Отображение сообщений на одну страницу</conf_title>
+      <!--Shouts displayed per page-->
+      <conf_description><![CDATA[Число сообщений, отображаемых на одну страницу.<br /><i>Введите 0 для отображения всех сообщений.</i>]]></conf_description>
+      <!--The number of shouts to be displayed per page.<br /><i>Enter 0 to display all one 1 page.</i>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_archive_perpage</conf_key>
+      <conf_default>20</conf_default>
+      <!--20-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group>Настройки архивации</conf_start_group>
+      <!--Archive Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Формат времени архива</conf_title>
+      <!--Archive clock format-->
+      <conf_description>Выберите формат времени для использовании в архиве чата</conf_description>
+      <!--Select the type of clock you want to use for selecting a date/time range in the archive-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_archive_clock</conf_key>
+      <conf_default>ampm</conf_default>
+      <!--ampm-->
+      <conf_extra>ampm=12 часовой (am/pm)&#13;
+24hr=24 часовой</conf_extra>
+      <!--ampm=12 hour (am/pm)
+24hr=24 hour-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Удаление устаревших сообщений</conf_title>
+      <!--Prune Old Shouts?-->
+      <conf_description><![CDATA[Укажите число, если вы хотите удалять сообщения станше X дней. <br /><b>Введите 0 для отключения задачи.</b><br />
+<b>Введите -1 для запрета сообщений, когда выполяется эта задача.</b>]]></conf_description>
+      <!--Specify here if you want to remove daily shouts older than X days.<br /><b>Enter 0 to disable the task.</b><br />
+<b>Enter -1 to prune all shouts when the task runs</b>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_autoprune</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group>Настройки задач</conf_start_group>
+      <!--Task Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить использовать тег /me?</conf_title>
+      <!--Allow use of the /me tag?-->
+      <conf_description>Разрешить пользователям использовать тег /me в сообщениях?</conf_description>
+      <!--Allow users to type /me in posts, to be replaced with their user name?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_me_tag</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group>Настройки функциональности</conf_start_group>
+      <!--Feature Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить использовать @ ссылку?</conf_title>
+      <!--Allow the @ link?-->
+      <conf_description></conf_description>
+      <!--Shows an @ symbol beside each user name in the Shoutbox, which adds that user name into the shout posting area when clicked
+-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_at_tag</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Включить звуковое оповещение?</conf_title>
+      <!--Enable sound notification-->
+      <conf_description><![CDATA[Добавляет звуковое оповещение при создании нового сообщения в чате
+]]></conf_description>
+      <!--Add sound effect when a new shout is received
+-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_enable_sound</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>999</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_title_title>Хук: Глобальное окно чата</conf_title_title>
+      <!--Hook: Global Shoutbox-->
+      <conf_title_desc></conf_title_desc>
+      <!---->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Вид глобального чата</conf_title>
+      <!--Global Shoutbox Look-->
+      <conf_description><![CDATA[Выберите вид глобального окна чата Shoutbox.<br />Theme 1 - Воод и кнопки справа от списка сообщений.<br />Theme 2 - Поле ввода в виде одной строки и кнопки под окном сообщений.<br /><strong style="color:blue">Эти настройки не действуют, если включен боковой блок чата</strong>]]></conf_description>
+      <!--Select which global Shoutbox look to display.<br />Theme 1 - Input & buttons over to right of the shouts.<br />Theme 2 - Input is a single line and buttons are below the shouts.<br /><strong style="color:blue">NOTE: This setting won't have any effect if you are using the sidebar hook</strong>-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_global_theme</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra>1=Theme 1&#13;
+2=Theme 2</conf_extra>
+      <!--1=Theme 1
+2=Theme 2-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройки отображения</conf_start_group>
+      <!--Display Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Порядок сообщений</conf_title>
+      <!--Shouts display ordering-->
+      <conf_description>Выберите ву каком порядке отображать сообщения в списке.</conf_description>
+      <!--Select which order to display the shouts.-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_global_shout_ordering</conf_key>
+      <conf_default>desc</conf_default>
+      <!--desc-->
+      <conf_extra><![CDATA[asc=Старые -> Новые
+desc=Новые -> Старые]]></conf_extra>
+      <!--asc=Older -> Newer
+desc=Newer -> Older-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Высота блока</conf_title>
+      <!--Default height-->
+      <conf_description>Укажите высоту блока чата по умолчанию.</conf_description>
+      <!--Set the default height new users will have for the shout area.-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_default_gheight</conf_key>
+      <conf_default>132</conf_default>
+      <!--132-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if ( $save == 1 )
+{
+	if ( intval( $_POST['shoutbox_default_gheight'] ) < 100 )
+	{
+		$value = 100;
+	}
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Режим отображения.</conf_title>
+      <!--Hook to enable?-->
+      <conf_description>Выберите,какой из хуков чата включить</conf_description>
+      <!--Select which one of the hooks you want to enable-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_global_hook</conf_key>
+      <conf_default>t</conf_default>
+      <!--t-->
+      <conf_extra>t=Вверху каждой страницы&#13;
+b=Внизу каждой страницы&#13;
+s=Боковой блок (Только на главной странице)&#13;
+ct=Перед списком категорий (Только на главной)&#13;
+cb=После списка категорий (Только на главной)</conf_extra>
+      <!--t=Top of Each Page
+b=Bottom of Each Page
+s=Sidebar (Board Index Only)
+ct=Above Forum Categories (Board Index Only)
+cb=Below Forum Categories (Board Index Only)-->
+      <conf_evalphp><![CDATA[if ( $save == 1 || ( $this->request['do'] == 'setting_revert' && $this->request['id'] == $r['conf_id'] ) )
+{
+	$_POST['shoutbox_global_hook'] = $_POST['shoutbox_global_hook'] ? $_POST['shoutbox_global_hook'] : $r['conf_default'];
+
+	switch( $_POST['shoutbox_global_hook'] )
+	{
+		case 's': $newHookData = 'a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:7:"foreach";s:2:"id";s:11:"side_blocks";s:8:"position";s:9:"outer.pre";}'; break;
+		case 'b': $newHookData = 'a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_global";s:12:"skinFunction";s:14:"globalTemplate";s:4:"type";s:2:"if";s:2:"id";s:15:"mainpageContent";s:8:"position";s:10:"post.endif";}'; break;
+		case 't': $newHookData = 'a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_global";s:12:"skinFunction";s:14:"globalTemplate";s:4:"type";s:2:"if";s:2:"id";s:15:"mainpageContent";s:8:"position";s:11:"pre.startif";}'; break;
+		case 'ct': $newHookData = 'a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:2:"if";s:2:"id";s:11:"cats_forums";s:8:"position";s:11:"pre.startif";}'; break;
+		case 'cb': $newHookData = 'a:6:{s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:11:"skin_boards";s:12:"skinFunction";s:18:"boardIndexTemplate";s:4:"type";s:2:"if";s:2:"id";s:11:"cats_forums";s:8:"position";s:10:"post.endif";}'; break;
+	}
+
+	$this->DB->update( 'core_hooks_files', array( 'hook_data' => $newHookData ), "hook_classname='shoutboxGlobalShoutbox'" );
+	$this->cache->rebuildCache( 'hooks', 'global' );
+
+	require_once( IPS_ROOT_PATH . 'sources/classes/skins/skinFunctions.php' );
+	require_once( IPS_ROOT_PATH . 'sources/classes/skins/skinCaching.php' );
+	$skinCaching = new skinCaching( $this->registry );
+	$skinCaching->flagSetForRecache();
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group>Настройки положения</conf_start_group>
+      <!--Location Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>На каких страницах отображать чат?</conf_title>
+      <!--Display on?-->
+      <conf_description><![CDATA[Выберите страницы для отображения чата.<br /><strong style="color:blue">Эта опция не влияет на хук боковой панели.</strong>]]></conf_description>
+      <!--Select where to display the global shoutbox.<br /><strong style="color:blue">NOTE: This setting won't have any effect if you are using the sidebar hook</strong>-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_global_display_loc</conf_key>
+      <conf_default>all</conf_default>
+      <!--all-->
+      <conf_extra>all=Все страницы&#13;
+idx=Главная(список форумов)</conf_extra>
+      <!--all=Every Page
+idx=Board Index Page-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Алгоритм фильтра страниц</conf_title>
+      <!--Type of Page Check-->
+      <conf_description><![CDATA[Фильтр страницы определяет показывать или нет окно чата на конкретной странице форума.<br /><strong style="color:blue">Не влияет на боковой блок</strong>]]></conf_description>
+      <!--Page Check checks the address of the loaded page to see if you want to exclude or include the shoutbox there.<br /><strong style="color:blue">NOTE: This setting won't have any effect if you are using the sidebar hook</strong>-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_global_pages_type</conf_key>
+      <conf_default>d</conf_default>
+      <!--d-->
+      <conf_extra>d=ОТКЛЮЧИТЬ фильтр&#13;
+e=НЕ ПОКАЗЫВАТЬ на указанных страницах&#13;
+i=ПОКАЗЫВАТЬ только на указанных страницах</conf_extra>
+      <!--d=DISABLE Page Check
+e=EXCLUDE from specified pages
+i=INCLUDE only in specified pages-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Список страниц</conf_title>
+      <!--Pages list-->
+      <conf_description><![CDATA[Введите команды по одной группе на строку, разделенные запятыми.<br />
+Команда включает в себя приложение, модуль или секцию страницы, или любой другой элемент строки запроса для страницы.<br /><br />
+Например, чтобы включить или исключить чат для страницы профиля пользователя №1, введите:<br />
+app=members,module=profile,id=1]]></conf_description>
+      <!--Enter one command per line, separated with a comma.<br />
+Commands should consist of application, module, and/or section values for that page, or anything that is part of the $_POST data for that particular page's URL.<br /><br />
+For example, to include or exclude this from showing on the profile page for Member #1, use:<br />
+app=members,module=profile,id=1-->
+      <conf_type>textarea</conf_type>
+      <conf_key>shoutbox_global_pages_list</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Ограничение на количество смайлов в окне выбора</conf_title>
+      <!--Number of emoticons to display per page-->
+      <conf_description>Сколько смайлов отображать на странице всплывающего списка?</conf_description>
+      <!--In the emoticons popup, how many total emoticons do you want to display per page?-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_emos_perpage</conf_key>
+      <conf_default>20</conf_default>
+      <!--20-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group>Настройки смайлов</conf_start_group>
+      <!--Emoticon Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Количство смайлов в строке</conf_title>
+      <!--Number of emoticons to display per row-->
+      <conf_description>Сколько смайлов помещать в каждой строке всплывающего окна выбора?</conf_description>
+      <!--How many emoticons do you want to display on each row of the emoticons popup?-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_emos_perrow</conf_key>
+      <conf_default>5</conf_default>
+      <!--5-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_hook_global</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_online</conf_title_keyword>
+      <conf_title_title>Онлайн/Оффлайн</conf_title_title>
+      <!--Online/Offline-->
+      <conf_title_desc>Включение/выключение чата, а так же настройки оффлайн сообщения.</conf_title_desc>
+      <!--Enable/disable the shoutbox and setup the offline message-->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Чат включён/выключен</conf_title>
+      <!--Shoutbox online-->
+      <conf_description>Включить чат?</conf_description>
+      <!--Is the shoutbox online?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_online</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройки онлайн/оффлайн</conf_start_group>
+      <!--Online/Offline Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_online</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Оффлайн сообщение</conf_title>
+      <!--Offline message-->
+      <conf_description>Это сообщение будет отображаться вашим пользователм, когда чат в оффлайне.</conf_description>
+      <!--The message to display when the Shoutbox is offline.-->
+      <conf_type>editor</conf_type>
+      <conf_key>shoutbox_offline_message</conf_key>
+      <conf_default>На данный момент чат выключен.</conf_default>
+      <!--The Shoutbox is currently offline.-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_online</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_title_title>Сообщения</conf_title_title>
+      <!--Shouts-->
+      <conf_title_desc>Настройки сообщений в чате</conf_title_desc>
+      <!--All settings related to shouts are here-->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Урезание имён пользователей</conf_title>
+      <!--Truncate shouter names-->
+      <conf_description>Укажите числовое значение, на которое будут уменьшены имена пользователей, если они слишком длинные.</conf_description>
+      <!--After how many characters do you want to truncate shouter names? This is useful if your members have a long name that breaks the layout of the shoutbox.-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_truncate_names</conf_key>
+      <conf_default>15</conf_default>
+      <!--15-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройки отображения</conf_start_group>
+      <!--Display Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Сообщений для отображения</conf_title>
+      <!--Shouts to display-->
+      <conf_description>Укажите число сообщений для отображения.</conf_description>
+      <!--Select the number of shouts to display.-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_shouts_limit</conf_key>
+      <conf_default>20</conf_default>
+      <!--20-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Сортировка сообщений</conf_title>
+      <!--Shouts display ordering-->
+      <conf_description>Выберите метод отображения сообщений.</conf_description>
+      <!--Select which order to display the shouts in.-->
+      <conf_type>dropdown</conf_type>
+      <conf_key>shoutbox_shout_ordering</conf_key>
+      <conf_default>desc</conf_default>
+      <!--desc-->
+      <conf_extra><![CDATA[asc=Старые -> Новые
+desc=Новые -> Старые]]></conf_extra>
+      <!--asc=Older -> Newer
+desc=Newer -> Older-->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Фотографии пользователей</conf_title>
+      <!--Show user photo?-->
+      <conf_description>Показывать фотографии пользователей перед никами?</conf_description>
+      <!--Show a photo icon of the shouter beside their name?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_show_photos</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Лимит флуда</conf_title>
+      <!--Flood limit-->
+      <conf_description><![CDATA[Количество секунд ожидания после каждого сообщения.<br /><i>Введите 0 для отключения лимита.</i>]]></conf_description>
+      <!--The # of seconds to wait in between each shout.<br /><i>Enter 0 for no flood limit.</i>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_flood_limit</conf_key>
+      <conf_default>10</conf_default>
+      <!--10-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group>Настройки сообщений</conf_start_group>
+      <!--Shouting Settings-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Максимальная длина сообщения</conf_title>
+      <!--Max shout length-->
+      <conf_description><![CDATA[Введите макисмальную длину каждого сообщения.<br /><i>Размер в килобайтах (kB)<br />0 = отключить</i>]]></conf_description>
+      <!--The maximum length a shout message can be.<br /><i>Size is in Kilobytes (kB)<br />0 = No max length</i>-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_max_shout_length</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Смайлики</conf_title>
+      <!--Allow Smilies-->
+      <conf_description>Разрешить смайлики в сообщениях?</conf_description>
+      <!--Allow smilie in shouts?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_allow_smilies</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group>Сообщения</conf_start_group>
+      <!--Shout Parsing-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Разрешить ББ коды?</conf_title>
+      <!--Allow BBCode-->
+      <conf_description>Разрешить ББ коды в сообщениях?</conf_description>
+      <!--Allow BBCode to be used in shouts?-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_allow_bbcode</conf_key>
+      <conf_default>1</conf_default>
+      <!--1-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Caps Lock</conf_title>
+      <!--Stop shouting in shouts?-->
+      <conf_description><![CDATA[Будет так: <strong>НАЖМИТЕ ЗДЕСЬ</strong> исправит на <strong>Нажмите здесь</strong>.]]></conf_description>
+      <!--Will turn: <strong>CLICK HERE</strong> into <strong>Click Here</strong>.-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_stop_shouting</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Загрузка сообщений из базы данных</conf_title>
+      <!--Loads shouts from DB-->
+      <conf_description><![CDATA[Включив эту настройку, сообщения будут загружаться из базы данных, вместо кэша.]]></conf_description>
+      <!--Enabling this settings shouts are loaded from DB instead of using the cache. This is useful if you are using an external caching method like <strong>xcache</strong>.-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_skip_cache</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group>Оптимизация</conf_start_group>
+      <!--Optimization-->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_shouts</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_title_title>Задача Twitter</conf_title_title>
+      <!--Twitter Task-->
+      <conf_title_desc>Настройки импорта twitter-сообщений</conf_title_desc>
+      <!--Settings for the twitter pull system-->
+      <conf_title_tab>Shoutbox</conf_title_tab>
+      <conf_title_app>shoutbox</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включить</conf_title>
+      <!--Enable-->
+      <conf_description>Включить импорт сообщений из Twitter</conf_description>
+      <!--Enable the task to pull from Twitter-->
+      <conf_type>yes_no</conf_type>
+      <conf_key>shoutbox_twitter_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <!--0-->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp><![CDATA[if( $save == 1 )
+{
+   if( $value )
+   {
+	$this->DB->update( 'task_manager', array( 'task_locked' => '0',  'task_enabled' => '1'), "task_key='shoutbox_tweet'" );
+   }
+   else
+   {
+	$this->DB->update( 'task_manager', array( 'task_locked' => '0',  'task_enabled' => '0'), "task_key='shoutbox_tweet'" );
+   }
+}
+
+]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords>shoutbox, twitter</conf_keywords>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Ключ API</conf_title>
+      <!--Consumer key-->
+      <conf_description>Введите ключ API выданный вам Twitter</conf_description>
+      <!--Twitter API Consumer Key-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_twitter_ckey</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Секретный ключ</conf_title>
+      <!--Consumer secret-->
+      <conf_description>Секретный ключ от API интерфейса Twitter</conf_description>
+      <!--Twitter API Consumer Secret key-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_twitter_csecret</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Токен</conf_title>
+      <!--Access token-->
+      <conf_description>Токен интерфейса API Twitter</conf_description>
+      <!--Twitter API Access token-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_twitter_atoken</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Access token secret</conf_title>
+      <!--Access token secret-->
+      <conf_description>Пароль токена интерфейса API Twitter</conf_description>
+      <!--Twitter API Access token secret-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_twitter_asecret</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Имена пользователей Twitter</conf_title>
+      <!--Twitter display names-->
+      <conf_description>Список акторов сообщений для импорта из twitter через запятую &#13;
+</conf_description>
+      <!--Comma separated list of Twitter display names to pull
+-->
+      <conf_type>input</conf_type>
+      <conf_key>shoutbox_twitter_names</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Автор сообщений в чате</conf_title>
+      <!--Shout from user-->
+      <conf_description>Пользователь, от имени которого будут публиковаться сообщения из twitter</conf_description>
+      <!--The user that you want this shout to be from-->
+      <conf_type>name_autocomplete</conf_type>
+      <conf_key>shoutbox_twitter_user</conf_key>
+      <conf_default></conf_default>
+      <!---->
+      <conf_extra></conf_extra>
+      <!---->
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group></conf_start_group>
+      <!---->
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>shoutbox_twitter</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

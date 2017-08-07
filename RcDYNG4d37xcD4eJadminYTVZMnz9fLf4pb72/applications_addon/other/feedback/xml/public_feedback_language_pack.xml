@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_invalid_link</word_key>
+      <word_default>The deal link is invalid, please correct it.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_captcha_error</word_key>
+      <word_default>The security check was not successful, please try again.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_no_feedback</word_key>
+      <word_default>Sorry, No one has left feedback yet.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_gotomember</word_key>
+      <word_default>Go To Member</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_flood_control</word_key>
+      <word_default>You cannot leave feedback yet, please wait at least %s seconds</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_cancel</word_key>
+      <word_default>cancel</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>feedback_spy_add</word_key>
+      <word_default>New Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>feedback_spy_row</word_key>
+      <word_default>Response was left for %s</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>confirm_delete_text</word_key>
+      <word_default>Are you sure you want to delete this feedback?</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_statistics_title</word_key>
+      <word_default>Response Statistics</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>confirm_delete_title</word_key>
+      <word_default>Delete Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>find_member</word_key>
+      <word_default>Find Member</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>no_username</word_key>
+      <word_default>A username was not specified.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>members_starting</word_key>
+      <word_default>Members Starting With:</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>silly_you</word_key>
+      <word_default>You cannot leave yourself feedback.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>feedback_empty_field</word_key>
+      <word_default>A required field has not been filled in, please review the form.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>feedback_left</word_key>
+      <word_default>Your feedback has been left on the users profile.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>more_members_message</word_key>
+      <word_default>There are more than one member that matches your search, please select one from the following list.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>col_feedback_from</word_key>
+      <word_default>From</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>col_feedback_rating</word_key>
+      <word_default>Rating</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>col_feedback_comment</word_key>
+      <word_default>Comment</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>col_feedback_date</word_key>
+      <word_default>Date</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>col_feedback_for</word_key>
+      <word_default>For</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>latest_feedback</word_key>
+      <word_default>Latest Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>viewprofile</word_key>
+      <word_default>View Forum Profile</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>trader</word_key>
+      <word_default>Trader</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>totalpos</word_key>
+      <word_default>Total Positive</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>totalpercent</word_key>
+      <word_default>Positive Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>totalneg</word_key>
+      <word_default>Total Negative</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>totalneut</word_key>
+      <word_default>Total Neutral</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>total</word_key>
+      <word_default><![CDATA[Response Score<br/>(Users who left positive)]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>topmember</word_key>
+      <word_default>Top Rated Member</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>topic_desc</word_key>
+      <word_default>A link to the topic where the deal took place.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>classified_desc</word_key>
+      <word_default>A link to the classifieds item where the deal took place.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>topic</word_key>
+      <word_default>Deal Topic</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>classified</word_key>
+      <word_default>Classifieds Item</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>topicerror</word_key>
+      <word_default>Invalid deal topic</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>tabtrader</word_key>
+      <word_default>Response as Trader</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>tabothers</word_key>
+      <word_default>Left for Others</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>tabseller</word_key>
+      <word_default>Response as Seller</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>tabbuyer</word_key>
+      <word_default>Response as Buyer</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>seller</word_key>
+      <word_default>Seller</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>taball</word_key>
+      <word_default>All Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>search</word_key>
+      <word_default>Find</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>role_desc</word_key>
+      <word_default>Select whether you were the buyer or seller, or if the deal was a trade</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>role</word_key>
+      <word_default>Your Role</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>recent</word_key>
+      <word_default>Recent Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>optional</word_key>
+      <word_default>Optional</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>page_title</word_key>
+      <word_default>Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>pos</word_key>
+      <word_default>Positive</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>notuser</word_key>
+      <word_default><![CDATA[This user doesn't exist.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>notfound</word_key>
+      <word_default>Not Found</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>notify_new_feedback</word_key>
+      <word_default>left you new feedback</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>notregistered</word_key>
+      <word_default>No Longer Registered</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>noPermissionApplication</word_key>
+      <word_default>You do not have permission to access this application.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>noperms</word_key>
+      <word_default>You do not have permission to perform this action</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>noneyet</word_key>
+      <word_default>This user has not received any feedback yet.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>neut</word_key>
+      <word_default>Neutral</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>neg</word_key>
+      <word_default>Negative</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>leaving_desc</word_key>
+      <word_default>Rate your experience with this member.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>leaving</word_key>
+      <word_default>Response to Leave</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>leave</word_key>
+      <word_default>Leave Response for</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>leave_title</word_key>
+      <word_default>Leave Response</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>joined</word_key>
+      <word_default>Member since</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>for</word_key>
+      <word_default>for</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>deleteok</word_key>
+      <word_default>Response has been deleted</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>detailed</word_key>
+      <word_default>Response Details</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fboffline</word_key>
+      <word_default>The Users Response System is Offline</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>delete</word_key>
+      <word_default>Delete</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>deletebad</word_key>
+      <word_default>Invalid Response ID</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_topusers_title</word_key>
+      <word_default>Top Members</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>comment_desc</word_key>
+      <word_default><![CDATA[Visible on the member's Response Profile. No BBCode.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>comment</word_key>
+      <word_default>Comment</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>buyer</word_key>
+      <word_default>Buyer</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>about</word_key>
+      <word_default>The Users Response System allows members to leave ratings for each other on forum transactions.</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_nouser</word_key>
+      <word_default><![CDATA[Sorry, we couldn't find the user you were looking for.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_symbol_pos</word_key>
+      <word_default>+1</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_symbol_neu</word_key>
+      <word_default>-</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_global</word_pack>
+      <word_key>fb_symbol_neg</word_key>
+      <word_default>-1</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_notifications</word_pack>
+      <word_key>notify_new_feedback</word_key>
+      <word_default><![CDATA[<#NAME#>,
+
+<#OWNER#> has just left you new feedback.
+
+======================================================================
+You can turn off this notification by visiting <#URL#>
+]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_notifications</word_pack>
+      <word_key>notify__notify_new_feedback</word_key>
+      <word_default>Notify me when someone leaves me feedback</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>public_notifications</word_pack>
+      <word_key>subject__notify_new_feedback</word_key>
+      <word_default><![CDATA[<a href='%s'>%s</a> left you new <a href='%s'>feedback</a>]]></word_default>
+    </lang>
+  </languagegroup>
+</languageexport>

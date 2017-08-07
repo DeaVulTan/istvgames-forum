@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Global</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Global Settings</subitemtitle>
+					<subitemlang>promenu_settings</subitemlang>
+					<subsection>settings</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Display</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Enable/Disable</subitemtitle>
+					<subitemlang>promenu_group_display</subitemlang>
+					<subsection>settings</subsection>
+					<subitemurl>do=display</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Effects</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Menu Effects</subitemtitle>
+					<subitemlang>promenu_effects_settings</subitemlang>
+					<subsection>settings</subsection>
+					<subitemurl>do=effects</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

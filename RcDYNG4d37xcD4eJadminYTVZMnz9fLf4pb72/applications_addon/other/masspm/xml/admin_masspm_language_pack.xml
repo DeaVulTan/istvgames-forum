@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>adminLogSuccessDelete</word_key>
+      <word_default>Массовые ЛС с ID успешно удалены = </word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>adminSuccessDelete</word_key>
+      <word_default>Массовые ЛС с ID успешно удалены = </word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>adminSuccessDeleteAll</word_key>
+      <word_default>Удалены все массовые ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>addingNewMass</word_key>
+      <word_default>Добавление массовых ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>addNewAndRun</word_key>
+      <word_default><![CDATA[Добавить массовые ЛС и продолжить >>]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>creatingNewMass</word_key>
+      <word_default>Создать новое ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>editingMass</word_key>
+      <word_default>Редактирование ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>editMassAndRun</word_key>
+      <word_default><![CDATA[Редактировать массовые ЛС и продолжить >>]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>NoMasss</word_key>
+      <word_default>Нет сообщений для редактирования. Пожалуйста попробуйте еще раз.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>adminSuccessAdd</word_key>
+      <word_default>Добавлены новые массовые ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>adminSuccessEdit</word_key>
+      <word_default>Отредактированы массовые ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>moreThan</word_key>
+      <word_default>Больше чем</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>lessThan</word_key>
+      <word_default>Меньше чем</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>beforeThan</word_key>
+      <word_default>Прежде чем</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>afterThan</word_key>
+      <word_default>После чем</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>hours</word_key>
+      <word_default>Часов</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>days</word_key>
+      <word_default>Дней</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>months</word_key>
+      <word_default>Месяц</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>years</word_key>
+      <word_default>Лет</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>successSent</word_key>
+      <word_default>Массовые ЛС отправлены!</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>sendingProcess</word_key>
+      <word_default><![CDATA[Отправить <% FROM %> from total <% TOTAL %> пользователям]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>overview</word_key>
+      <word_default>Обзор</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>removeAll</word_key>
+      <word_default>Удалить все</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>addNew</word_key>
+      <word_default>Добавить новое ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>id</word_key>
+      <word_default>ID</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>pageName</word_key>
+      <word_default>Название</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>dateAdded</word_key>
+      <word_default>Добавлено</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>dateUpdated</word_key>
+      <word_default>Дата обновления</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>isSent</word_key>
+      <word_default>Послать?</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>options</word_key>
+      <word_default>Опции</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>sendAgain</word_key>
+      <word_default>Отправить снова</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>edit</word_key>
+      <word_default>Редактировать</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>remove</word_key>
+      <word_default>Удалить</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>noItems1</word_key>
+      <word_default>Нет массовых ЛС.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>settings</word_key>
+      <word_default>Основные установки</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>msgTitle</word_key>
+      <word_default>Название</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>msgTitleDesc</word_key>
+      <word_default>Это будет названием ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>msgSender</word_key>
+      <word_default>ЛС для</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>msgSenderDesc</word_key>
+      <word_default>Выберите автора ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>moreSettings</word_key>
+      <word_default>Другие настройки</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>groups</word_key>
+      <word_default>Группы</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>groupsDesc</word_key>
+      <word_default>Выберите группы которые получат это сообщение</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>groupsSecondary</word_key>
+      <word_default>Вторичные группы</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>groupsSecondaryDesc</word_key>
+      <word_default>Проверить вторичные группы?</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>allowReply</word_key>
+      <word_default>Дать ответ</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>allowReplyDesc</word_key>
+      <word_default><![CDATA[Если нет, то пользователь не сможет ответить на это сообщение]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>filters</word_key>
+      <word_default>Фильтры</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>leave</word_key>
+      <word_default>Оставьте пустым, чтобы не фильтровать.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>posts</word_key>
+      <word_default>Сообщения</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>postsDesc</word_key>
+      <word_default>Отправить сообщение для пользователей с конкретным кол-во сообщений.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>rejestration</word_key>
+      <word_default>Регистрация</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>joined</word_key>
+      <word_default>Регистрация</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>ago</word_key>
+      <word_default>тому назад</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>wrote</word_key>
+      <word_default>Написал</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>wrotePosts</word_key>
+      <word_default>сообщений</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>rejestrationDesc</word_key>
+      <word_default>Отправить сообщение для пользователей, которые зарегистрировались в определенный период времени.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>lastVisit</word_key>
+      <word_default>Последний визит</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>lastVisitDesc</word_key>
+      <word_default>Отправить сообщение для пользователям, которые были на форуме в определенный период времени.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>bodySettings</word_key>
+      <word_default>Тело сообщения</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>lastLogin1</word_key>
+      <word_default>Последний вход</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>lastLogin2</word_key>
+      <word_default>назад</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>bbcode</word_key>
+      <word_default>BBCode</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>html</word_key>
+      <word_default>HTML</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>sendingConfirmation</word_key>
+      <word_default>Подтвердить отправку</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>checkingMsg</word_key>
+      <word_default>Проверка массовых ЛС</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>info</word_key>
+      <word_default>Информация</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>perSession</word_key>
+      <word_default>Установить количество сообщений в сессии:</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>checkingDesc</word_key>
+      <word_default><![CDATA[Сообщение будет отправлено %s пользователям. <br />Не забудьте установить до 25 сообщений за одну сессию.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>startSending</word_key>
+      <word_default><![CDATA[Начать отправку >>>]]></word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoId</word_key>
+      <word_default>Неправильный ID. Пожалуйста, попробуйте еще раз.</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoPage</word_key>
+      <word_default>Нет сообщений с таким ID</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoTitle</word_key>
+      <word_default>Вы не указали название</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoTxt</word_key>
+      <word_default>Вы не ввели тело сообщения</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoSender</word_key>
+      <word_default>Вы не указали имя автора</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorSenderNoExist</word_key>
+      <word_default>Нет отправителя</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoGroups</word_key>
+      <word_default>Вы не выбрали ни одной группы</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>errorNoUsers</word_key>
+      <word_default>Нет пользователей, пожалуйста измените фильтры</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>remove_all_sure</word_key>
+      <word_default>Вы уверены, что хотите удалить все элементы?</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_masspm</word_pack>
+      <word_key>add_new_question</word_key>
+      <word_default>Добавить новый?</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>menu__settings</word_key>
+      <word_default>Управление настройками</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>menu__show_all_messages</word_key>
+      <word_default>Показать все сообщения</word_default>
+    </lang>
+    <lang>
+      <word_app>masspm</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>menu__send_new_pm</word_key>
+      <word_default>Отправить новое ЛС</word_default>
+    </lang>
+  </languagegroup>
+</languageexport>

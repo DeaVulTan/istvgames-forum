@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Groups</grouptitle>
+		<grouplang>app_promenu_groups</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_groups</key>
+				<string>Can Add/Edit Groups?</string>
+			</item>
+			<item>
+				<key>app_promenu_groups_delete</key>
+				<string>Can Delete Groups?</string>
+			</item>	
+		</items>
+	</group>
+	<group>
+		<grouptitle>Menus</grouptitle>
+		<grouplang>app_promenu_menus</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_menu</key>
+				<string>Can Add/Edit Menus?</string>
+			</item>
+			<item>
+				<key>app_promenu_menu_delete</key>
+				<string>Can Delete Menus?</string>
+			</item>	
+		</items>
+	</group>
+</permissions>

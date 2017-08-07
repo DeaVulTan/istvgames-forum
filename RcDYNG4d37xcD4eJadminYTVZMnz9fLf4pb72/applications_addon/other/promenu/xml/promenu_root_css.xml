@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<css>
+  <cssfile>
+    <css_set_id/>
+    <css_updated>1333389321</css_updated>
+    <css_group>promenu_header</css_group>
+    <css_content><![CDATA[/********************************************************************************/
+/* ProMenu CSS - By Robert Simons - (c)2012 Provisionists LLC               */
+/********************************************************************************/
+/* promenu_header.css                                                              */
+/********************************************************************************/
+	#header_menus .megamenu > li { margin: 0px 3px 0 0; position: relative; }
+
+#header_menus .megamenu
+{
+     background: #323232; /* Define your mega menu background color */
+     border: 1px solid #000000; /* Define your mega menu border color */
+     border-width: 5px 1px; /* Define your mega menu border widths here */
+     font: normal 12px Verdana;
+     margin: 0px auto;
+     width:100%;
+     height:100%
+     text-align:left;
+}
+
+#header_menus .submenu_container a
+{
+padding:none;
+}
+#header_menu_bar .submenu_container li a
+{
+padding:5px;
+}
+
+#header_menus .header_menu_bar li a
+{
+  margin-top:1px;
+  margin-bottom:1px;
+}
+#header_menus a
+{
+    color: #8a8a8a;   /* Define your megamenu font color here to blend with your new background color */
+    font-size:12px;
+    padding: 10px 10px 7px 10px;
+}
+
+#header_menus a:hover, #header_menus a.menu_active {
+  background-color:#292929; /* Define your menu hover background-color here since the default doesn't provide one */
+  color: #FFFFFF; /* Define your menu hover font color here since the default doesn't provide one */
+}
+
+#header_menus a.active
+{
+  background-color:#323232; /* Define your menu active background-color here since the default doesn't provide one */
+  color: #FC6D32; /* Define your menu active font color here since the default doesn't provide one */
+}
+
+#header_menus .submenu_container a:hover, #header_menus .submenu_container a.menu_active {
+  background-color:#292929; /* Define your menu hover background-color here since the default doesn't provide one */
+  color: #FFFFFF; /* Define your menu hover font color here since the default doesn't provide one */
+}
+
+#header_menus .submenu_container a.active
+{
+  background-color:#323232; /* Define your menu active background-color here since the default doesn't provide one */
+  color: #FC6D32; /* Define your menu active font color here since the default doesn't provide one */
+}
+
+#header_menus .megamenu a:hover, #header_menus .megamenu a.menu_active {
+  background-color:#323232; /* Define your menu active background-color here since the default doesn't provide one */
+  color: #FFFFFF; /* Define your menu hover font color here since the default doesn't provide one */
+}
+
+#header_menus .megamenu  a.menu_active:hover {
+  background-color:#323232; /* Define your menu hover background-color here since the default doesn't provide one */
+  color: #FFFFFF; /* Define your menu hover font color here since the default doesn't provide one */
+}
+
+#header_menus .megamenu a.active,#header_menus .megamenu a.active:hover
+{
+  color: #FC6D32; /* Define your menu active font color here since the default doesn't provide one */
+}
+
+#header_menus li ul 
+{
+    display:none; 
+    position:absolute;
+    background-color:#181818; /* Define your normal submenu background color */
+
+}
+
+#header_menus
+{
+    background: url({style_images_url}/user_navigation.png);
+    width:100%;
+    text-align:left;
+    line-height:28px; 
+}
+
+#header_menus li .downarrow {
+    background: url({style_images_url}/_menu_icons/down_arrow_head.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+
+#header_menus li a.active .downarrow,#header_menus li:hover a.active:hover .downarrow, #header_menus li.active a.menu_active .downarrow{
+    background: url({style_images_url}/_menu_icons/down_arrow_head_active.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+
+#header_menus li a:hover .downarrow, #header_menus li a.active:hover .downarrow, #header_menus li a.menu_active .downarrow{
+    background: url({style_images_url}/_menu_icons/down_arrow_head_hover.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+
+#header_menus .submenu_container li a .rightarrow {
+    background: url({style_images_url}/_menu_icons/right_arrow_head.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+    margin-top:7px;
+    margin-right:5px;
+}
+
+#header_menus .submenu_container li.active a .rightarrow, #header_menus .submenu_container li.active a:hover .rightarrow
+, #header_menus .submenu_container li.active a.active:hover .rightarrow, #header_menus .submenu_container li.active a.menu_active .rightarrow{
+    background: url({style_images_url}/_menu_icons/right_arrow_head_active.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+    margin-top:7px;
+}
+
+#header_menus .submenu_container li a:hover .rightarrow, #header_menus .submenu_container li a.menu_active .rightarrow {
+    background: url({style_images_url}/_menu_icons/right_arrow_head_hover.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+    margin-top:7px;
+}
+
+/********  Alterations below will effect the display only ... all color changes are made above this marker  ********/
+
+/*****  Mega Menu *****/
+
+.category
+{
+     min-width:150px;
+     padding: 10px 10px 10px 10px;
+     top:0px;
+     text-align:left;
+}
+
+#header_menus .megamenu a
+{
+     display: block;
+     float:left;
+     min-width:100px;
+     top:0px;
+     text-align:left;
+}
+
+#header_menus .category a
+{
+     display: block;
+     float:left;
+     min-width:100px;
+     top:0px;
+     text-align:left;
+}
+
+#header_menus .block
+{
+     display: block;
+     float:left;
+     text-align:left;
+}
+
+#header_menus .megamenu > .block
+{
+     text-align:left;
+     padding-left:10px; 
+     padding-top:10px;
+}
+
+#header_menus .new_row, #header_menus .category .new_row h3 
+{
+     padding-top:20px;
+     display:block;
+     float:left;
+     text-align:left;
+}
+
+#header_menus .category h3,#header_menus h3 {
+
+     padding-left:13px;   
+     text-decoration: underline;
+     float:left;
+     text-align:left;
+}
+
+.category h3 {  
+  
+    padding-bottom:5px; 
+    padding-left:10px; 
+}
+
+/****** End Mega Menu ******/
+
+#header_menus li  
+{ 
+    position:relative;
+} 
+
+#header_menu_bar li a
+{
+    padding: 10px 10px 7px 10px;
+	min-width:150px;
+	text-align:left;
+	padding-left:10px;
+}
+
+#header_menus li a.menucat:hover
+{
+    border: 0;
+    cursor:default !important; /* DO NOT CHANGE ... this stops the cursor from appearing on categories*/
+}]]></css_content>
+    <css_position>1</css_position>
+    <css_app>promenu</css_app>
+    <css_app_hide>0</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_modules/>
+    <css_removed>0</css_removed>
+    <css_master_key>root</css_master_key>
+  </cssfile>
+  <cssfile>
+    <css_set_id/>
+    <css_updated>1333389321</css_updated>
+    <css_group>promenu</css_group>
+    <css_content><![CDATA[/********************************************************************************/
+/* ProMenu CSS - By Robert Simons - (c)2012 Provisionists LLC               */
+/********************************************************************************/
+/* promenu.css                                                              */
+/********************************************************************************/
+
+
+#community_app_menu .megamenu{
+background: white; /* Define your mega menu background color */
+border: 1px solid #173455; /* Define your mega menu border color */
+border-width: 5px 1px; /* Define your mega menu border widths here */
+font: normal 12px Verdana;
+width:100%;
+height:100%
+}
+#community_app_menu .submenu_container li a{
+    padding: 10px;
+}
+#community_app_menu .submenu_container li
+{
+        background-color:#173455; /* Define your submenu color here since the default color are terrible */
+    margin-bottom:1px;
+}
+
+#community_app_menu .submenu_container li a
+{
+        background-color:#1c3b5f; /* Define your submenu color here since the default color are terrible */
+        color: #c5d5e2;   /* Define your submenu font color here to blend with your new background color */
+}
+#community_app_menu .submenu_container li a:hover,
+#community_app_menu .submenu_container li a.menu_active
+{
+        background-color:#173455; /* Define your submenu hover color here since the default doesn't provide one */
+        color: #fff;   /* Define your submenu font color here to blend with your new background color */
+}
+#community_app_menu .submenu_container li a.active
+{
+        background-color:#fff; /* Define your submenu active color here since the default doesn't provide one */
+        color: #0b5794;   /* Define your submenu font color here to blend with your new background color */
+        font-weight: bold;
+        margin-top: 0;
+        text-shadow: none;
+}
+
+#community_app_menu .megamenu a
+{
+    color: #0066CC;   /* Define your megamenu font color here to blend with your new background color */
+}
+
+#community_app_menu .megamenu a:hover
+{
+    color: #000000;   /* Define your megamenu font color here to blend with your new background color */
+}
+
+#community_app_menu .megamenu a.active, 
+#community_app_menu .megamenu a.active:hover
+{
+    color: #0066CC;   /* Define your megamenu font color here to blend with your new background color */
+    font-weight: bold;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+#community_app_menu li .downarrow {
+    background: url({style_images_url}/_menu_icons/down_arrow.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+#community_app_menu li.active .downarrow, #community_app_menu li:hover a.active:hover .downarrow, #community_app_menu li.active a.menu_active .downarrow, #community_app_menu li.active a:hover .downarrow {
+    background: url({style_images_url}/_menu_icons/down_arrow_active.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+#community_app_menu li a.active:hover .downarrow, #community_app_menu li a.menu_active .downarrow, #community_app_menu li a:hover .downarrow{
+    background: url({style_images_url}/_menu_icons/down_arrow_hover.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 7px;
+    width: 9px;
+}
+
+#community_app_menu li a .rightarrow {
+    background: url({style_images_url}/_menu_icons/right_arrow.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+}
+
+#community_app_menu li a.active .rightarrow, #community_app_menu li:hover a.active:hover .rightarrow, #community_app_menu li.active a.active .rightarrow{
+    background: url({style_images_url}/_menu_icons/right_arrow_active.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+}
+
+#community_app_menu li a.active:hover .rightarrow, #community_app_menu li a.menu_active .rightarrow, #community_app_menu li a:hover .rightarrow, #community_app_menu li.active a:hover .rightarrow {
+    background: url({style_images_url}/_menu_icons/right_arrow_hover.png) no-repeat scroll left center transparent;
+    display: inline-block;
+    height: 12px;
+    width: 6px;
+}
+
+
+#community_app_menu .submenu_container, 
+#community_app_menu .submenu_container li
+{
+min-width: 100px; /* Define your submenu width here */
+max-width: 175px;
+}
+
+
+/********  Alterations below will effect the display only ... all color changes are made above this marker  ********/
+
+/*****  Mega Menu *****/
+
+#community_app_menu .category{
+     padding: 10px 10px 10px 10px;
+     min-width:150px;
+     top:0px;
+}
+
+#community_app_menu .megamenu a
+{
+     display: block;
+     float:left;
+     min-width:100px;
+     top:0px;
+
+}
+
+#community_app_menu .category a
+{
+     display: block;
+     float:left;
+     min-width:100px;
+     top:0px;
+}
+
+#community_app_menu .block
+{
+     display: block;
+     float:left;
+
+}
+
+#community_app_menu .megamenu > .block
+{
+padding: 10px 10px 10px 10px; 
+overflow:hidden;
+}
+
+#community_app_menu .new_row, #community_app_menu .category .new_row h3 
+{
+padding-top:20px;
+     display:block;
+     float:left;
+}
+
+#community_app_menu .category h3,#community_app_menu h3 {
+     display:block;
+padding-left:0px;   
+     text-decoration: underline;
+     float:left;
+}
+
+#community_app_menu .category img {
+    display:block;
+    float:left;  
+    padding-left: 5px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+/****** End Mega Menu ******/
+
+#community_app_menu li ul 
+{
+    display:none;
+    position:absolute;
+}
+#community_app_menu li  
+{ 
+    position:relative;  
+} 
+
+#community_app_menu li a.menucat:hover
+{
+    border: 0;
+    cursor:default !important; /* DO NOT CHANGE ... this stops the cursor from appearing on categories*/
+}]]></css_content>
+    <css_position>2</css_position>
+    <css_app>promenu</css_app>
+    <css_app_hide>0</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_modules/>
+    <css_removed>0</css_removed>
+    <css_master_key>root</css_master_key>
+  </cssfile>
+  <cssfile>
+    <css_set_id/>
+    <css_updated>1333389321</css_updated>
+    <css_group>promenu_footer</css_group>
+    <css_content><![CDATA[/********************************************************************************/
+/* ProMenu Footer CSS - By Robert Simons - (c)2012 Provisionists LLC 		*/ 
+/********************************************************************************/
+/*promenu_footer.css								*/
+/********************************************************************************/
+
+#footer_menu h3  
+{
+     padding-left: 0px; 
+     text-align: left;  
+     text-decoration: underline;
+     padding-bottom:8px;
+     padding-top:16px;
+}
+
+#footer_menu
+{
+     text-align: left; 
+}
+
+#footer_menu .category
+{
+     padding-left:25px;
+     width:100px;
+     top:0px;
+}
+
+#footer_menu .category a
+{
+     display: block;
+     padding: 0px 0px 0px 0px;
+     width:100px;
+     top:0px;
+}
+
+#footer_menu .block
+{
+     display: block;
+     float:left;
+
+}]]></css_content>
+    <css_position>3</css_position>
+    <css_app>promenu</css_app>
+    <css_app_hide>0</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_modules/>
+    <css_removed>0</css_removed>
+    <css_master_key>root</css_master_key>
+  </cssfile>
+</css>

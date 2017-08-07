@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Overview</grouptitle>
+		<grouplang>app_promenu_overview</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_send_report</key>
+				<string>Can Send Bug Reports?</string>
+			</item>
+				<item>
+				<key>app_promenu_delete_report</key>
+				<string>Can Delete Bug Reports?</string>
+			</item>			
+		</items>
+	</group>
+</permissions>

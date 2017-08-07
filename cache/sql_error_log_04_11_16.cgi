@@ -1,0 +1,52 @@
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Mon, 11 Apr 2016 03:50:59 +0000
+ Error: 1366 - Incorrect string value: '\xD0 \xD0\xB0\xD0\xB7...' for column 'session_url' at row 1
+ IP Address: 31.135.208.5 - /RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/index.php?adsess=4e1b35894d4807b4ae61e9f4b35d5cc5&app=forums&&module=forums&section=forums&&do=donew&f=0&name=%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB+Call+Of+Duty+4
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: UPDATE core_sys_cp_sessions SET session_running_time=1460346659,session_location='forums',session_url='&amp;app=forums&amp;&amp;module=forums&amp;section=forums&amp;&amp;do=donew&amp;f=0&amp;name=Технический � аздел Call Of Duty 4',session_app_data='a:6:{s:9:\"uagent_id\";s:2:\"57\";s:10:\"uagent_key\";s:6:\"chrome\";s:11:\"uagent_name\";s:6:\"Chrome\";s:11:\"uagent_type\";s:7:\"browser\";s:14:\"uagent_version\";i:49;s:10:\"uagent_raw\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36\";}',session_member_name='Tony_Hawks' WHERE session_member_id=71 and session_id='4e1b35894d4807b4ae61e9f4b35d5cc5'
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/classes/session/adminSessions.php| [db_main_mysql].update                                                        | 335               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [adminSessions].__construct                                                   | 3854              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].init                                                     | 3723              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].instance                                                 | 616               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Mon, 11 Apr 2016 03:51:06 +0000
+ Error: 1366 - Incorrect string value: '\xD0 \xD0\xB0\xD0\xB7...' for column 'session_url' at row 1
+ IP Address: 31.135.208.5 - /RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/index.php?adsess=4e1b35894d4807b4ae61e9f4b35d5cc5&app=forums&&module=forums&section=forums&&do=donew&f=0&name=%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB+Call+Of+Duty+4
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: UPDATE core_sys_cp_sessions SET session_running_time=1460346666,session_location='forums',session_url='&amp;app=forums&amp;&amp;module=forums&amp;section=forums&amp;&amp;do=donew&amp;f=0&amp;name=Технический � аздел Call Of Duty 4',session_app_data='a:6:{s:9:\"uagent_id\";s:2:\"57\";s:10:\"uagent_key\";s:6:\"chrome\";s:11:\"uagent_name\";s:6:\"Chrome\";s:11:\"uagent_type\";s:7:\"browser\";s:14:\"uagent_version\";i:49;s:10:\"uagent_raw\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36\";}',session_member_name='Tony_Hawks' WHERE session_member_id=71 and session_id='4e1b35894d4807b4ae61e9f4b35d5cc5'
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/classes/session/adminSessions.php| [db_main_mysql].update                                                        | 335               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [adminSessions].__construct                                                   | 3854              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].init                                                     | 3723              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].instance                                                 | 616               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Date: Mon, 11 Apr 2016 03:51:16 +0000
+ Error: 1366 - Incorrect string value: '\xD0 \xD0\xB0\xD0\xB7...' for column 'session_url' at row 1
+ IP Address: 31.135.208.5 - /RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/index.php?adsess=4e1b35894d4807b4ae61e9f4b35d5cc5&app=forums&&module=forums&section=forums&&do=donew&f=0&name=%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB+Call+Of+Duty+4
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ mySQL query error: UPDATE core_sys_cp_sessions SET session_running_time=1460346676,session_location='forums',session_url='&amp;app=forums&amp;&amp;module=forums&amp;section=forums&amp;&amp;do=donew&amp;f=0&amp;name=Технический � аздел Call Of Duty 4',session_app_data='a:6:{s:9:\"uagent_id\";s:2:\"57\";s:10:\"uagent_key\";s:6:\"chrome\";s:11:\"uagent_name\";s:6:\"Chrome\";s:11:\"uagent_type\";s:7:\"browser\";s:14:\"uagent_version\";i:49;s:10:\"uagent_raw\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36\";}',session_member_name='Tony_Hawks' WHERE session_member_id=71 and session_id='4e1b35894d4807b4ae61e9f4b35d5cc5'
+ .--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+ | File                                                                       | Function                                                                      | Line No.          |
+ |----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------|
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/classes/session/adminSessions.php| [db_main_mysql].update                                                        | 335               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [adminSessions].__construct                                                   | 3854              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].init                                                     | 3723              |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'
+ | RcDYNG4d37xcD4eJadminYTVZMnz9fLf4pb72/sources/base/ipsRegistry.php         | [ips_MemberRegistry].instance                                                 | 616               |
+ '----------------------------------------------------------------------------+-------------------------------------------------------------------------------+-------------------'

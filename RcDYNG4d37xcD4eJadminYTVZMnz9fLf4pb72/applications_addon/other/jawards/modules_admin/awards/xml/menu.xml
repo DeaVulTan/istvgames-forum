@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Управление наградами</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Управление наградами</subitemtitle>
+					<subsection>manage</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+
+		<item>
+		    <title>Выдача наград</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Выдача наград</subitemtitle>
+					<subsection>award</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+
+		<item>
+		    <title>Массовая выдача наград</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Массовая выдача наград</subitemtitle>
+					<subsection>bulkaward</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+
+		<item>
+		    <title>Права групп</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Права групп</subitemtitle>
+					<subsection>perms</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+
+		<item>
+		    <title>Функции автонаграждения</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Функции автонаграждения</subitemtitle>
+					<subsection>auto</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

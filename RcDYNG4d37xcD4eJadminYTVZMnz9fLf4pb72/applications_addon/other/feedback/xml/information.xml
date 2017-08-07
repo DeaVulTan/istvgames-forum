@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<information>
+  <data>
+    <name>Users Response System</name>
+    <public_name>Response</public_name>
+    <hide_tab>0</hide_tab>
+    <author>Zero108</author>
+    <description>Allows members to leave response for each other</description>
+    <disabledatinstall>0</disabledatinstall>
+    <global_caches/>
+    <website></website>
+    <update_check/>
+    <templategroups>
+        <template match="contains">skin_feedback</template>
+    </templategroups>
+  </data>
+</information>

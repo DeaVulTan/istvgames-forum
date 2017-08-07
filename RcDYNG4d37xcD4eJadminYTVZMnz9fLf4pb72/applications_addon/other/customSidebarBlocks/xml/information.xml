@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<information>
+	<data>
+		<name><![CDATA[Custom Sidebar Blocks]]></name>
+		<public_name>Пользовательские блоки</public_name>
+		<author>emoney / Перевод WzGeee</author>
+		<description><![CDATA[Компонент для создания блоков на форуме и управления ими.]]></description>
+	</data>
+</information>

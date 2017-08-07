@@ -1,0 +1,6 @@
+.case{margin:0px;width:100%;position:absolute;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}@media screen and (max-width: 35em){.case{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}}.case .img-wrap, .case
+figcaption{width:100%}@media screen and (max-width: 35em){.case .img-wrap, .case
+figcaption{width:100%}}@media screen and (max-width: 35em){.case
+figcaption{padding-top:1rem;padding-left:0}}.case figcaption .title:after{content:'';position:absolute;right:0;bottom:0;left:0;height:1px;background-color:#2e2e31;background-image:-webkit-linear-gradient(0deg, #2e2e31, #d5d5d7), -webkit-linear-gradient(0deg, #d5d5d7, #2e2e31);background-image:linear-gradient(90deg, #2e2e31, #d5d5d7), linear-gradient(90deg, #d5d5d7, #2e2e31);background-size:15% 100%;background-position:-30% 0, 130% 0;background-repeat:no-repeat;box-shadow:1px 1px 1px #4f5055;-webkit-animation:scan 4s infinite;animation:scan 4s infinite}@-webkit-keyframes
+scan{0%{background-position:-20% 0, 120% 0}50%{background-position:120% 0, 120% 0}100%{background-position:120% 0, -20% 0}}@keyframes
+scan{0%{background-position:-20% 0, 120% 0}50%{background-position:120% 0, 120% 0}100%{background-position:120% 0, -20% 0}}

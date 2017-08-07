@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>title</word_key>
+      <word_default>Users Response System</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>settingsdesc</word_key>
+      <word_default><![CDATA[Under 'Response' tab]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>settings</word_key>
+      <word_default>Manage feedback system settings</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>perms_offline</word_key>
+      <word_default><![CDATA[Can access the system when it's offline?]]></word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>perms_admin</word_key>
+      <word_default>Can moderate the system?</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>perms_leave</word_key>
+      <word_default>Can leave feedback for other members?</word_default>
+    </lang>
+    <lang>
+      <word_app>feedback</word_app>
+      <word_pack>admin_feedback</word_pack>
+      <word_key>perms_access</word_key>
+      <word_default>Can access the feedback system?</word_default>
+    </lang>
+  </languagegroup>
+</languageexport>

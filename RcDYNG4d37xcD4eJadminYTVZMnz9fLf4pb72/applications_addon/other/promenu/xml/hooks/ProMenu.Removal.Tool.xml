@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+	<hookdata>
+		<config>
+			<hook_name>Promenu: Removal Tools</hook_name>
+			<hook_desc>This hook is used in the removal of the default primary navigation menus as well as the "More" option inherit to a basic board installation.</hook_desc>
+			<hook_author>Provisionists, LLC.</hook_author>
+			<hook_email />
+			<hook_website />
+			<hook_update_check/>
+			<hook_requirements><![CDATA[a:4:{s:20:"hook_ipb_version_min";i:0;s:20:"hook_ipb_version_max";i:0;s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+			<hook_version_human>2.0.4</hook_version_human>
+			<hook_version_long>20004</hook_version_long>
+			<hook_extra_data/>
+			<hook_key>promenu_prim_nav_removal</hook_key>
+		</config>
+	</hookdata>
+	<hookfiles>
+		<file>
+			<hook_file_real>globalProMenuRemovalTool.php</hook_file_real>
+			<hook_type>skinHooks</hook_type>
+			<hook_classname>globalProMenuRemovalTool</hook_classname>
+			<hook_data><![CDATA[a:6:{s:15:"classToOverload";s:11:"skin_global";s:9:"skinGroup";N;s:12:"skinFunction";N;s:4:"type";N;s:2:"id";N;s:8:"position";N;}]]></hook_data>
+			<hooks_source><![CDATA[class globalProMenuRemovalTool extends skin_global(~id~)
+{
+	public function globalTemplate( $html, $documentHeadItems, $css, $jsModules, $metaTags, array $header_items, $items=array(), $footer_items=array(), $stats=array() )
+	{
+		if(!IPSLib::appIsInstalled('promenu'))
+		{
+			$output = parent::globalTemplate( $html, $documentHeadItems, $css, $jsModules, $metaTags, $header_items, $items, $footer_items, $stats );
+			return $output;
+		}
+		else
+		{
+			if ($this->caches['app_cache']['promenu']['app_enabled']==0)
+			{
+				$output = parent::globalTemplate( $html, $documentHeadItems, $css, $jsModules, $metaTags, $header_items, $items, $footer_items, $stats );
+				return $output;
+			}
+			else
+			{
+				if ( $this->settings['promenu_disable_more'] == true) {
+					$documentHeadItems['raw'][] = "<script type='text/javascript'>
+					//<![CDATA[
+					ipb.global.activateMainMenu = function() {};
+					//]]]]><![CDATA[>
+					</script>";
+				}
+				
+				/* This sets the "app hide tab" to true, and erases the application list from the header items, so we can draw our own stuff */
+				
+				if ( $this->settings['promenu_enable_remove_menu'] == true )
+				{
+					ipsRegistry::$applications['forums']['app_hide_tab'] = true;
+					ipsRegistry::$applications['members']['app_hide_tab'] = true;
+					ipsRegistry::$applications['core']['app_hide_tab'] = true;
+				
+					$header_items['applications'] = array();
+					
+					if(IPSLib::appIsInstalled('ccs'))
+					{
+					unset($header_items['primary_navigation_menu']);
+					}				
+				}
+				
+				$output = parent::globalTemplate( $html, $documentHeadItems, $css, $jsModules, $metaTags, $header_items, $items, $footer_items, $stats );
+		
+				return $output;
+			}
+		}
+	}	
+}]]>
+			</hooks_source>
+		</file>
+	</hookfiles>
+	<hookextras_settings/>
+	<hookextras_language/>
+	<hookextras_modules/>
+	<hookextras_help/>
+	<hookextras_templates/>
+	<hookextras_tasks/>
+	<hookextras_database_create/>
+	<hookextras_database_alter/>
+	<hookextras_database_update/>
+	<hookextras_database_insert/>
+</hookexport>

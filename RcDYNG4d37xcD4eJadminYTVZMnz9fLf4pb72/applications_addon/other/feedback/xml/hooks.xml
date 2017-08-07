@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hooks>
+	<hook>
+		<file>feedbackLeaveButton.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>feedbackClassifieds.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>feedbackTopMembers.xml</file>
+		<enabled>1</enabled>
+	</hook>
+	<hook>
+		<file>fbscore.xml</file>
+		<enabled>1</enabled>
+	</hook>
+</hooks>

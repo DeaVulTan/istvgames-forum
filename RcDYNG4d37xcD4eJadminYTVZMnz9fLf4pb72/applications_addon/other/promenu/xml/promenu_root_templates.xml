@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="promenu" templategroups="a:1:{s:12:&quot;skin_promenu&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_promenu">
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<if test="hasmenus:|:is_array($menudata) AND count($menudata) > 0">
+	<ul class='submenu_container clearfix boxShadow<if test="isFirstSubReal:|:$first != 1"> first</if><if test="leftOpen:|:$active == 1"> left<else /> right</if>_open'>
+		<foreach loop="menus:$menudata as $menuid => $menuitem">
+		<li id="nav_app_{$menuitem['promenu_use_app']}" class='left'>
+			<a href="<if test="doFinalCheck:|:($menuItem['promenu_is_cat']==1 AND !$menuItem['promenu_url']) OR ($this->settings['behavior'] != 0 AND $menuitem['has_subs'] == 1)">#-{$menuitem['promenu_id']}" onclick="return false;<else />{$menuitem['promenu_url']}</if>" class="notMe <if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> menucat</if><if test="isactive:|:$menuitem['_active'] == 1"> active</if>" <if test="disableHover:|:$menuitem['promenu_disable_desc_hover'] != 1"><if test="useDataTool:|:$menuitem['promenu_data_tooltip'] == 1">data-tooltip<else />title</if>="<if test="hasDescrip:|:$menuitem['promenu_description']">{$menuitem['promenu_description']}<else />{$menuitem['promenu_title']}</if>"</if> id="promenu_{$menuitem['promenu_id']}"
+			<if test="isCategorynoFollow:|:$menuitem['promenu_is_cat'] == 1">
+			rel="nofollow"
+			</if>
+			<if test="openNew:|:$menuitem['promenu_open_new_window'] == 1 AND $this->settings['behavior'] == 0"> target="_blank"</if>>
+				<if test="hasIcon:|:$menuitem['promenu_icon']">
+				<img src="{$menuitem['promenu_icon']}" height='14px' width='14px' />&nbsp;</if>
+				{$menuitem['promenu_title']}
+				<if test="hasSubs:|:$menuitem['has_subs'] == 1 && $this->settings['promenu_disable_arrow'] == 0">
+				<span class='rightarrow right'></span>
+				</if>
+			</a>
+			<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+			{parse template="primary_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+			</if>
+		</li>
+		</foreach>
+	</ul>
+</if>]]></template_content>
+      <template_name>primary_submenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<if test="hasmenus:|:is_array($menudata) AND count($menudata) > 0">
+		<foreach loop="menus:$menudata as $menuid => $menuitem">		
+			<li id="nav_app_{$menuitem['promenu_use_app']}" class='main left<if test="isactive:|:$menuitem['_active'] == 1"> active</if><if test="leftOpen:|:$menuitem['promenu_left_open'] == 1"> left<else /> right</if>_open'>
+				<a href="<if test="doFinalCheck:|:($menuItem['promenu_is_cat']==1 AND !$menuItem['promenu_url']) OR ($this->settings['behavior'] != 0 AND $menuitem['has_subs'] == 1)">#-{$menuitem['promenu_id']}" onclick="return false;<else />{$menuitem['promenu_url']}</if>" class="<if test="ignorclick:|:$menuitem['has_subs'] == 0"> notMe</if><if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> menucat</if>" <if test="disableHover:|:$menuitem['promenu_disable_desc_hover'] != 1"><if test="useDataTool:|:$menuitem['promenu_data_tooltip'] == 1">data-tooltip<else />title</if>="<if test="hasDescrip:|:$menuitem['promenu_description']">{$menuitem['promenu_description']}<else />{$menuitem['promenu_title']}</if>"</if> <if test="isCategorynoFollow:|:$menuitem['promenu_is_cat'] == 1">rel="nofollow"</if><if test="openNew:|:$menuitem['promenu_open_new_window'] == 1 AND $this->settings['behavior'] == 0"> target="_blank"</if>>
+                                <if test="iconAsTitle:|:$menuitem['promenu_title_image'] == 0">
+				<if test="hasIcon:|:$menuitem['promenu_icon']"><img src="{$menuitem['promenu_icon']}" height='14px' width='14px' />&nbsp;</if>{$menuitem['promenu_title']}
+                                <else />
+                                <img src="{$menuitem['promenu_icon']}" />
+                                </if>
+                                  <if test="hasSubs:|:$menuitem['has_subs'] == 1 && $this->settings['promenu_disable_arrow'] == 0"> <span class="downarrow"></span></if>
+				</a>
+				<if test="hasSubs:|:$menuitem['has_subs'] == 1">
+<if test="isMega:|:$menuitem['promenu_group_mega'] == 1">
+<ul><li class="megamenu clearfix boxShadow go_left"><table><tr>
+{parse template="primary_megamenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], $menuitem['promenu_parent_id']"}
+</tr></table></li></ul>
+<else />
+{parse template="primary_submenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], $menuitem['promenu_parent_id']"}
+</if>
+				</if>
+			</li>
+		</foreach>
+<script type='text/javascript'>        
+ProjQ171(document).ready(function() {
+ProjQ171("#community_app_menu").ProMenu();  
+});
+</script>
+</if>]]></template_content>
+      <template_name>primary_menus</template_name>
+      <template_data>$menudata</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<if test="hasmenus:|:is_array($menudata) AND count($menudata) > 0">
+	<foreach loop="menus:$menudata as $menuid => $menuitem">
+		<if test="isNewRow:|:$menuitem['promenu_new_row'] == 1">
+		</tr>
+		<tr>
+		</if>
+		<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> 
+			<td class="category" valign="top">
+                <if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+                <span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+                <else />
+				<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+					<img src="{$menuitem['promenu_icon']}" />
+				<else />
+					<h3>{$menuitem['promenu_title']}</h3>
+
+				</if>
+</if>
+				<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+					{parse template="primary_megamenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+				</if>      
+			</td>    
+		<else />
+            <if test="isCategory:|:$menuitem['promenu_as_cat'] == 1">
+                <if test="useBlock:|:$menuitem['promenu_use_block'] == 1">
+                	<span class='block'>{IPSText::getTextClass('bbcode')->preDisplayParse( $menuitem['promenu_block_content'] )}
+                <else />
+            		<span class="new_row"><h3>{$menuitem['promenu_title']}</h3>
+                </if>
+            <else />
+
+				<span class="">
+				<a href="{$menuitem['promenu_url']}" class="notMe <if test="isCategory:|:$menuitem['promenu_is_cat'] == 1"> menucat</if><if test="isactive:|:$menuitem['_active'] == 1"> active</if>" <if test="disableHover:|:$menuitem['promenu_disable_desc_hover'] != 1"><if test="useDataTool:|:$menuitem['promenu_data_tooltip'] == 1">data-tooltip<else />title</if>="<if test="hasDescrip:|:$menuitem['promenu_description']">{$menuitem['promenu_description']}<else />{$menuitem['promenu_title']}</if>"</if> id="promenu_{$menuitem['promenu_id']}"
+				<if test="isCategorynoFollow:|:$menuitem['promenu_is_cat'] == 1">
+				rel="nofollow"
+				</if>
+				<if test="openNew:|:$menuitem['promenu_open_new_window'] == 1 AND $this->settings['behavior'] == 0"> target="_blank"</if>>
+				<if test="useImage:|:$menuitem['promenu_title_image'] == 1 AND $menuitem['promenu_icon']">
+					<img src="{$menuitem['promenu_icon']}" />
+				<else />
+					<if test="hasIcon:|:$menuitem['promenu_icon']">
+						<img src="{$menuitem['promenu_icon']}" height='14px' width='14px' />&nbsp;
+					</if>
+					<if test="isCategory:|:$menuitem['promenu_is_cat'] == 1">
+						<h3>{$menuitem['promenu_title']}</h3><else />{$menuitem['promenu_title']}
+					</if>
+				</if>
+				</a>
+           	</if>
+			<if test="hasSubSubs:|:$menuitem['has_subs'] == 1">
+				{parse template="primary_megamenus" group="promenu" params="$menuitem[$menuitem['promenu_parent_id']], $menuitem['promenu_left_open'], 1"}
+			</if>
+		</if>
+		</span>
+	</foreach>
+</if>]]></template_content>
+      <template_name>primary_megamenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+  </templategroup>
+</templates>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>В компоненте Blog</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>В компоненте Blog</subitemtitle>
+					<subsection>blog</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>В компоненте Gallery</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>В компоненте Gallery</subitemtitle>
+					<subsection>gallery</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>gallery</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>За количество сообщений</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>За количество сообщений</subitemtitle>
+					<subsection>post</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>post</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>В компоненте Download</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>В компоненте Download</subitemtitle>
+					<subsection>download</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>download</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>В компоненте Nexus</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>В компоненте Nexus</subitemtitle>
+					<subsection>nexus</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>nexus</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>За подписку</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>За подписку</subitemtitle>
+					<subsection>subscription</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>subscription</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

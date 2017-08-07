@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<css>
+  <cssfile>
+    <css_set_id>0</css_set_id>
+    <css_updated>1364067116</css_updated>
+    <css_group>feedback</css_group>
+    <css_content>
+
+#feedbackStats li
+{
+	line-height: 1.75em;
+}
+
+#feedbackStats li .value
+{
+	line-height: 1.2em !important;
+}
+
+#feedbackStats li, .fbkProfStat, #topMembers li .value
+{
+	vertical-align: middle;
+}
+
+.fbkProfStat
+{
+	text-align: center;
+	margin-bottom: 9px;
+}
+
+.fbkProfStat .value, #feedbackStats .value, #topMembers .value
+{
+    background: none repeat scroll 0 0 #A0A0A0;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 3px;
+    padding: 2px 6px;
+}
+
+.feedbackBadge_lightgrey
+{
+    background: none repeat scroll 0 0 #A0A0A0;
+}
+
+.fbkProfStat .value.positive, #feedbackStats .value.positive, #topMembers .value.positive, .feedbackBadge_green
+{
+    background: none repeat scroll 0 0 #6FB758;
+}
+
+.feedbackBadge_green, .feedbackBadge_lightgrey, .feedbackBadge_red
+{
+	font-size: 12px !important;
+	height: auto !important;
+    padding: 2px 6px !important;
+	min-width: 14px;
+}
+
+.fbkProfStat .value.negative, #feedbackStats .negative, .feedbackBadge_red
+{
+    background: none repeat scroll 0 0 #E6574B;
+}
+
+.fbkProfStat.uP li
+{
+	margin-top: 6px;
+}
+
+.fbkProfStat.uP
+{
+	margin-top: 3px;
+}
+
+/* Classifieds Tweaks */
+#advertiser_overview .fbkProfStat a
+{
+	display: inline !important;
+	background: none !important;
+}
+
+#advertiser_overview .fbkProfStat li
+{
+	text-align: center !important;
+	margin-top: 6px !important;
+}</css_content>
+    <css_position>10</css_position>
+    <css_app>feedback</css_app>
+    <css_app_hide>0</css_app_hide>
+    <css_attributes><![CDATA[title="Main" media="screen"]]></css_attributes>
+    <css_modules/>
+    <css_removed>0</css_removed>
+    <css_master_key>root</css_master_key>
+  </cssfile>
+</css>

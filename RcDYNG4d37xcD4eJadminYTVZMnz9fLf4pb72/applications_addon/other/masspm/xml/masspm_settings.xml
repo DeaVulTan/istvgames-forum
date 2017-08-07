@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>masspm</conf_title_keyword>
+      <conf_title_title>(DP34) Массовые ЛС</conf_title_title>
+      <conf_title_desc>Настройки для массовые ЛС.</conf_title_desc>
+      <conf_title_tab>(DP3X) Мод</conf_title_tab>
+      <conf_title_app>masspm</conf_title_app>
+      <conf_title_noshow>1</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Исключение групп</conf_title>
+      <conf_description><![CDATA[Какие группы вы не хотите редактировать или добавлять?]]></conf_description>
+      <conf_group>111</conf_group>
+      <conf_type>multi</conf_type>
+      <conf_key>masspmGroups</conf_key>
+      <conf_default/>
+      <conf_extra>#show_groups#</conf_extra>
+      <conf_evalphp><![CDATA[$key = 'masspmGroups';
+
+if ( $save == 1)
+{
+    if ( is_array($_POST[ $key ]) )
+    {
+        $_POST[ $key ] = implode(",",$_POST[ $key ]);
+    }
+    else
+    {
+        $_POST[ $key ] = "";
+    }
+}
+if ( $show == 1 )
+{
+    $key .= '[]';
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Настройки</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>masspm</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

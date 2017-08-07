@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Global Settings</grouptitle>
+		<grouplang>app_promenu_global_settings</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_alter_group</key>
+				<string>Can Alter Global Settings?</string>
+			</item>	
+		</items>
+	</group>
+	<group>
+		<grouptitle>Enable/Disable</grouptitle>
+		<grouplang>app_promenu_visibility</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_alter_display</key>
+				<string>Can Enable/Disable Displays?</string>
+			</item>	
+		</items>
+	</group>
+	<group>
+		<grouptitle>Menu Effects</grouptitle>
+		<grouplang>app_promenu_menu_effects</grouplang>
+		<items>
+			<item>
+				<key>app_promenu_alter_effects</key>
+				<string>Can Alter Menu Effects?</string>
+			</item>	
+		</items>
+	</group>
+</permissions>

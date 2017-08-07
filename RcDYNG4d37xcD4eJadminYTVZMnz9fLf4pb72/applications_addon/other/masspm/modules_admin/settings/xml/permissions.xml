@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+	<group>
+		<grouptitle>Массовые ЛС</grouptitle>
+		<items>
+			<item>
+				<key>view_settings</key>
+				<string>Можно просмотреть и сохранить настройки массовые ЛС</string>
+			</item>						
+		</items>
+	</group>
+</permissions>

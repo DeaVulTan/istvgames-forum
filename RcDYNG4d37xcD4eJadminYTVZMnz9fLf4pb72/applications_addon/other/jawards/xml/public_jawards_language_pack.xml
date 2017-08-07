@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>last_awarded</word_key>
+      <word_default>Последний награждённый</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>hide_awarded</word_key>
+      <word_default>Скрыть награждённого</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>give_award_title</word_key>
+      <word_default>Выдал награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>give_award_msg</word_key>
+      <word_default><![CDATA[Выберите награду из списка. По желанию можно добавлять примечание.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>give_award_continue</word_key>
+      <word_default>Выдать награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>given_by_unknown</word_key>
+      <word_default>Неизвестно</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>error_no_permission</word_key>
+      <word_default>У Вас нет прав доступа к этой странице</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>error_no_awards</word_key>
+      <word_default><![CDATA[Нету отображаемых наград для Вас.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>error_no_awarded</word_key>
+      <word_default><![CDATA[Нету пользователей с этой наградой.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>error_listings_disabled</word_key>
+      <word_default>Страница отключена администратором.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>error_invalid_request</word_key>
+      <word_default>Ссылка недействительна</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>enter_award_notes</word_key>
+      <word_default>Примечание</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>description</word_key>
+      <word_default>Описание</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>choose_award</word_key>
+      <word_default>Выберите награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_removed</word_key>
+      <word_default>Награда удалена</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_info</word_key>
+      <word_default>Название / Описание</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_icon</word_key>
+      <word_default>Значок награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_given_on</word_key>
+      <word_default>Выдана</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_given_by</word_key>
+      <word_default>пользователем</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award_added</word_key>
+      <word_default>Награда добавлена</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_title_post</word_key>
+      <word_default><![CDATA[Награды]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_signature_post</word_key>
+      <word_default><![CDATA[Награды]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_profile_view_unawarded</word_key>
+      <word_default>У пользователя нету наград</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_profile_view_title</word_key>
+      <word_default><![CDATA[Награды]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_profile_tab_title</word_key>
+      <word_default>Награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awards_achievement_post</word_key>
+      <word_default>Достижения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>awarded</word_key>
+      <word_default>Награжден</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>award</word_key>
+      <word_default>Награда</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>no_awards</word_key>
+      <word_default>Нету</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>pending_approval</word_key>
+      <word_default>Ожидающие утверждения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>profile_public_award</word_key>
+      <word_default>Выдать награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>remove_award</word_key>
+      <word_default>Удалить награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>statistics</word_key>
+      <word_default>Статистика</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>times_awarded</word_key>
+      <word_default>Награждённых</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>title</word_key>
+      <word_default>Награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>public_awards</word_pack>
+      <word_key>view_awarded</word_key>
+      <word_default>Просмотр</word_default>
+    </lang>
+  </languagegroup>
+</languageexport>

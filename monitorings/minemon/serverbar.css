@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+	font-size: 17px;
+    font-family: Calibri;
+    font-weight:bold;color:#fbe47c;
+    text-shadow:1px 1px #2b4260;
+    background-color: none;
+    margin: 0 0 0 3px;
+}
+
+/* Настройка прогресс бара - Оранжевый */
+
+div .progressbar_meter
+{
+    height: 20px;
+    text-align: center;
+    font-size: 11px;
+	font-weight: bold; 
+    color: #465047!important;
+    text-shadow: 1px 1px 1px rgba(32,150,225,0.3)!important;
+	line-height: 20px; 
+	text-indent: 2px;
+	white-space: nowrap;
+	
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div .progressbar_overlay
+{
+    text-align: center;
+    font-size: 11px;
+	font-weight: bold; 
+    color: #465047!important;
+    text-shadow: 1px 1px 1px rgba(32,150,225,0.3)!important;
+	line-height: 20px; 
+	margin-top: 1px;
+	float:left; 
+	display: block; 
+	text-align:center; 
+	width: 100%;
+}
+
+div .progressbar_overlay_top {
+    background: #373737;
+    display:inline-block;
+
+    font: 12px Calibri;
+
+    border-top: 2px solid #484848; 
+    border-left: 2px solid #484848; 
+    border-right: 2px solid #484848; 
+
+    -o-text-shadow: 0px 0px 3px #000;
+    -moz-text-shadow: 0px 0px 3px #000;
+    -webkit-text-shadow: 0px 0px 3px #000;
+
+    border-radius: 3px 3px 0px 0px;
+    -o-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+
+    min-height: 15px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold; 
+    color: #fff; 
+
+    padding: 4px;
+}
+
+.server-info-holder {
+    /* margin: 0 auto 7px; */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	padding : 5px;
+	width: 200px;
+    border: 1px rgba(0,0,0,0.5) solid!important;
+    background: url('creeper-pattern.png') repeat rgba(32,150,225,0.55)!important;
+	display: block;
+}
+
+.server-info-name 
+{
+    color: #465047!important;
+    text-shadow: 1px 1px 1px rgba(32,150,225,0.3)!important;
+    width: 200px!important;
+	margin: 0 auto;
+	font-size: 13px;
+	width : 110px;
+    padding-bottom: 2px;
+	margin-bottom: 5px;
+    border-bottom: 1px rgba(0,0,0,0.3) solid;
+    box-shadow: 0px 1px 0px rgba(32,150,225,0.2), 0px -1px 0px rgba(32,150,225,0.2) inset;
+    font-weight: bold;
+}
+
+.server-info-state  {
+	width : 190px!important;
+	margin: 0 auto;
+}
+
+
+div .greenbar 
+{ 
+    border: 1px rgba(0,0,0,0.5) solid!important;
+    width : 190px!important;
+    background: url('creeper-pattern.png') repeat rgba(255,255,255,0.8)!important;
+    border-radius: 4px;
+}
+div .greenbar  div
+{  
+    border: 1px rgba(0,0,0,0.5) solid!important;
+    background: url('creeper-pattern-hover.png') repeat rgba(32,150,225,0.55);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4) inset, 0px 0px 0px 1px rgba(255, 255, 255, 0.2) inset, 0px 1px 3px rgba(0, 0, 0, 0.5)!important;
+}
+
+div .redbar 
+{
+    border: 1px solid rgba(218,22,12,0.5);
+    box-shadow: 0 0 1px 1px rgba(218,22,12,0.3);
+    background: url('creeper-pattern-hover.png') repeat rgba(166,68,75,0.4)!important;
+    width : 190px!important;
+    border-radius: 4px;
+}

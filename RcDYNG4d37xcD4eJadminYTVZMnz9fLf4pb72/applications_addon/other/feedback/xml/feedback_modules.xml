@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moduleexport>
+  <modulegroup>
+    <module>
+      <sys_module_title>View Response</sys_module_title>
+      <sys_module_application>feedback</sys_module_application>
+      <sys_module_key>view</sys_module_key>
+      <sys_module_description><![CDATA[View a member&#39;s feedback list]]></sys_module_description>
+      <sys_module_version>1.4.1</sys_module_version>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_position>13</sys_module_position>
+      <sys_module_admin>0</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Settings</sys_module_title>
+      <sys_module_application>feedback</sys_module_application>
+      <sys_module_key>settings</sys_module_key>
+      <sys_module_description>Manage settings</sys_module_description>
+      <sys_module_version>1.4.1</sys_module_version>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_position>15</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+    <module>
+      <sys_module_title>Tools</sys_module_title>
+      <sys_module_application>feedback</sys_module_application>
+      <sys_module_key>tools</sys_module_key>
+      <sys_module_description>Tools for administraction</sys_module_description>
+      <sys_module_version>1.4.1</sys_module_version>
+      <sys_module_protected>0</sys_module_protected>
+      <sys_module_visible>1</sys_module_visible>
+      <sys_module_position>33</sys_module_position>
+      <sys_module_admin>1</sys_module_admin>
+    </module>
+  </modulegroup>
+</moduleexport>

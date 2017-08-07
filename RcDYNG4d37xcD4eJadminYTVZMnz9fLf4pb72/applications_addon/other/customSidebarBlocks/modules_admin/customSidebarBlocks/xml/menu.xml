@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Управление блоками</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Управление блоками</subitemtitle>
+					<subsection>core</subsection>
+					<subitemurl>do=blocks</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>
+			</subitems>
+		</item>	
+		<item>
+			<title>Настройки</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Настройки</subitemtitle>
+					<subsection>core</subsection>
+					<subitemurl>do=settings</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>		
+		<item>
+			<title>Добавить блок</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Добавить блок</subitemtitle>
+					<subsection>core</subsection>
+					<subitemurl>do=block_form</subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+				</subitem>				
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

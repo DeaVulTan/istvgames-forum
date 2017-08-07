@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="promenu" templategroups="a:1:{s:10:&quot;skin_promenu&quot;;s:5:&quot;exact&quot;;}">
+  <templategroup group="skin_promenu">
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>footer_menus</template_name>
+      <template_data>$menudata</template_data>
+      <template_updated>1333364245</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>footer_submenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>header_megamenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>header_menus</template_name>
+      <template_data>$menudata</template_data>
+      <template_updated>1333364245</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>header_submenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>primary_megamenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333364245</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>primary_menus</template_name>
+      <template_data>$menudata</template_data>
+      <template_updated>1333389322</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_promenu</template_group>
+      <template_content><![CDATA[<!--no data in this master skin-->]]></template_content>
+      <template_name>primary_submenus</template_name>
+      <template_data>$menudata, $active, $first</template_data>
+      <template_updated>1333364245</template_updated>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+  </templategroup>
+</templates>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>promenu_group_display</conf_title_keyword>
+      <conf_title_title>Enable/Disable</conf_title_title>
+      <conf_title_desc/>
+      <conf_title_tab>ProMenu</conf_title_tab>
+      <conf_title_app>promenu</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable Primary Navigation Menus</conf_title>
+      <conf_description>Enable or disable the Primary Navigation Menus. If set to no, all menus in Primary Navigation Menus in the Menus area will not displayed in the primary navigation bar.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_enable_primary_menus</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_group_display</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_title_title>Global Settings</conf_title_title>
+      <conf_title_desc/>
+      <conf_title_tab>ProMenu</conf_title_tab>
+      <conf_title_app>promenu</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Enable Member Group Visibility</conf_title>
+      <conf_description>Enabling this option will allow access to the menus on the public side, depending on member groups rather than using the permissions set matrix.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_group_perm_view</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Remove Default Menus</conf_title>
+      <conf_description>Enable this to remove the default menus from the primary navigation bar. This will not effect the Primary Navigation Menu.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_enable_remove_menu</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Remove More Apps</conf_title>
+      <conf_description><![CDATA[Setting this to yes will disable the inherit ability for IPB to create a "More" dropdown menu. This function is in place to allow users of low resolutions to view the site without the menus breaking its structure. By disabling this function, you may break the structure of your theme by adding too many parent menus.]]></conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_disable_more</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Parent Activation</conf_title>
+      <conf_description>Enabling this option will show active parents when a child menu is active.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_recursive</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Disable Arrow Indicators</conf_title>
+      <conf_description>Setting this to yes will disable the menus from displaying a sub menu indicator arrow on any menu items that may contain sub menus.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_disable_arrow</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Enable Help Guides</conf_title>
+      <conf_description>Enabling this option will show a small help guide in the side block for each section of this application.</conf_description>
+      <conf_group/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>promenu_view_help</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_title_title>Menu Effects</conf_title_title>
+      <conf_title_desc>Controlling Javascript Features</conf_title_desc>
+      <conf_title_tab>ProMenu</conf_title_tab>
+      <conf_title_app>promenu</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Menu Behavoir</conf_title>
+      <conf_description><![CDATA[Change the behavior how the menu bar act. 
+
+Hover: selecting hover all menus open on mouse over and close on mouse leave.
+
+Click: The menu bar opens and close's on a click and the sub menu's and their descendants are opened by hovering. IMPORTANT: This option deactivates the main parent menu links  (but Main Parent Menu's without Subs, their links are unaffected).]]></conf_description>
+      <conf_group/>
+      <conf_type>dropdown</conf_type>
+      <conf_key>behavior</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra>0=Default (Hover)&#13;
+1=Click then Hover&#13;
+2=Click Only&#13;
+</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Speed Of Animation: Showing</conf_title>
+      <conf_description>Set the speed of the animation for show.</conf_description>
+      <conf_group/>
+      <conf_type>dropdown</conf_type>
+      <conf_key>ShowSpeed</conf_key>
+      <conf_default>200</conf_default>
+      <conf_extra><![CDATA[20=Fly Her Apart Fast
+100=Really Fast
+200=Default (Fast)
+400=Medium
+600=Slow
+800=Slower
+1000=Really Slow
+1500=Blue Hair's Passing You Slow
+2000=User Riot Slow!]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Speed Of Animation: Hiding</conf_title>
+      <conf_description>Set the speed of the hiding animation.</conf_description>
+      <conf_group/>
+      <conf_type>dropdown</conf_type>
+      <conf_key>HideSpeed</conf_key>
+      <conf_default>200</conf_default>
+      <conf_extra><![CDATA[20=Fly Her Apart Fast
+100=Really Fast
+200=Default (Fast)
+400=Medium
+600=Slow
+800=Slower
+1000=Really Slow
+1500=Blue Hair's Passing You Slow
+2000=User Riot Slow!]]></conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Animation:showing</conf_title>
+      <conf_description>This sets the animation for the showing of the menus.</conf_description>
+      <conf_group/>
+      <conf_type>dropdown</conf_type>
+      <conf_key>animationShow</conf_key>
+      <conf_default>show</conf_default>
+      <conf_extra>show=Show (Default)&#13;
+fade=Fade&#13;
+slide=Slide</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Animation:Hiding</conf_title>
+      <conf_description>This sets the animation for the hiding of the menus.	&#13;
+</conf_description>
+      <conf_group/>
+      <conf_type>dropdown</conf_type>
+      <conf_key>animationHiding</conf_key>
+      <conf_default>hide</conf_default>
+      <conf_extra>hide=Hide (Default)&#13;
+fade=Fade&#13;
+slide=Slide</conf_extra>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Sub Menu Top Offset</conf_title>
+      <conf_description><![CDATA[This sets how far off from the parent the sub menu's will appear.]]></conf_description>
+      <conf_group/>
+      <conf_type>input</conf_type>
+      <conf_key>TopOffSet</conf_key>
+      <conf_default>10</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>promenu_effects_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>

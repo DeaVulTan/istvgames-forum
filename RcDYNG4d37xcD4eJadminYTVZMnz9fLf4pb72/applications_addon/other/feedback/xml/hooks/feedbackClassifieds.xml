@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hookexport>
+  <hookdata>
+    <config>
+      <hook_name><![CDATA[Feedback &lt;&gt; Classifieds]]></hook_name>
+      <hook_desc>Users Response System</hook_desc>
+      <hook_author>Zero108</hook_author>
+      <hook_email/>
+      <hook_website/>
+      <hook_update_check/>
+      <hook_requirements><![CDATA[a:3:{s:21:"required_applications";a:2:{s:8:"feedback";a:3:{s:8:"app_name";s:22:"Trader Feedback System";s:11:"min_version";i:0;s:11:"max_version";i:0;}s:11:"classifieds";a:3:{s:8:"app_name";s:11:"Classifieds";s:11:"min_version";i:12002;s:11:"max_version";i:0;}}s:20:"hook_php_version_min";s:0:"";s:20:"hook_php_version_max";s:0:"";}]]></hook_requirements>
+      <hook_version_human>2.6.3</hook_version_human>
+      <hook_version_long>10000</hook_version_long>
+      <hook_extra_data/>
+      <hook_key>feedbackClassifieds</hook_key>
+      <hook_global_caches/>
+    </config>
+  </hookdata>
+  <hookfiles>
+    <file>
+      <hook_file_real>feedbackClassifieds.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>feedbackClassifieds</hook_classname>
+      <hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:16:"skin_classifieds";s:12:"skinFunction";s:11:"seller_info";s:4:"type";s:2:"if";s:2:"id";s:13:"ourReputation";s:8:"position";s:11:"pre.startif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+
+class feedbackClassifieds
+{
+	public function getOutput()
+	{
+		$this->registry		=	ipsRegistry::instance();
+		$this->caches		=&	$this->registry->cache()->fetchCaches();
+		IPSRegistry::getAppClass('feedback');
+
+		if ( ! $this->registry->permissions->check( 'view', $this->registry->feedback->getPermissions() ) )
+		{
+			return '';
+		}
+
+		$_post = $this->registry->output->getTemplate('classifieds')->functionData['seller_info'][0];
+		$_post['seller']['fbLink'] = $this->registry->output->buildSEOUrl( 'showuser=' . $_post['seller']['member_id'].'&amp;tab=feedback', 'public', $_post['seller']['members_seo_name'], 'showuser' );
+		return '<ul>'.$this->registry->getClass('output')->getTemplate('feedback')->userPaneFeedback( $_post['seller'] ).'</ul>';
+	}
+}
+?>]]></hooks_source>
+    </file>
+    <file>
+      <hook_file_real>feedbackClassifiedsLink.php</hook_file_real>
+      <hook_type>templateHooks</hook_type>
+      <hook_classname>feedbackClassifiedsLink</hook_classname>
+      <hook_data><![CDATA[a:8:{s:12:"dataLocation";s:0:"";s:14:"libApplication";s:0:"";s:15:"classToOverload";s:0:"";s:9:"skinGroup";s:16:"skin_classifieds";s:12:"skinFunction";s:11:"seller_info";s:4:"type";s:2:"if";s:2:"id";s:16:"noFriendYourself";s:8:"position";s:10:"post.endif";}]]></hook_data>
+      <hooks_source><![CDATA[<?php
+
+
+class feedbackClassifiedsLink
+{
+	public function getOutput()
+	{
+		$this->registry		=	ipsRegistry::instance();
+		$this->caches		=&	$this->registry->cache()->fetchCaches();
+		IPSRegistry::getAppClass('feedback');
+
+		if ( ! $this->registry->permissions->check( 'view', $this->registry->feedback->getPermissions() ) )
+		{
+			return '';
+		}
+
+		$member = $this->registry->output->getTemplate('classifieds')->functionData['seller_info'][0]['seller'];
+		return $this->registry->getClass('output')->getTemplate('feedback')->userLeaveLink( $member, TRUE );
+	}
+}
+?>]]></hooks_source>
+    </file>
+  </hookfiles>
+  <hookextras_settings/>
+  <hookextras_language/>
+  <hookextras_modules/>
+  <hookextras_help/>
+  <hookextras_templates/>
+  <hookextras_css/>
+  <hookextras_replacements/>
+  <hookextras_tasks/>
+  <hookextras_database_create/>
+  <hookextras_database_alter/>
+  <hookextras_database_update/>
+  <hookextras_database_insert/>
+</hookexport>

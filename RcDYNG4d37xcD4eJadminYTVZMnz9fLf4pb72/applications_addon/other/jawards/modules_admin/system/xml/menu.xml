@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<tabitems>
+		<item>
+			<title>Обзор системы</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Обзор системы</subitemtitle>
+					<subsection>root</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>system_overview</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+		<item>
+			<title>Маски групп</title>
+			<subitems>
+				<subitem>
+					<subitemtitle>Маски групп</subitemtitle>
+					<subsection>cabinet</subsection>
+					<subitemurl></subitemurl>
+					<subitemrolekey></subitemrolekey>
+					<subisredirect>0</subisredirect>
+					<subitemlang>cabinet_permissions</subitemlang>
+				</subitem>
+			</subitems>
+		</item>
+	</tabitems>
+</menu>

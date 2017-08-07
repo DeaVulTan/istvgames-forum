@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_app_title</word_key>
+      <word_default>ProMenu</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_menus</word_key>
+      <word_default>Menus</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_overview</word_key>
+      <word_default>Overview</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_settings</word_key>
+      <word_default>Global Settings</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_group_display</word_key>
+      <word_default>Enable/Disable</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>promenu_effects_settings</word_key>
+      <word_default>Menu Effects</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_title</word_key>
+      <word_default>ProMenu</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_title</word_key>
+      <word_default>You must enter a menu title</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_url</word_key>
+      <word_default>You must either choose an application or enter an URL</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>custom_menus</word_key>
+      <word_default>Parent Menus</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>custom_submenus</word_key>
+      <word_default>Parent With Children</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_email</word_key>
+      <word_default>You must enter a valid Email address</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_invalid_email</word_key>
+      <word_default>Invalid Email</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_bug_desc</word_key>
+      <word_default>You must enter a description of your problem</word_default>
+    </lang>    
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_bug</word_key>
+      <word_default>blank bug report</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_contact</word_key>
+      <word_default>Contact Name: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_contact_email</word_key>
+      <word_default>Contact Email: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_site</word_key>
+      <word_default>Site: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_version</word_key>
+      <word_default>Promenu Version: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_version_ipb</word_key>
+      <word_default>IPB Version: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_bug_message</word_key>
+      <word_default>Message:</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_bug_report</word_key>
+      <word_default>Bug Report</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_add_menu</word_key>
+      <word_default>Add New Menu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_sub_menu</word_key>
+      <word_default>Custom SubMenu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu</word_key>
+      <word_default>Edit Menu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_perms</word_key>
+      <word_default>Edit Menu Permissions</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_added</word_key>
+      <word_default>New Menu Successfully Added</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_edited</word_key>
+      <word_default>Menu Successfully Edited</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_perm_edited</word_key>
+      <word_default>Menu Permissions Successfully Edited</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_visibile_edited</word_key>
+      <word_default>Menu Visibility Successfully Edited</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_deleted</word_key>
+      <word_default>Menu Successfully Deleted</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_add_new</word_key>
+      <word_default>Add New Menu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menus</word_key>
+      <word_default>Menus</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_modify</word_key>
+      <word_default>Modify</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_options</word_key>
+      <word_default>Options</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_permissions</word_key>
+      <word_default>Permissions</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_menu</word_key>
+      <word_default>Delete Menu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_alert_delete</word_key>
+      <word_default>Are you sure you want to delete this menu?</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_application</word_key>
+      <word_default>Application: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_app_page</word_key>
+      <word_default>Page: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_url</word_key>
+      <word_default>URL: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_description</word_key>
+      <word_default>Description: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_display</word_key>
+      <word_default>There are currently no menus to display.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_overview</word_key>
+      <word_default>Overview</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_overview_disclaim1</word_key>
+      <word_default>The Provisionists team would like to give our special thanks to </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_overview_disclaim2</word_key>
+      <word_default>for their assistance in this products development.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menus_disclaim</word_key>
+      <word_default>Create, modify, or delete custom menus. Each menu has numerous settings so take special care when setting up your menus. For proper tab activation, a menu must have a specified application selected and Link to IP.Board Application must be set to yes, even if your using the Link to URL setting.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menus_setting_disclaim</word_key>
+      <word_default>This is the main area for defining your menu settings. Take special care when building your menus as there are numerous settings here that directly effect your menus display.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menus_perm_disclaim</word_key>
+      <word_default>This is the main area for defining menu permissions. The permissions matrix is designed to display an item if the selected permission set has permissions to view said item.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menus_group_view_disclaim</word_key>
+      <word_default>This is the main area for displaying menus based on groups. All groups selected here will hide this menu on the public side for those groups.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_settings_disclaim</word_key>
+      <word_default>These are the basic settings for this application. This menu system provides numerous settings, including Default Application Features. These settings are designed for those who choose to use other applications (such as Portal, IP.Content, Pages, etc) for their default application settings, though will work with the default forums. This menu system will not set your default application setting, only detect what you have set in the initdata.php. These options are not required to use the custom menu system, they are only added to provide extra features to those choosing to operate their boards in such a manner.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_settings</word_key>
+      <word_default>Settings</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_latest</word_key>
+      <word_default>Latest News</word_default>
+    </lang> 
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_latest_disable</word_key>
+      <word_default>The latest news block is currently not available.</word_default>
+    </lang> 
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_general_info</word_key>
+      <word_default>General Information</word_default>
+    </lang> 
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_total</word_key>
+      <word_default>Total Menus:</word_default>
+    </lang> 
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_none</word_key>
+      <word_default>None</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_notify_dev</word_key>
+      <word_default>File A Bug Report with the Developer.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_file_bug</word_key>
+      <word_default>File A Bug Report</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_submit_bug</word_key>
+      <word_default>Submit Bug</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_thanks</word_key>
+      <word_default>Thank you for your submission!</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_read</word_key>
+      <word_default>Read More</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_bugs_reported</word_key>
+      <word_default>Bugs Reported</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_date_filed</word_key>
+      <word_default>Date File: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_by_user</word_key>
+      <word_default>By User: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_report</word_key>
+      <word_default>Report: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_report_delete</word_key>
+      <word_default>Delete Report</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_bugs</word_key>
+      <word_default>No Bugs Filed.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_settings</word_key>
+      <word_default>Menu Settings</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_perms</word_key>
+      <word_default>Menu Permissions</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_visible</word_key>
+      <word_default>Menu Visibility</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_visible</word_key>
+      <word_default>Editing Menu Visibility</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_title</word_key>
+      <word_default>Title</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_title_desc</word_key>
+      <word_default>This is the text that appears as the menu title.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_desc</word_key>
+      <word_default>Description</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_desc_desc</word_key>
+      <word_default>This is the text that appears as a tooltip when the member hovers over the menu item with their mouse.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_link_app</word_key>
+      <word_default>Link to IP.Board Application</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_link_app_desc</word_key>
+      <word_default>Choose whether to link this menu item to an IP.Board application. Linking to a URL and manually entering the URL of an IP.Board application and setting that link to an application means ProMenu can mark it as active when the member is in it.  If no Link URL is provided this will produce an direct link to the application set below. Regardless if this is set to yes and disable active is disabled the menu will apear as active when in the specified location.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_app</word_key>
+      <word_default>Application</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_app_desc</word_key>
+      <word_default>Sets the application to which this menu item is linked too</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_page</word_key>
+      <word_default>Page</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_page_desc</word_key>
+      <word_default>If choosing IP.Content as the application, and you wish to link the menu item to a specific page, select the page you wish to be linked</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_link</word_key>
+      <word_default>Link URL</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_link_desc</word_key>
+      <word_default>Sets the URL to which this menu item links. If left unset, the link will be produced from the Link to IP.Board settings. If you not treating this menu as an category, you must add an url or choose to link to an application.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_parent</word_key>
+      <word_default>Parent Menu</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_parent_desc</word_key>
+      <word_default>Select a parent for this menu. If you wish to have this menu as the main parent, select none</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_icon</word_key>
+      <word_default>Icon URL</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_icon_desc</word_key>
+      <word_default>Sets the URL to the image that will appear as the icon for the menu. All images larger than 14px will be reduced in size when displayed to maximum viewing compatibility</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_open</word_key>
+      <word_default>Open in New Window</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_open_desc</word_key>
+      <word_default>Chooses whether this menu item is to open in a new window, or the same one</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_save</word_key>
+      <word_default>Save</word_default>
+    </lang>	
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_edit_settings</word_key>
+      <word_default>Editing Settings For Menu: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_edit_perms</word_key>
+      <word_default>Editing Permissions For Menu: </word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_parent_total</word_key>
+      <word_default>Parent Menus:</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_child_total</word_key>
+      <word_default>Child Menus:</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_is_cat</word_key>
+      <word_default>This Menu Is Set Up As A Category</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_the_cat</word_key>
+      <word_default>Menu:</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_parent_error</word_key>
+      <word_default>You attempting to make a menu a submenu of itself. This action you requested is not allowed. </word_default>
+    </lang>  
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_treat_cat</word_key>
+      <word_default>Treat This Menu As A Category? </word_default>
+    </lang>  
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_treat_desc</word_key>
+      <word_default>If you decide to set a menu to be used as a category, the menu item will not be displayed as a clickable item.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_disable_active</word_key>
+      <word_default>Disable Active Tabbing?</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_disable_active_desc</word_key>
+      <word_default>Choose "yes" to deactivate the highlight of this menu when on the specified application. If this menu is a submenu, it will also deactivate and parent menu.</word_default>
+    </lang>
+	<lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_left</word_key>
+      <word_default>Open Submenus Left?</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_left_desc</word_key>
+      <word_default>Use this setting if you wish it to open any submenus this parent may have to the left. By default all submenus will open right.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_hide_all_groups</word_key>
+      <word_default>Hide for all current and future groups?</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_hide_all_groups_desc</word_key>
+      <word_default>If enabled, this will hide this menu for all current groups or any groups created in the future.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_hide_group</word_key>
+      <word_default>Hide menu for group...</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_hide_group_desc</word_key>
+      <word_default>Chosen groups won't see this menu on the public side, but will still be able to access the application (depending on the applications permissions access) regardless. This setting does not apply if you have selected the setting above as 'Yes'.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_cancel</word_key>
+      <word_default>Cancel</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_and_reload</word_key>
+      <word_default>and Reload</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_view_html</word_key>
+      <word_default>View With HTML</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_viewing</word_key>
+      <word_default>Viewing</word_default>
+    </lang>
+     <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_editing</word_key>
+      <word_default>Editing</word_default>
+    </lang>    
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_disable_desc_hover</word_key>
+      <word_default>Disable Description Hover Over</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_disable_desc_hover_desc</word_key>
+      <word_default>Disabling this option will prevent the basic hover over description/title to appear when hovered over with the mouse. This setting will also effect <b>Enable Data ToolTip</b> option.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_data_tooltip</word_key>
+      <word_default>Enable Data Tooltip</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_data_tooltip_desc</word_key>
+      <word_default>Enabling this option will change the basic hover over description/title to appear as a popup for displaying data.</word_default>
+    </lang>   
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_help_guides</word_key>
+      <word_default>Help Guildes</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_groups</word_key>
+      <word_default>Menu Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_new_group</word_key>
+      <word_default>Add New Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_title</word_key>
+      <word_default>You Must Provide A Group Title</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_view_desc</word_key>
+      <word_default>In this area, you can edit your group's mega menu settings, the titles and descriptions for your groups, or build your own group. Adding your own custom group is designed for the power user, so you would need to have full understanding of the IPB structure to accomplish proper group creation. It requires knowledge on how to create your own hooks, utilize hook points, template creation and/or alteration, etc. I do have plans on adding easier implementation of this feature in the future, but for now this will get the job done.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_add_desc</word_key>
+      <word_default>Here we add our few settings to be used for all menus built within. After building a group, you will have to create your own hook or block for front end display of any menus you create within the group created.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_edit_desc</word_key>
+      <word_default>You can edit your group settings here, provided the option is available. Groups that I have designed as 'Stock' will have limited options, while any custom group will have options available for alteration.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_new_group_added</word_key>
+      <word_default>New Group Added</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_key_req</word_key>
+      <word_default>You Must Provide A Group Key</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_key_dup</word_key>
+      <word_default>Alert: Group Key Already Exists!</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_group_id</word_key>
+      <word_default>Alert: No Group ID Found</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_menu_id</word_key>
+      <word_default>Alert: No Menu ID Found</word_default>
+    </lang>    
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_group</word_key>
+      <word_default>Editing Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_added_group_log</word_key>
+      <word_default>ProMenu: Added Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_group_log</word_key>
+      <word_default>ProMenu: Edited The Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_group_log</word_key>
+      <word_default>ProMenu: Deleted The Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_1</word_key>
+      <word_default>ProMenu: the menu titled</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_2</word_key>
+      <word_default>within the group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_3</word_key>
+      <word_default>has been edited</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_4</word_key>
+      <word_default>ProMenu: the menu with the ID</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_5</word_key>
+      <word_default>has had the permissions edited</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_6</word_key>
+      <word_default>has had the menu visibility edited</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_log_7</word_key>
+      <word_default>has been deleted</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_edited</word_key>
+      <word_default>Group Edited</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_deleted</word_key>
+      <word_default>Group Deleted</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_view_main</word_key>
+      <word_default>Here you can view all your menus within the selected group. Just drop and drag to reorder you menus to suit your needs, edit any aspect of your menus (some settings will not appear when adding or editing a menu if the group is not set to be shown as mega menus), or delete any menu. If you delete a menu and it contains children, you will be directed to a page with options. We also added in the ability to hide submenus with a toggle, though currently it is cookie based. This will be changing in a future version to become a true setting, along with some enhancements on how submenus are handled and viewed.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_view_desc</word_key>
+      <word_default>This is the 'parent with children' view, specifically designed to allow you view, edit, reorder, etc any submenus within the group.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_add_menu_desc</word_key>
+      <word_default>Adding a new menu is fairly simple, though does have many settings. I have placed the most vital settings within the 'Menu Settings' where more of the advanced features are under the 'Advanced Settings'. If you have this group setup to display mega menus, you will see an additional tab labeled 'Mega Settings' with settings that effect only that display.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_edit_menu_desc</word_key>
+      <word_default>Editing a menu is as simple as building a new menu. All vital settings within the 'Menu Settings' where more of the advanced features are under the 'Advanced Settings'. If you have this group setup to display mega menus, you will see an additional tab labeled 'Mega Settings' with settings that effect only that display.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_menu_desc</word_key>
+      <word_default>This area is used for deleting your menus. If your viewing this page, it means your attempting to delete a menu that contains children. At this point you have a few options available too you. You may delete just the menu, which would turn the childen (just the first tier below while all other tiers will remain intact) into main level parents. You may also delete the menu, and all children contained within its structure. And finally, you can just cancel the process, so you may choose to move menus to a different parent before the chosen menu is deleted. NOTE: any menu that does not have a child will be deleted automatically without prompts!!!</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_menu_visual_edit</word_key>
+      <word_default>Menu Visibility Edited Successfully</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_deleting_menu</word_key>
+      <word_default>Deleting Menu</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_parent_with_sub</word_key>
+      <word_default>Parent And Children Menus Deleted Successfully</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_parent_no_sub</word_key>
+      <word_default>Parent Deleted And Children Updated To Parents Successfully</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_display_setting_desc</word_key>
+      <word_default>This settings area is designed for enabling and disabling specific menu areas without having to disable the application entirely.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_effect_setting_desc</word_key>
+      <word_default>This settings area is for all the special menu effects. Please take special care when applying these settings as they effect all menus.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_general_setting_desc</word_key>
+      <word_default>This area contains the basic global settings for this menu management system. Some of these key settings include the removal tools, parent activation and member visibility settings.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_title</word_key>
+      <word_default>Group Title</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_title_desc</word_key>
+      <word_default>This is the title used in association this group.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_desc</word_key>
+      <word_default>Group Description</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_desc_desc</word_key>
+      <word_default>This is the description used in association this group.</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_key</word_key>
+      <word_default>Group Key</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_key_desc</word_key>
+      <word_default>This is the key used in association this group. This key must be unique.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_mega</word_key>
+      <word_default>Treat Menus as Mega?</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_group_mega_desc</word_key>
+      <word_default>This is the setting used in association this mega menus. All menus contains within this group are effected by this setting.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_view_as_cat</word_key>
+      <word_default>View As Category?</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_view_as_cat_desc</word_key>
+      <word_default>This setting is used to give the menu the appearance of a category, without starting a new column. If your in Mega Menu mode, this will also begin a new row.</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_icon_as_title</word_key>
+      <word_default>Use Icon for Title?</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_icon_as_title_desc</word_key>
+      <word_default>Setting this to yes will allow you to use the full sized image as the title rather than an icon.</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_start_new_row</word_key>
+      <word_default>Start a New Row?</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_start_new_row_desc</word_key>
+      <word_default>Setting this to yes will allow you to start a new row within the mega menu.</word_default>
+    </lang> 
+
+
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_use_block</word_key>
+      <word_default>Use HTML Block?</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_use_block_desc</word_key>
+      <word_default>Choose yes if you wish to use this menu as HTML block content.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_block_content</word_key>
+      <word_default>HTML Block Contents</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_block_content_desc</word_key>
+      <word_default>This is the contents to be displayed, if chosen to use this menu as an HTML block.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_start_new_column</word_key>
+      <word_default>Start a New Column?</word_default>
+    </lang>     
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_start_new_column_desc</word_key>
+      <word_default>Setting this to yes will allow you to start a new column within the mega menu.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_group_edit_key</word_key>
+      <word_default>Cannot Edit Key</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_group_delete</word_key>
+      <word_default>Cannot Delete This Group</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_not_group_available</word_key>
+      <word_default>Not Available For This Group</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_no_group_selected</word_key>
+      <word_default>No Group Selected</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_deleting_menu</word_key>
+      <word_default>Deleting Menu</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_deleting_menu_desc_1</word_key>
+      <word_default>Submenus Have Been Detected!!!</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_deleting_menu_desc_2</word_key>
+      <word_default>Please Select A Delete Option From Below!!!!</word_default>
+    </lang>  
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_deleting_menu_desc_3</word_key>
+      <word_default>Note: Choosing to delete just the menu will result in all submenus becoming parents. This only includes the first tier. Any other tiers will remain intact.</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_just_this_menu</word_key>
+      <word_default>Just This Menu</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_and_all_subs</word_key>
+      <word_default>And All Submenus?</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_custom_menu_group</word_key>
+      <word_default>Custom Menu Groups</word_default>
+    </lang>
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_group</word_key>
+      <word_default>Delete Group</word_default>
+    </lang> 
+    <lang>
+      <word_app>promenu</word_app>
+      <word_pack>admin_lang</word_pack>
+      <word_key>promenu_delete_group_alert</word_key>
+      <word_default>Are You Sure You Want To Delete This Group? This Action Will Delete All Menus Contained Inside and Cannot Be Undone!!!</word_default>
+    </lang>           
+  </languagegroup>
+</languageexport>

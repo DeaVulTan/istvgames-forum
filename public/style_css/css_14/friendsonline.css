@@ -1,0 +1,33 @@
+/************************************************************************/
+/* SOS Invision - (SOS34) Friends Online 1.3.1							*/
+/************************************************************************/
+	
+.textShort { text-align: left; }
+
+#friendsonline_menucontent.ipsHeaderMenu {
+        width: 300px;
+}
+
+#friendsonline_menucontent  a{color: #225985!important;
+text-decoration: none;}
+
+#friendsonline_menucontent a:hover { color: #328586!important; }
+
+#friendsonline {
+        background: url(http://forum.istvgames.uz/public/style_images/green/icon_friends.png ) no-repeat center;
+        vertical-align: middle;
+        width: 18px;
+        height: 15px;
+        padding: 11px 24px 8px 12px;
+        position: relative;
+}
+
+        
+        #friendsonline:hover { 
+                background-position: center;
+                background-color: #fff;
+        }
+
+        #friendsonline.menu_active {
+                background-position: center;
+        }

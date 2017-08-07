@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates application="feedback" templategroups="a:1:{s:13:&quot;skin_feedback&quot;;s:8:&quot;contains&quot;;}">
+  <templategroup group="skin_feedback">
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<h1 class="ipsType_pagetitle">{$this->lang->words['confirm_delete_title']}</h1>
+<div class='ipsBox'>
+	<form id='leaveFeedback' name='leaveFeedback' enctype='multipart/form-data' method="post" action="{parse url="app=feedback&amp;module=view&amp;action=delete&amp;do={$feedback['id']}&amp;confirm=1" base="public"}">
+		<div class='ipsBox_container ipsPad'>
+			<p class='message error'>{$this->lang->words['confirm_delete_text']}</p>
+		</div>
+		<fieldset class="submit">
+			<input class="input_submit" value="{$this->lang->words['delete']}" type="submit"> or <a href="{parse url="showuser={$member['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}" title="" class="cancel">{$this->lang->words['fb_cancel']}</a>
+		</fieldset>
+	</form>
+</div>]]></template_content>
+      <template_name>deleteFeedback</template_name>
+      <template_data>$feedback, $member</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<script type='text/javascript'>
+document.observe("dom:loaded", function(){
+	url = ipb.vars['base_url'] + 'app=core&module=ajax&section=findnames&do=get-member-names&secure_key=' + ipb.vars['secure_hash'] + '&name=';
+	autoComplete = new ipb.Autocomplete( $('username'), { multibox: false, url: url, templates: { wrap: ipb.templates['autocomplete_wrap'], item: ipb.templates['autocomplete_item'] }} );
+});
+</script>
+<div class='ipsLayout ipsLayout_withright ipsLayout_largeright clearfix'>
+	<div class='ipsLayout_right'>
+		<div class='ipsSideBlock clearfix'>
+			<h3>{$this->lang->words['find_member']}</h3>
+			<form action="{parse url="app=feedback&amp;module=view&amp;action=find-member" seotitle="a" template="feedbackFind" base="public"}" method="post">
+				<fieldset>
+				<ul>
+					<li class="field">
+						<input class='input_text' id='username' name="username" size="20" type="text">
+						&nbsp;
+						<input class="input_submit" value="{$this->lang->words['search']}" type="submit">
+					</li>
+				</ul>
+				</fieldset>
+			</form>
+		</div>
+		<if test="$stats['global']['total'] > 0 ">
+		<div class='ipsSideBlock clearfix'>
+			<h3>{$this->lang->words['fb_statistics_title']}</h3>
+			<ul id='feedbackStats'>
+				<li><strong>{$this->lang->words['totalpos']}:</strong> <span class='right clearfix value positive ipsType_small'>{$stats['global']['positive']}</span></li>
+				<li><strong>{$this->lang->words['totalneut']}:</strong> <span class='right clearfix value ipsType_small'>{$stats['global']['neutral']}</span></li>
+				<li><strong>{$this->lang->words['totalneg']}:</strong> <span class='right clearfix value negative ipsType_small'>{$stats['global']['negative']}</span></li>
+				<li><strong>{$this->lang->words['totalpercent']}:</strong> <span class='right clearfix value <if test="$stats['global']['percent'] > 99">positive<else /><if test="$stats['global']['percent'] < 0 ">neutral<else /><if test="$stats['global']['percent'] < 40 ">negative</if></if></if>'>{$stats['global']['percent']}%</span></li>
+			</ul>
+		</div>
+		</if>
+		{parse template="topMembers" group="feedback" params="$stats['top_members']"}
+	</div>
+	<div class='ipsLayout_content'>
+		<h3 class='maintitle clear'>{$this->lang->words['latest_feedback']}</h3>
+		<div class='ipsBox'>
+			<div class='ipsBox_container'>
+				<table class='ipb_table'>
+					<tr class='header'>
+						<th scope="col" width='100'>{$this->lang->words['col_feedback_for']}</th>
+						<th scope="col" width='80'>{$this->lang->words['col_feedback_date']}</th>
+						<th scope="col" width='35'>{$this->lang->words['col_feedback_rating']}</th>
+						<th scope="col">{$this->lang->words['col_feedback_comment']}</th>
+						<th scope="col" width='150'>{$this->lang->words['col_feedback_from']}</th>
+						<if test="$moderate">
+							<th scope="col" width='35'>&nbsp;</th>
+						</if>
+					</tr>
+				<if test="count($feedback)">
+				<foreach loop="feedbackLoop:$feedback as $f">
+					<tr>
+						<td><a hovercard-ref="member" hovercard-id="{$f['receiver']}" class="_hovertrigger url fn" href="{parse url="showuser={$f['receiver']}&amp;tab=feedback" template="showuser" seotitle="{$users[$f['receiver']]['members_seo_name']}" base="public"}">{$users[$f['receiver']]['members_display_name']}</a></td>
+						<td>{parse date="$f['date']" format="manual{%x}" relative="true"}</td>
+						<td align="center"><p class='ipsBadge feedbackBadge_{$f['badge']['colour']}'>{$f['badge']['symbol']}</p></td>
+						<td>
+						<if test="$f['link']"><a <if test="$f['link_type'] == 'c'">target="_blank"</if> href="{parse url="{$f['link']}" seotitle="{$f['title_seo']}"}" title='{$this->lang->words['go_to_forum']}'></if>{$f['note']}<if test="$f['link']"></a></if>
+						</td>
+						<td>{$f['type']}: <a hovercard-ref="member" hovercard-id="{$f['sender']}" class="_hovertrigger url fn" href="{parse url="showuser={$f['sender']}&amp;tab=feedback" template="showuser" seotitle="{$users[$f['sender']]['members_seo_name']}" base="public"}">{$users[$f['sender']]['members_display_name']}</a></td>
+						<if test="$moderate">
+							<td align="center">
+								<ul class='ipsList_inline right'>
+									<li>
+										<a class="ipsButton_secondary" href="{parse url="app=feedback&amp;module=view&amp;action=delete&amp;do={$f['id']}" base="public"}"><img src="{$this->settings['img_url']}/feedback/delete.png" alt="Delete"></a>
+									</li>
+								</ul>
+							</td>
+						</if>
+					</tr>
+				</foreach>
+				<else />
+					<tr>
+						<td colspan='<if test="$moderate">6<else />5</if>'>
+							{$this->lang->words['fb_no_feedback']}
+						</td>
+					</tr>
+				</if>
+				</table>
+			</div>
+		</div>
+		{$pages}
+	</div>
+</div>]]></template_content>
+      <template_name>feedbackIndex</template_name>
+      <template_data>$feedback, $users, $icons, $stats, $pages, $moderate</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<div align="center" class='ipsPad'><span class="desc"><a href="http://www.a108.net/index.php/store/" target="_blank">Переводы и аддоны для IPB</a></span></div>]]></template_content>
+      <template_name>footer</template_name>
+      <template_data/>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<h1 class="ipsType_pagetitle">{$this->lang->words['leave']} {$user['members_display_name']}</h1>
+<if test="$error">
+	<p class='message error'>{$error}</p><br />
+</if>
+<div class='ipsBox'>
+	<form id='leaveFeedback' name='leaveFeedback' enctype='multipart/form-data' method="post" action="{parse url="app=feedback&amp;module=view&amp;action=leave&amp;do={$user['member_id']}" seotitle="{$user['members_seo_name']}" template="feedbackLeave" base="public"}">
+		<div class='ipsBox_container ipsPad'>
+			<ul class='ipsForm ipsForm_horizontal ipsPad'>
+				<li class='ipsField ipsField_primary'>
+					<label for='role' class='ipsField_title'>{$this->lang->words['role']} <span class="ipsForm_required">*</span></label>
+					<p class='ipsField_content'>
+						<select id="role" class="input_text" name="role">
+							<option value="0" <if test="isset($this->request['role']) &&$this->request['role'] == 0">selected="selected"</if>>{$this->lang->words['buyer']}</option>
+							<option value="1" <if test="$this->request['role'] == 1">selected="selected"</if>>{$this->lang->words['seller']}</option>
+							<option value="2" <if test="$this->request['role'] == 2">selected="selected"</if>>{$this->lang->words['trader']}</option>
+						</select>
+						<br/><span class="desc">{$this->lang->words['role_desc']}</span>
+					</p>
+				</li>
+				<li class='ipsField ipsField_primary'>
+					<label for='leaving' class='ipsField_title'>{$this->lang->words['leaving']} <span class="ipsForm_required">*</span></label>
+					<p class='ipsField_content'>
+						<select id="leaving" class="input_text" name="leaving">
+							<option value="2" <if test="$this->request['leaving'] == 2">selected="selected"</if>>{$this->lang->words['pos']} (+1)</option>
+							<option value="1" <if test="$this->request['leaving'] == 1">selected="selected"</if>>{$this->lang->words['neut']} (0)</option>
+							<option value="0" <if test="isset($this->request['leaving']) && $this->request['leaving'] == 0">selected="selected"</if>>{$this->lang->words['neg']} (-1)</option>
+						</select><br />
+						<span class="desc">{$this->lang->words['leaving_desc']}</span>
+					</p>
+				</li>
+				<li class='ipsField ipsField_primary'>
+					<label for='topic_url' class='ipsField_title'><if test="$this->settings['fb_linkType'] == 'c' && IPSLib::appIsInstalled('classifieds')">{$this->lang->words['classified']}<else />{$this->lang->words['topic']}</if><if test="$optional"> (<em>{$this->lang->words['optional']}</em>)<else /> <span class="ipsForm_required">*</span></if></label>
+					<p class='ipsField_content'>
+						<input class="input_text" id="topic_url" size="55" maxlength="255" name="topic_url" type="text" <if test="isset($this->request['topic_url'])">value="{$this->request['topic_url']}"</if>/><br/>
+						<span class="desc"><if test="$this->settings['fb_linkType'] == 'c' && IPSLib::appIsInstalled('classifieds')">{$this->lang->words['classified_desc']}<else />{$this->lang->words['topic_desc']}</if></span>
+					</p>
+				</li>
+				<li class='ipsField ipsField_primary'>
+					<label for='comment' class='ipsField_title'>{$this->lang->words['comment']} <span class="ipsForm_required">*</span></label>
+					<p class='ipsField_content'>
+						<input id="comment" class="input_text" size="55" maxlength="500" name="comment" type="text"  <if test="isset($this->request['comment'])">value="{$this->request['comment']}"</if>/><br>
+						<span class="desc">{$this->lang->words['comment_desc']}</span>
+					</p>
+				</li>
+				<if test="$this->settings['fb_enableCaptcha']">
+				<li class='ipsField ipsField_primary'>
+					{$captcha}
+				</li>
+				</if>
+			</ul>
+		</div>
+		<fieldset class="submit">
+			<input class="input_submit" value="{$this->lang->words['leave_title']}" type="submit"> or <a href="{$this->registry->output->buildUrl('app=feedback&u='.$user['member_id'])}" title="" class="cancel">{$this->lang->words['fb_cancel']}</a>
+		</fieldset>
+	</form>
+</div>]]></template_content>
+      <template_name>leave</template_name>
+      <template_data><![CDATA[$user, $optional, $captcha='', $error=FALSE]]></template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<div class='message error'>{$this->lang->words['fb_nouser']}</div>]]></template_content>
+      <template_name>noResult</template_name>
+      <template_data/>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<ul class="ipsType_small ipsList_inline fbkProfStat">
+	<li class="clear">
+		<span class="value positive">{$member['feedb_pos']}</span>
+		{$this->lang->words['totalpos']}
+	</li>
+	<li class="clear">
+		<span class="value">{$member['feedb_neu']}</span>
+		{$this->lang->words['totalneut']}
+	</li>
+	<li class="clear">
+		<span class="value negative">{$member['feedb_neg']}</span>
+		{$this->lang->words['totalneg']}
+	</li>
+	<li class="clear">
+		<span class="value <if test="$member['feedb_percent'] > 99">positive<else /><if test="$member['feedb_percent'] < 0 ">neutral<else /><if test="$member['feedb_percent'] < 40 ">negative</if></if></if>"><if test="$member['feedb_percent']<0">N/A<else />{$member['feedb_percent']}%</if></span>
+		{$this->lang->words['totalpercent']}
+	</li>
+</ul>
+<div class="maintitle ipsFilterbar clear clearfix">
+	<ul class='ipsList_inline left'>
+		<li <if test="filterplace:|:$this->request['filter'] == 'all' || !$this->request['filter']">class='active'</if>>
+			<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback" template="showuser" base="public" seotitle="{$member['members_seo_name']}"}' title='{$this->lang->words['taball']}'>{$this->lang->words['taball']}</a>
+		</li>
+		<li <if test="filteradded:|:$this->request['filter'] == 'buyer'">class='active'</if>>
+			<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback&amp;filter=buyer" template="showuser" base="public" seotitle="{$member['members_seo_name']}"}' title='{$this->lang->words['tabbuyer']}'>{$this->lang->words['tabbuyer']}</a>
+		</li>
+		<li <if test="filterplace:|:$this->request['filter'] == 'seller'">class='active'</if>>
+			<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback&amp;filter=seller" template="showuser" base="public" seotitle="{$member['members_seo_name']}"}' title='{$this->lang->words['tabseller']}'>{$this->lang->words['tabseller']}</a>
+		</li>
+		<li <if test="filteradded:|:$this->request['filter'] == 'swap'">class='active'</if>>
+			<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback&amp;filter=swap" template="showuser" base="public" seotitle="{$member['members_seo_name']}"}' title='{$this->lang->words['tabtrader']}'>{$this->lang->words['tabtrader']}</a>
+		</li>
+		<li <if test="filteradded:|:$this->request['filter'] == 'others'">class='active'</if>>
+			<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback&amp;filter=others" template="showuser" base="public" seotitle="{$member['members_seo_name']}"}' title='{$this->lang->words['tabothers']}'>{$this->lang->words['tabothers']}</a>
+		</li>
+	</ul>
+</div>
+<div class='ipsBox'>
+	<div class='ipsBox_container'>
+		<table class='ipb_table'>
+			<tr class='header'>
+				<th scope="col" width='35'>{$this->lang->words['col_feedback_rating']}</th>
+				<th scope="col" width='150'>{$this->lang->words['col_feedback_date']}</th>
+				<th scope="col">{$this->lang->words['col_feedback_comment']}</th>
+				<th scope="col" width='150'><if test="$this->request['filter'] == 'others'">{$this->lang->words['col_feedback_for']}<else />{$this->lang->words['col_feedback_from']}</if></th>
+				<if test="$moderate">
+					<th scope="col" width='35'>&nbsp;</th>
+				</if>
+			</tr>
+		<if test="count($feedback)">
+		<foreach loop="feedbackLoop:$feedback as $f">
+			<tr>
+				<td align="center"><p class='ipsBadge feedbackBadge_{$f['badge']['colour']}'>{$f['badge']['symbol']}</p></td>
+				<td>{parse date="$f['date']" format="short" relative="true"}</td>
+				<td>
+<if test="$f['link']"><a <if test="$f['link_type'] == 'c'">target="_blank"</if> href="{parse url="{$f['link']}" seotitle="{$f['title_seo']}"}" title='{$this->lang->words['go_to_forum']}'></if>{$f['note']}<if test="$f['link']"></a></if>
+				</td>
+				<td>{$f['type']}: <a hovercard-ref="member" hovercard-id="{$f['sender']}" class="_hovertrigger url fn" href="{parse url="showuser={$f['sender']}&amp;tab=feedback" template="showuser" seotitle="{$users[$f['sender']]['members_seo_name']}" base="public"}">{$users[$f['sender']]['members_display_name']}</a></td>
+				<if test="$moderate">
+					<td align="center">
+						<ul class='ipsList_inline right'>
+							<li>
+								<a class="ipsButton_secondary" href="{parse url="app=feedback&amp;module=view&amp;action=delete&amp;do={$f['id']}" base="public"}"><img src="{$this->settings['img_url']}/feedback/delete.png" alt="Delete"></a>
+							</li>
+						</ul>
+					</td>
+				</if>
+			</tr>
+		</foreach>
+		<else />
+			<tr>
+				<td colspan='4'>{$this->lang->words['noneyet']}</td>
+			</tr>
+		</if>
+		</table>
+	</div>
+</div>
+{$pages}]]></template_content>
+      <template_name>profilePage</template_name>
+      <template_data>$member, $feedback, $users, $pages, $moderate</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<if test="count($data)">
+<div class='ipsSideBlock clearfix'>
+	<h3>{$this->lang->words['fb_topusers_title']}</h3>
+	<ul id='topMembers' class='ipsList_withminiphoto'>
+	<foreach loop="$data as $m">
+		<li>
+			<a class="ipsUserPhotoLink" href="{parse url="showuser={$m['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$m['members_seo_name']}" base="public"}">
+				<img src='{$m['pp_small_photo']}' class='ipsUserPhoto ipsUserPhoto_mini' />
+			</a>
+			<a hovercard-ref="member" hovercard-id="{$m['member_id']}" class="_hovertrigger url fn" href="{parse url="showuser={$m['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$m['members_seo_name']}" base="public"}">
+				{$m['members_display_name']}
+			</a>
+			<span title='{$this->lang->words['totalpercent']}' class="value <if test="$m['feedb_percent'] > 99">positive<else /><if test="$m['feedb_percent'] < 0 ">neutral<else /><if test="$m['feedb_percent'] < 40 ">negative</if></if></if>"><if test="$m['feedb_percent']<0">N/A<else />{$m['feedb_percent']}%</if></span>
+		</li>
+	</foreach>
+	</ul>
+</div>
+</if>]]></template_content>
+      <template_name>topMembers</template_name>
+      <template_data>$data</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<if test="$this->memberData['member_id'] != $member['member_id']">
+<li>
+	<a href='{parse url="app=feedback&amp;module=view&amp;action=leave&amp;do={$member['member_id']}" seotitle="{$member['members_seo_name']}" template="feedbackLeave" base="public"}' <if test="!$cl">class='ipsButton_secondary'</if>><img src="{$this->settings['img_url']}/notifications/notify_feedback.png" alt="Leave Response"> <if test="!$cl">&nbsp;&nbsp;</if>{$this->lang->words['leave_title']}</a>
+</li>
+</if>]]></template_content>
+      <template_name>userLeaveLink</template_name>
+      <template_data>$member, $cl=FALSE</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<p class='message'>{$this->lang->words['more_members_message']}</p><br/>
+<h3 class='maintitle clear'>{$this->lang->words['members_starting']} {$search} </h3>
+<div class="ipsBox">
+<ul class="ipsMemberList ipsBox_container ipsPad">
+{parse striping="loc" classes="row1, row2"}
+<foreach loop="$users as $member">
+	<li id='member_id_{$member['member_id']}' class='ipsPad clearfix member_entry {parse striping="loc"}'>
+		<a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}' class='ipsUserPhotoLink left'><img src='{$member['pp_small_photo']}' alt="{$member['members_display_name']}{$this->lang->words['users_photo']}" class='ipsUserPhoto ipsUserPhoto_medium' /></a>
+		<div class='ipsBox_withphoto'>
+			<ul class='ipsList_inline right'>
+				<if test="notus:|:$this->memberData['member_id'] AND $this->memberData['member_id'] != $member['member_id'] && $this->settings['friends_enabled'] AND $this->memberData['g_can_add_friends']">
+					<if test="addfriend:|:IPSMember::checkFriendStatus( $member['member_id'] )">
+						<li class='mini_friend_toggle is_friend' id='friend_mlist_{$member['member_id']}'><a href='{parse url="app=members&amp;module=list&amp;module=profile&amp;section=friends&amp;do=remove&amp;member_id={$member['member_id']}&amp;secure_key={$this->member->form_hash}" base="public"}' title='{$this->lang->words['remove_friend']}' class='ipsButton_secondary'>{parse replacement="remove_friend"}</a></li>
+					<else />
+						<li class='mini_friend_toggle is_not_friend' id='friend_mlist_{$member['member_id']}'><a href='{parse url="app=members&amp;module=list&amp;module=profile&amp;section=friends&amp;do=add&amp;member_id={$member['member_id']}&amp;secure_key={$this->member->form_hash}" base="public"}' title='{$this->lang->words['add_friend']}' class='ipsButton_secondary'>{parse replacement="add_friend"}</a></li>
+					</if>
+				</if>
+				<li><a href='{parse url="app=core&amp;module=search&amp;do=user_activity&amp;mid={$member['member_id']}" base="public"}' title='{$this->lang->words['gbl_find_my_content']}' class='ipsButton_secondary'>{parse replacement="find_topics_link"}</a></li>
+				<li>
+					<a class="ipsButton_secondary" href="{parse url="showuser={$member['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}">{$this->lang->words['fb_gotomember']}</a>
+				</li>
+			</ul>
+			<h3 class='ipsType_subtitle'>
+				<strong><a href='{parse url="showuser={$member['member_id']}&amp;tab=feedback" template="showuser" seotitle="{$member['members_seo_name']}" base="public"}' title='{$this->lang->words['view_profile']}'>{$member['members_display_name']}</a></strong>
+
+				<if test="rating:|:$this->settings['pp_allow_member_rate'] && $this->request['pp_rating_real']">
+					<span class='rating'>
+						<if test="rate1:|:$member['pp_rating_real'] >= 1">{parse replacement="rate_on"}<else />{parse replacement="rate_off"}</if><if test="rate2:|:$member['pp_rating_real'] >= 2">{parse replacement="rate_on"}<else />{parse replacement="rate_off"}</if><if test="rate3:|:$member['pp_rating_real'] >= 3">{parse replacement="rate_on"}<else />{parse replacement="rate_off"}</if><if test="rate4:|:$member['pp_rating_real'] >= 4">{parse replacement="rate_on"}<else />{parse replacement="rate_off"}</if><if test="rate5:|:$member['pp_rating_real'] >= 5">{parse replacement="rate_on"}<else />{parse replacement="rate_off"}</if>
+					</span>
+				</if>
+			</h3>
+			<if test="repson:|:$this->settings['reputation_enabled'] && $this->settings['reputation_show_profile']">
+				<if test="norep:|:$member['pp_reputation_points'] == 0 || !$member['pp_reputation_points']">
+					<p class='reputation zero ipsType_small left' data-tooltip="{parse expression="sprintf( $this->lang->words['member_has_x_rep'], $member['members_display_name'], $member['pp_reputation_points'] )"}">
+				</if>
+				<if test="posrep:|:$member['pp_reputation_points'] > 0">
+					<p class='reputation positive ipsType_small left' data-tooltip="{parse expression="sprintf( $this->lang->words['member_has_x_rep'], $member['members_display_name'], $member['pp_reputation_points'] )"}">
+				</if>
+				<if test="negrep:|:$member['pp_reputation_points'] < 0">
+					<p class='reputation negative ipsType_small left' data-tooltip="{parse expression="sprintf( $this->lang->words['member_has_x_rep'], $member['members_display_name'], $member['pp_reputation_points'] )"}">
+				</if>
+						<span class='number'>{$member['pp_reputation_points']}</span>
+					</p>
+			</if>
+			<span class='desc'>
+				{$this->lang->words['member_joined']} {parse date="$member['joined']" format="joined"}<br />
+				{IPSMember::makeNameFormatted( $member['group'], $member['member_group_id'] )} &middot; {parse format_number="$member['posts']"} {$this->lang->words['member_posts']}
+			</span>
+		</div>
+	</li>
+</foreach>
+</ul>
+</div>
+	{$pages}]]></template_content>
+      <template_name>userList</template_name>
+      <template_data>$users, $search</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+    <template>
+      <template_group>skin_feedback</template_group>
+      <template_content><![CDATA[<li>
+	<ul class="ipsType_small fbkProfStat uP">
+		<li>
+			<span class="value <if test="$member['feedb_percent'] > 99">positive<else /><if test="$member['feedb_percent'] < 0 ">neutral<else /><if test="$member['feedb_percent'] < 40 ">negative</if></if></if>"><if test="$member['feedb_percent']<0">N/A<else />{$member['feedb_percent']}%</if></span>
+			<a href='{$member['fbLink']}'>{$this->lang->words['totalpercent']}</a>
+		</li>
+		<li>
+			<span class="value positive" data-tooltip="{$this->lang->words['totalpos']}">{$member['feedb_pos']}</span>
+			<span class="value" data-tooltip="{$this->lang->words['totalneut']}">{$member['feedb_neu']}</span>
+			<span class="value negative" data-tooltip="{$this->lang->words['totalneg']}">{$member['feedb_neg']}</span>
+		</li>
+	</ul>
+</li>]]></template_content>
+      <template_name>userPaneFeedback</template_name>
+      <template_data>$member</template_data>
+      <template_removable>0</template_removable>
+      <template_user_added>0</template_user_added>
+      <template_user_edited>0</template_user_edited>
+      <template_master_key>root</template_master_key>
+    </template>
+  </templategroup>
+</templates>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_location</word_key>
+      <word_default>Расположение</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_location_desc</word_key>
+      <word_default>Выбор места отображения наград</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_perm</word_key>
+      <word_default>Публичное награждение</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_perm_desc</word_key>
+      <word_default>Укажите группы которые могут выдать награду не заходя в АЦ. (Не применяется для значков)</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_savechanges</word_key>
+      <word_default> Сохранить изменения </word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_saveor</word_key>
+      <word_default>или</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_enable</word_key>
+      <word_default>Включить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_enabledisable</word_key>
+      <word_default>Включено/Выключено</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_helppage</word_key>
+      <word_default>Помощь по этой странице</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_helpshowhide</word_key>
+      <word_default>Показать/Скрыть информацию</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_hide</word_key>
+      <word_default>Скрыть</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_mahelp</word_key>
+      <word_default><![CDATA[Эта страница позволяет управлять наградами и категориями.
+<br />
+<br />
+<strong style='text-decoration:underline;'>Изменение названий категорий:</strong>
+<br />
+Чтобы изменить название категории, Вы должны дважды щелкнуть на заголовок, а затем появится текстовое поле для его изменения. Чтобы сохранить или отменить, щелкните в поле и нажмите кнопку из него.
+<br />
+<br />
+<strong style='text-decoration:underline;'>Изменение порядка наград и категорий:</strong>
+<br />
+Так же, как к другим страницам данной панель администратора, вы можете использовать перетаскивание, чтобы изменить порядок наград и категорий на этой странице.
+<br />
+<br />
+<strong style='text-decoration:underline;'>Изменение видимости наград и категорий:</strong>
+<br />
+Если вы хотите скрыть награду, или категорию, это можно легко сделать! Для этого просто нажмите на влючение отображения (%enabledImage%), или скрытие (%disabledImage%). Вы не сможете включить категорию где нету наград.
+<br />
+<br />
+<strong style='text-decoration:underline;'>Изменение видимости наград в кабинете:</strong>
+<br />
+Кроме того, награды и категории вы можете скрыть в кабинете. Просто нажмите на глаз %showImage% - Отображается или %hideImage% - Скрыто. Это специально сделано для тех, кто не использует значки наград.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_icon_warn</word_key>
+      <word_default><![CDATA[Оставьте это поле пустым, чтобы не менять иконку награды!!!]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_icon_desc</word_key>
+      <word_default>Это картинка которая будет отображена для этой награды. Примерный размер " 40x40 " пикселей. Загружать только файлы изображений!</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_icon</word_key>
+      <word_default>Иконка награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_cattitle_desc</word_key>
+      <word_default/>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_cattitle</word_key>
+      <word_default>Название категории</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_badge_desc</word_key>
+      <word_default>Укажите группы пользователей, которым будут отображены значки ваших наград.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_badge</word_key>
+      <word_default>Значок виден</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardname_desc</word_key>
+      <word_default>Награда будет определена этим</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardname</word_key>
+      <word_default>Название награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardlongdesc_desc</word_key>
+      <word_default>Длинное описание награды (HTML разрешён) для использования в кабинете.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardlongdesc</word_key>
+      <word_default>Полное описание</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awarddesc_descno</word_key>
+      <word_default>Подсказка для получения награды для тех, кто её ещё не получил.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awarddesc_desc</word_key>
+      <word_default>Небольшое описание этой награды.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awarddescno</word_key>
+      <word_default>Как получить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awarddesc</word_key>
+      <word_default>Краткое описание</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardcategory_desc</word_key>
+      <word_default>Выберите категорию, в которую вы хотите поместить награду.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_awardcategory</word_key>
+      <word_default>Категория</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit_award</word_key>
+      <word_default>Редактирование награды:</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_editcat_title</word_key>
+      <word_default>Редактирование этой категории</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_editcat</word_key>
+      <word_default>Редактирование категории</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_editaward</word_key>
+      <word_default>Редактирование награды:</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_edit</word_key>
+      <word_default>Редактировать</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_disable</word_key>
+      <word_default>Отключить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_doubleclick</word_key>
+      <word_default>Дважды нажмите, чтобы изменить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_dirwrite</word_key>
+      <word_default><![CDATA[Убедитесь, что каталог "auto_awarding" доступен для чтения вашей системе.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_deletecat_title</word_key>
+      <word_default>Удалить эту категорию.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_delhasawards</word_key>
+      <word_default><![CDATA[В этой категории есть награды, что вы хотите с ними делать? &nbsp;&nbsp;&nbsp; ]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_deletecatno</word_key>
+      <word_default><![CDATA[Невозможно удалить категорию по умолчанию]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_submit</word_key>
+      <word_default>Подтвердить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_deletecat</word_key>
+      <word_default>Удалить категорию</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_delete</word_key>
+      <word_default>Удалить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_delcat</word_key>
+      <word_default>Удаление категории</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_delaward</word_key>
+      <word_default>Вы уверены, что вы хотите удалить эту награду? Это действие не может быть отменено.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_delareyousure</word_key>
+      <word_default>Вы уверены, что вы хотите удалить эту категорию? Это действие не может быть отменено.</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_continue</word_key>
+      <word_default> Продолжить </word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_auto_awards</word_key>
+      <word_default>Управление автонаграждением</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_cancel</word_key>
+      <word_default>Отменить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_autotype</word_key>
+      <word_default>Тип автонаграждения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addnewcat</word_key>
+      <word_default>Создать категорию для наград</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addnewaward</word_key>
+      <word_default>Создать награду</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addingaward</word_key>
+      <word_default>Добавление награды</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addaward</word_key>
+      <word_default> Добавление награды </word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addauto</word_key>
+      <word_default>Добавить новую функцию автонаграждения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addaatype</word_key>
+      <word_default>Тип автонаграждения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_addaafun</word_key>
+      <word_default>Добавление новой функции автонаграждения</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_manage_awards</word_key>
+      <word_default>Управление наградами</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_noaafun</word_key>
+      <word_default><![CDATA[Такой функции автонаграждения нету.]]></word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_ormoveto</word_key>
+      <word_default>или перейти к....</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_pleasechooseone</word_key>
+      <word_default>Выберите одно</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_show</word_key>
+      <word_default>Показать</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_show_on_frontend</word_key>
+      <word_default>Отображение в кабинете</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_show_on_frontend_desc</word_key>
+      <word_default>Если включено, то награды будут отображаться даже если не кому не выданы</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_type_achievement</word_key>
+      <word_default>Достижение</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_type_badge</word_key>
+      <word_default>Значок</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_type_naked</word_key>
+      <word_default>Везде</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_type_profile</word_key>
+      <word_default>Профиль</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_type_signature</word_key>
+      <word_default>Подпись</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_yesdelete</word_key>
+      <word_default>Да, удалить</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_cabinet_permissions</word_key>
+      <word_default>Просмотр прав кабинета</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_manage</word_pack>
+      <word_key>ja_manage_cabinet</word_key>
+      <word_default>Управление правами кабинета</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>menu__cabinet_permissions</word_key>
+      <word_default>Настройки кабинета</word_default>
+    </lang>
+    <lang>
+      <word_app>jawards</word_app>
+      <word_pack>admin_menulang</word_pack>
+      <word_key>menu__system_overview</word_key>
+      <word_default>Обзор</word_default>
+    </lang>
+  </languagegroup>
+</languageexport>
